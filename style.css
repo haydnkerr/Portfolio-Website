@@ -76,7 +76,7 @@ p {
 }
 
 .loading-content {
-  max-width: 550px;
+  max-width: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
