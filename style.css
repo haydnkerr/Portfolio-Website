@@ -5,10 +5,11 @@
 }
 
 body {
+  font-family:sans-serif
 }
 
 h1 {
-
+  margin-bottom: 15px;
 }
 
 h2 {
@@ -41,4 +42,44 @@ p {
 
 .hidden {
   display: none;
+}
+
+.loading-screen {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(41, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.face {
+  height: 200px;
+  width: auto
+}
+
+.social-media-container {
+  display: flex;
+}
+
+.social-media-container img {
+  height: 45px;
+  width: auto;
+  margin: 15px;
+  padding: 5px;
+}
+
+.social-media-container img:hover {
+  padding: 0px
+}
+
+.loading-content {
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
