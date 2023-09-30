@@ -5,46 +5,474 @@
 }
 
 body {
-  font-family:sans-serif
+  font-family: 'Montserrat';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px;
 }
 
-h1 {
+main {
+  font-family: 'Montserrat';
+}
+
+
+
+.primary-btn {
+  background-color: dodgerblue;
+  text-decoration: none;
+  border: none;
+  border-bottom: 3px solid rgb(0, 96, 192);
+  border-radius: 15px;
+  padding: 5px;
+  overflow: hidden;
+  width: 150px;
+  margin-right: 25px;
+}
+
+.secondary-btn {
+  background-color: rgb(0, 208, 38);
+  border-bottom: 3px solid rgb(0, 167, 31);
+}
+
+.primary-btn a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+
+/* Jobs Section */
+.job-container {
+  background: rgb(209, 209, 209);
+  padding: 50px
+}
+
+.job-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 3fr;
+  width: 700px;
+  gap: 15px;
+  
+}
+
+.job-cell {
+  border-radius: 10px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.job-cell:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 0px;
+}
+
+.job-header-bg {
+  color: white;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.job-header {
+  background-color: rgba(0, 0, 0, 0.45);
+  padding: 25px;
+}
+
+
+.job-header h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.job-header h3 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  opacity: 60%;
+  font-weight: 400;
+  font-size: .9rem;
+}
+
+.job-header h4 {
+  font-weight: 600;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    
+}
+
+
+
+.job-info p {
+  font-weight: 300;
+  font-size: 0.85rem;
+}
+
+.inactive-cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.40);
+  color: white;
+}
+
+.inactive-cell h2{
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.inactive-cell h4{
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 4px;
+}
+
+#inactive-nutmeg {
+  background-image: url("./assets/uconn-bg.jpg");
+  
+}
+
+#inactive-freelance {
+  background-image: url("./assets/desk-bg.jpg");
+  background-position: center;
+  
+}
+
+#inactive-dxg {
+  background-image: url("./assets/dx-bg.jpeg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  
+}
+
+#active-dxg .job-header-bg {
+  background-image: url("./assets/dx-bg.jpeg");
+  background-position: bottom;
+}
+
+#active-nutmeg .job-header-bg {
+  background-image: url("./assets/uconn-bg.jpg");
+  color: white;
+  background-position: center;
+  background-size: 100%;
+}
+
+#active-freelance .job-header-bg {
+  background-image: url("./assets/desk-bg.jpg");
+  color: white;
+  background-position-y: 64%;
+  background-size: 100%;
+}
+
+
+
+.job-info {
+  padding: 25px;
+}
+
+
+.primary-grid {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  transition: 2s;
+
+}
+
+.left-grid {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  transition: 2s;
+}
+
+.right-grid {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  transition: 2s;
+}
+
+
+/* Project Section */
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  width: 100%;
+  max-width: 1300px;
+  gap: 15px;
+
+
+}
+
+.project-cell {
+  height: 250px;
+  width: 250px;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 1px 7px #00000030;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project-cell:hover {
+  transition: 0.5s;
+  border-radius: 0px;
+}
+
+.project-info {
+  height: 100%;
+  width: 100%;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white
+}
+
+.project-info h2 {
+  transform: translateY(-200px);
+  margin-bottom: 10px;;
+}
+
+.project-info a {
+  transform: translateY(200px);
+}
+
+.project-info:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.75);
+  opacity: 100%;
+  transition: 1s;
+}
+
+.project-info:hover > h2{
+  transform: translateY(0px);
+  transition: 1s;
+}
+
+.project-info:hover > a{
+  transform: translateY(0px);
+  transition: 1s;
+}
+
+#miracles-project {
+  background-color: white;
+  background-image: url("./assets/miracles-logo.png");
+  background-size: 85%;
+}
+
+#connect-four-project {
+  background-image: url('./assets/background.png');
+}
+
+#space-project {
+  background-image: url('./assets/space-bg.png');
+}
+
+#ctnerr-project {
+  background-color: rgb(220, 220, 220);
+  background-image: url("./assets/CTNERR-logo_digital-circle-color.png");
+  background-size: 85%;
+}
+
+#core-project {
+  background-color: #d9363e;
+  background-image: url("./assets/core-bg.png");
+  background-size: 80%;
+}
+
+#frontend-mentor-project {
+  background-image: url("./assets/frontend-logo.svg");
+  background-size: 90%;
+}
+
+/* Project Description Modal */
+#job-description-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.461);
+  top: 0;
+  left: 0;
+  padding: 50px;
+  overflow: scroll;
+}
+
+.job-description-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.job-description {
+  width: 100%;
+  height: auto;
+  max-width: 1350px;
+  display: flex;
+  overflow: hidden;
+  background: white;
+  border-radius: 25px;
+}
+
+.left-side {
+  width: 40%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.right-side {
+  width: 60%;
+  height: 100%;
+  padding: 25px;
+  overflow: scroll;
+  position: relative;
+}
+
+
+
+.job-description h2 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.job-description h3 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  opacity: 60%;
+  font-weight: 400;
+  font-size: .9rem;
+}
+
+.job-description h4 {
+  font-weight: 400;
   margin-bottom: 15px;
+  letter-spacing: 2px;
 }
 
-h2 {
-
-}
-h3 {
-
+.job-description h4 span {
+  margin-right: 15px;
 }
 
-h4 {
-
-}
-
-h5 {
-
-}
-
-p {
-
-}
-
-.container {
-
+.job-description p {
+  font-weight: 300;
+  font-size: 0.85rem;
 }
 
 
-.active {
 
+#connect-four-description .left-side {
+  background-image: url("./assets/connect-four-bg.png");
+  background-position: center;
 }
 
-.hidden {
+#connect-four-description .left-side img {
+  width: 90%;
+}
+
+#miracles-description h2 {
+  font-size: 2rem;
+}
+
+#miracles-description .left-side {
+  background-image: url("./assets/miracles-bg.png");
+  background-position: left
+}
+
+#miracles-description .left-side img {
+  width: 90%;
+}
+
+
+.project-close-btn {
+  position: absolute;
+  right: 15px;
+  top: 7px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: dimgray;
+}
+
+.project-close-btn:hover {
+  cursor: pointer;
+}
+
+.blue {
+  color: blue;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+.purple {
+  color: blueviolet;
+}
+
+@media screen and (max-width: 992px)  {
+  .job-description {
+    flex-direction: column;
+  }
+
+  .left-side {
+    width: 100%;
+  }
+
+  .right-side {
+    width: 100%;
+  }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.display-none {
   display: none;
 }
 
+
+
 .loading-screen {
+  position: absolute;
   height: 100vh;
   width: 100vw;
   background-color: rgb(41, 255, 255);
@@ -53,10 +481,12 @@ p {
   align-items: center;
   flex-direction: column;
   padding: 25px;
+  top: 0;
+  left: 0
 }
 
 .face {
-  height: 200px;
+  height: 300px;
   width: auto
 }
 
@@ -96,6 +526,41 @@ p {
   animation: spin 2s linear infinite;
 }
 
+/*
+
+.snow {
+  position: absolute;
+  width: 100vw;
+  height: 75vh;
+  display: flex;
+  justify-content: space-between;
+  background-color: #3854A5;
+}
+
+.snow-ball {
+
+  border-radius: 50%;
+  background-color: white;
+  /* animation: fall 5s linear infinite; */
+/* position: absolute;
+  top: 0;
+  right: 590px
+}
+
+@keyframes fall {
+  0% {
+
+  }
+
+
+  100% {
+    opacity: 0%;
+    transform: translateY(450px);
+  }
+}
+
+*/
+
 
 
 
@@ -103,4 +568,4 @@ p {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
-}
+} 
