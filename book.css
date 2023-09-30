@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.book-container {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: rgba(0, 0, 0, 0.516);
+}
+
+/* Book */
+.book {
+    position: relative;
+    width: 400px;
+    height: 515px;
+    transition: transform 0.3s;
+}
+
+.paper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    perspective: 1500px;
+
+}
+
+.front,
+.back {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+.front {
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-left: 3px solid rgb(240, 240, 240);
+}
+
+.back {
+    z-index: 0;
+}
+
+.front-content,
+.back-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-content {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+/* Paper flip effect */
+.flipped .front,
+.flipped .back {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+
+/* Controller Buttons */
+button {
+    border: none;
+    background-color: transparent; 
+}
+
+button:focus {
+    outline: none;
+}
+
+
+
+.btn {
+    width: 50px;
+    height: auto;
+    opacity: 0.5;
+    margin: 10px;
+    transition: transform 0.5s;
+    cursor: pointer;
+    z-index: 29;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+
+
+/* Paper stack order */
+#p1 {
+    z-index:22;
+}
+
+#p2 {
+    z-index: 21;
+}
+
+#p3 {
+    z-index: 20;
+}
+
+#p4 {
+    z-index: 19;
+}
+
+#p5 {
+    z-index: 18;
+}
+
+#p6 {
+    z-index: 17;
+}
+
+#p7 {
+    z-index: 16;
+}
+
+#p8 {
+    z-index: 15;
+}
+
+#p9 {
+    z-index: 14;
+}
+
+#p10 {
+    z-index: 13;
+}
+
+#p11 {
+    z-index: 12;
+}
+
+#p12 {
+    z-index: 11;
+}
+#p13 {
+    z-index: 10;
+}
+
+#p14 {
+    z-index: 9;
+}
+
+#p15 {
+    z-index: 8;
+}
+#p16 {
+    z-index: 7;
+}
+
+#p17 {
+    z-index: 6;
+}
+
+#p18 {
+    z-index: 5;
+}
+
+#p19 {
+    z-index: 4;
+}
+
+#p20 {
+    z-index: 3;
+}
+
+#p21 {
+    z-index: 2;
+}
+
+/* Background for each page */
+#f1 {
+    background: url('./assets/print-designs/book-cover.jpg');
+    background-size: cover;
+}
+
+#b1 {
+    background: url('./assets/print-designs/dating/dating2.jpg');
+    background-size: cover;
+}
+
+#f2 {
+    background: url('./assets/print-designs/dating/dating3.jpg');
+    background-size: cover;
+}
+
+#b2 {
+    background: url('./assets/print-designs/dating/dating4.jpg');
+    background-size: cover;
+}
+
+#f3 {
+    background: url('./assets/print-designs/dating/dating5.jpg');
+    background-size: cover;
+}
+
+#b3 {
+    background: url('./assets/print-designs/dating/dating6.jpg');
+    background-size: cover;
+}
+
+
+#f4 {
+    background: url('./assets/print-designs/dating/dating7.jpg');
+    background-size: cover;
+}
+
+#b4 {
+    background: url('./assets/print-designs/dunkin/dunkin.jpg');
+    background-size: cover;
+}
+
+#f5 {
+    background: url('./assets/print-designs/dunkin/dunkin2.jpg');
+    background-size: cover;
+}
+
+#b5 {
+    background: url('./assets/print-designs/teds:huskies/single-pg/huskies:teds-pages-4-92.jpg');
+    background-size: cover;
+}
+
+#f6 {
+    background: url('./assets/print-designs/teds:huskies/single-pg/huskies:teds-pages-4-93.jpg');
+    background-size: cover;
+}
+
+#b6 {
+    background: url('./assets/print-designs/teds:huskies/single-pg/huskies:teds-pages-4-94.jpg');
+    background-size: cover;
+}
+
+
+#f7 {
+    background: url('./assets/print-designs/teds:huskies/single-pg/huskies:teds-pages-4-95.jpg');
+    background-size: cover;
+}
+
+#b7 {
+    background: url('./assets/print-designs/teds:huskies/single-pg/huskies:teds-pages-4-96.jpg');
+    background-size: cover;
+}
+
+
+#f8 {
+    background: url('./assets/print-designs/teds:huskies/single-pg/huskies:teds-pages-4-97.jpg');
+    background-size: cover;
+}
+
+#b8 {
+    background: url('./assets/print-designs/fall2021/single-pg/fall-mag2.jpg');
+    background-size: cover;
+}
+
+
+#f9 {
+    background: url('./assets/print-designs/fall2021/single-pg/fall-mag3.jpg');
+    background-size: cover;
+}
+
+#b9 {
+    background: url('./assets/print-designs/fall2021/single-pg/fall-mag4.jpg');
+    background-size: cover;
+}
+
+
+#f10 {
+    background: url('./assets/print-designs/fall2021/single-pg/fall-mag5.jpg');
+    background-size: cover;
+}
+
+#b10 {
+    background: url('./assets/print-designs/baseball/baseball-spreads2.jpg');
+    background-size: cover;
+}
+
+
+#f11 {
+    background: url('./assets/print-designs/baseball/baseball-spreads3.jpg');
+    background-size: cover;
+}
+
+#b11 {
+    background: url('./assets/print-designs/baseball/baseball-spreads4.jpg');
+    background-size: cover;
+}
+
+
+#f12 {
+    background: url('./assets/print-designs/baseball/baseball-spreads5.jpg');
+    background-size: cover;
+}
+
+#b12 {
+    background: url('./assets/print-designs/baseball/baseball-spreads6.jpg');
+    background-size: cover;
+}
+
+
+#f13 {
+    background: url('./assets/print-designs/baseball/baseball-spreads7.jpg');
+    background-size: cover;
+}
+
+#b13 {
+    background: url('./assets/print-designs/baseball/baseball-spreads8.jpg');
+    background-size: cover;
+}
+
+
+#f14 {
+    background: url('./assets/print-designs/baseball/baseball-spreads9.jpg');
+    background-size: cover;
+}
+
+#b14 {
+    background: url('./assets/print-designs/baseball/baseball-spreads10.jpg');
+    background-size: cover;
+}
+
+
+#f15 {
+    background: url('./assets/print-designs/baseball/baseball-spreads11.jpg');
+    background-size: cover;
+}
+
+#b15 {
+    background: url('./assets/print-designs/mens-basketball-spread/mens-basketball-spread.jpg');
+    background-size: cover;
+}
+
+
+#f16 {
+    background: url('./assets/print-designs/mens-basketball-spread/mens-basketball-spread2.jpg');
+    background-size: cover;
+}
+
+#b16 {
+    background: url('./assets/print-designs/womens-bball/womens-basketball-spread.jpg');
+    background-size: cover;
+}
+
+
+#f17 {
+    background: url('./assets/print-designs/womens-bball/womens-basketball-spread2.jpg');
+    background-size: cover;
+}
+
+#b17 {
+    background: url('./assets/print-designs/winter/winter.jpg');
+    background-size: cover;
+}
+
+
+#f18 {
+    background: url('./assets/print-designs/winter/winter2.jpg');
+    background-size: cover;
+}
+
+#b18 {
+    background: url('./assets/print-designs/roxanne/roxane-gay.jpg');
+    background-size: cover;
+}
+
+
+#f19 {
+    background: url('./assets/print-designs/roxanne/roxane-gay2.jpg');
+    background-size: cover;
+}
+
+#b19 {
+    background: url('./assets/print-designs/drag/drag-show.jpg');
+    background-size: cover;
+}
+
+
+#f20 {
+    background: url('./assets/print-designs/drag/drag-show2.jpg');
+    background-size: cover;
+}
+
+#b20 {
+    background: url('./assets/print-designs/sports/sports.jpg');
+    background-size: cover;
+}
+
+
+#f21 {
+    background: url('./assets/print-designs/sports/sports2.jpg');
+    background-size: cover;
+}
+
+#b21 {
+    background: powderblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#b21 img {
+    width: 550px;
+    height: auto
+}
+
+.display-none {
+    display: none;
+}
