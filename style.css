@@ -78,16 +78,29 @@ header a {
   color: black;
   text-decoration: none;
   margin-left: 50px;
+  font-weight: 400;
+}
+
+header a:hover {
+  text-decoration: underline;
 }
 
 .resume-link {
   padding: 5px;
-  border: 1px solid black
+  border: 1px solid black;
+  background-color: #113361;
+  color: white;
+
 }
 
 .resume-link:hover {
   cursor: pointer;
+  background-color: transparent;
+  color: black;
+  transition: .5s;
+  text-decoration: none;
 }
+
 .resume-container {
   position:fixed;
   width: 100vw;
@@ -137,6 +150,12 @@ top: 0;
 
 .hero-section h1 {
   font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-section h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .navy {
@@ -193,8 +212,12 @@ top: 0;
   width: 50%
 }
 
+.intro-info h2 {
+  margin-bottom: 25px;
+  font-size: 2.25rem;
+}
+
 .skills-container {
-  background: #113361;
   background: #e0ebf3;
   display: flex;
   justify-content: center;
@@ -547,6 +570,52 @@ top: 0;
   background-color: white;
   background-image: url("./assets/frontend-logo.svg");
   background-size: 90%;
+}
+
+#mensah-logo {
+  background-color: white;
+  background-image: url("./assets/mensah-logo.png");
+  background-size: 90%;;
+}
+
+#tr-logo {
+  background-color: #d9363e;
+  background-image: url("./assets/tr-logo.png");
+  background-size: 75%;;
+}
+
+#hk-logo {
+  background-color: #dfdfdf;
+  background-image: url("./assets/hk-full-logo.png");
+  background-size: 60%;;
+}
+
+#greenwood-logo {
+  background-color: #c32424;
+  background-image: url("./assets/greenwood-logo.png");
+  background-size: 90%;;
+}
+
+#fbf-logo {
+  background-color: #000000;
+  background-image: url("./assets/fbf-black.png");
+  background-size: 80%;;
+}
+
+#top-5 {
+  background-image: url("./assets/top-5-post.png");
+  background-size: 100%;;
+}
+
+#kicking-camp {
+  background-image: url("./assets/kicking-camp.png");
+}
+
+#nutmeg-spreads {
+  background-color: powderblue;
+  background-size: 60%;;
+  background-image: url("./assets/nutmeg-logo.png");
+
 }
 
 /* Project Description Modal */
