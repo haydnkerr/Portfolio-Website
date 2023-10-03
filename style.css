@@ -10,7 +10,8 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 100px;
+  background-color: #F3E8E0;
+  
 }
 
 main {
@@ -34,19 +35,224 @@ main {
 .secondary-btn {
   background-color: rgb(0, 208, 38);
   border-bottom: 3px solid rgb(0, 167, 31);
+  font-size: 0.8rem;
+  color: white;
 }
 
 .primary-btn a {
   text-decoration: none;
   color: white;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 75px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f3e8e076;;
+  padding: 10px 25px;
+}
+
+
+
+header img {
+  height: 100%;
+  width: auto
+}
+
+header ul {
+  display: flex;
+}
+
+header li {
+  list-style-type: none;
+  
+}
+
+header a {
+  color: black;
+  text-decoration: none;
+  margin-left: 50px;
+}
+
+.resume-link {
+  padding: 5px;
+  border: 1px solid black
+}
+
+.resume-link:hover {
+  cursor: pointer;
+}
+.resume-container {
+  position:fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+  background: rgb(5, 4, 67);
+  top: 0;
+  left: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 150px;
+  opacity: 100%;
+}
+
+#resume-close-btn {
+  font-family: 'Montserrat',sans-serif;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 3rem;
+  font-weight: 600;
+  color: rgb(141, 141, 141);
+  z-index: 58;
+}
+
+#resume-close-btn:hover {
+  cursor: pointer;
+}
+
+.resume {
+width: 90vw;
+max-width: 800px;
+height: auto;
+position: absolute;
+top: 0;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 80vh;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+}
+
+.navy {
+  color: #113361;
+}
+
+.face-img {
+  height: 80vh;
+  width: auto;
+}
+
+/* Intro/skills */
+.wavy-line {
+  width: 100vw;
+  height: auto;
+  transform: translateY(10px);
+}
+.introduction-container {
+  background: white;
+  color: black;
+  padding: 0px 50px 75px 50px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  
+}
+
+.introduction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width:1200px;
+  transform: translateY(-25px);
+}
+
+.introduction h2 {
+  margin-bottom: 25px;
+}
+
+.introduction-container img {
+  width: 50%;
+  height: auto;
+}
+
+.introduction-container p {
+  line-height: 24px;
+  font-weight: 200;
+  font-size: 18px;
+}
+
+.intro-info {
+  width: 50%
+}
+
+.skills-container {
+  background: #113361;
+  background: #e0ebf3;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  padding: 100px;
+  gap: 10px;
+}
+
+.skill-box {
+  background: white;
+  width: 500px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.skill-info {
+  padding: 25px;
+}
+
+.skill-box h2 {
+  width: 100%;
+  color: white;
+  background: #113361;
+  text-align: center;
+  padding:25px;
+  font-size: 2rem;
+}
+
+.designer-container h2 {
+  font-family: 'alex brush';
+}
+
+.developer-container h2 {
+  font-family: 'cousine';
+}
+
 
 
 /* Jobs Section */
 .job-container {
-  background: rgb(209, 209, 209);
-  padding: 50px
+  background: #ffffff;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.container > h2 {
+  margin-bottom: 25px;
+  font-size: 2.25rem;
 }
 
 .job-grid {
@@ -55,6 +261,7 @@ main {
   grid-template-rows: 1fr 3fr;
   width: 700px;
   gap: 15px;
+  margin: 0 auto
   
 }
 
@@ -62,6 +269,7 @@ main {
   border-radius: 10px;
   background-color: white;
   overflow: hidden;
+  box-shadow: 0px 1px 7px #00000030;
 }
 
 .job-cell:hover {
@@ -122,6 +330,7 @@ main {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.40);
   color: white;
+  box-shadow: 0px 1px 7px #00000030;
 }
 
 .inactive-cell h2{
@@ -207,9 +416,17 @@ main {
 
 
 /* Project Section */
+.projects-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  flex-direction: column;
+}
+
 .projects-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   width: 100%;
   max-width: 1300px;
@@ -219,8 +436,8 @@ main {
 }
 
 .project-cell {
-  height: 250px;
-  width: 250px;
+  height: 200px;
+  width: 200px;
   border-radius: 15px;
   overflow: hidden;
   display: flex;
@@ -291,7 +508,7 @@ main {
 }
 
 #ctnerr-project {
-  background-color: rgb(220, 220, 220);
+  background-color: rgb(192, 255, 195);
   background-image: url("./assets/CTNERR-logo_digital-circle-color.png");
   background-size: 85%;
 }
@@ -299,10 +516,35 @@ main {
 #core-project {
   background-color: #d9363e;
   background-image: url("./assets/core-bg.png");
+  background-size: 90%;
+}
+
+#floe-project {
+  background-color: #3A57A6;
+  background-image: url("./assets/floe-logo.png");
   background-size: 80%;
 }
 
+#turfgrass-project {
+  background-color: #47b8ff;
+  background-image: url("./assets/turfgrass-logo.png");
+  background-size: 90%;
+}
+
+#pr-archive-project {
+  background-color: #000E2F;
+  background-image: url("./assets/uconn-logo.png");
+  background-size: 85%;
+}
+
+#crosshairs-project {
+  background-color: black;
+  background-image: url("./assets/crosshairs-logo.png");
+  background-size: 100%;
+}
+
 #frontend-mentor-project {
+  background-color: white;
   background-image: url("./assets/frontend-logo.svg");
   background-size: 90%;
 }
@@ -409,8 +651,8 @@ main {
   position: absolute;
   right: 15px;
   top: 7px;
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 2rem!important;
+  font-weight: 600!important;
   color: dimgray;
 }
 
@@ -465,9 +707,7 @@ main {
   display: flex;
 }
 
-.display-none {
-  display: none;
-}
+
 
 
 
@@ -482,7 +722,8 @@ main {
   flex-direction: column;
   padding: 25px;
   top: 0;
-  left: 0
+  left: 0;
+  display: none;
 }
 
 .face {
@@ -497,7 +738,8 @@ main {
 .social-media-container img {
   height: 45px;
   width: auto;
-  margin: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
   padding: 5px;
 }
 
@@ -524,6 +766,10 @@ main {
   justify-content: center;
   align-items: center;
   animation: spin 2s linear infinite;
+}
+
+.display-none {
+  display: none;
 }
 
 /*
@@ -569,3 +815,14 @@ main {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 } 
+
+
+@media screen and (max-width: 700px)  {
+  main {
+    display: none
+  }
+  .loading-screen {
+    display: flex;
+  }
+
+}

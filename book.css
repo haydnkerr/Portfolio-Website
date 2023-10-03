@@ -15,6 +15,7 @@
     align-items: center;
     font-family: sans-serif;
     background-color: rgba(0, 0, 0, 0.516);
+    z-index: 1;
 }
 
 /* Book */
@@ -79,31 +80,7 @@
     transform: rotateY(-180deg);
 }
 
-/* Controller Buttons */
-button {
-    border: none;
-    background-color: transparent; 
-}
 
-button:focus {
-    outline: none;
-}
-
-
-
-.btn {
-    width: 50px;
-    height: auto;
-    opacity: 0.5;
-    margin: 10px;
-    transition: transform 0.5s;
-    cursor: pointer;
-    z-index: 29;
-}
-
-.btn:hover {
-    opacity: 1;
-}
 
 
 
@@ -422,6 +399,33 @@ button:focus {
 #b21 img {
     width: 550px;
     height: auto
+}
+
+/* Controller Buttons */
+button {
+    border: none;
+    background-color: transparent;
+    z-index: 88;
+}
+
+button:focus {
+    outline: none;
+}
+
+
+
+.btn {
+    width: 50px;
+    height: auto;
+    opacity: 0.99;
+    margin: 10px;
+    transition: transform 0.5s;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.btn:hover {
+    opacity: 0.99;
 }
 
 .display-none {

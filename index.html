@@ -7,6 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cousine:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
   <link
     href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
@@ -18,552 +23,630 @@
 </head>
 
 <body>
-  <main class="display-none">
+  <header>
+    <img src="./assets/hk-logo.png">
+    <ul>
+      <li><a href="#jobs">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li id="resume-link"><a class="resume-link">Resume</a></li>
+    </ul>
+  </header>
+
+  <section class="resume-container display-none">
+    <img src="./assets/new_resume.pdf" class="resume">
+    <p id="resume-close-btn">X</p>
+  </section>
+
+  <section class="hero-section">
+    <img class="face-img" src="./assets/right-face.png">
+    <div class="">
+
+      <h1>I'm Haydn. <br> <span class="navy">Developer</span> & Designer</h1>
+      <h2>I like to bring websites to life</h2>
+      <div class="social-media-container">
+        <a alt="Instagram" target="_blank" href="https://www.instagram.com/haydnkerr.design/"><img
+            src="./assets/5279112_camera_instagram_social media_instagram logo_icon.png"></a>
+        <a alt="LinkedIn" target="_blank" href="https://www.linkedin.com/in/haydn-kerr-354899202/"><img
+            src="./assets/linkedin.png"></a>
+        <a alt="GitHub" target="_blank" href="https://github.com/haydnkerr"><img src="./assets/github.png"></a>
+      </div>
+    </div>
+    <img class="face-img" src="./assets/left-face.png">
+  </section>
+  <main class="">
+    <img class="wavy-line" src="./assets/wavy-line.png">
 
     <section class="introduction-container">
-      <p>
-        Hello there, I'm Haydn Kerr. Part-time <strong><span>Developer</span></strong>, part-time
-        <strong><span>Designer</span></strong>, retired college athlete. As a frontend developer, my passion is
-        utilizing my coding skills to craft immersive and user-centric web experiences. With a background in UI/UX
-        design and proficiency in Adobe Suite products like Illustrator, Photoshop, and InDesign, I bring a holistic
-        approach to every project. This digital showcase features a curated collection of endeavors that showcase my
-        proficiency in HTML, CSS, and JavaScript, as well as my dedication to creating functional yet visually
-        captivating websites. Explore the diverse range of projects, and discover how I blend creativity with technical
-        expertise to leave a lasting digital impression.
-      </p>
+      <div class="introduction">
+        <div class="intro-info">
+          <h2>In A Nutshell</h2>
+        <p>
+          Hello there, I'm Haydn Kerr. Part-time <strong><span>Developer</span></strong>, part-time
+          <strong><span>Designer</span></strong>, retired college athlete. As a frontend developer, my passion is
+          utilizing my coding skills to craft immersive and user-centric web experiences. With a background in UI/UX
+          design and proficiency in <strong>Adobe Suite</strong> products like Illustrator, Photoshop, and InDesign, I bring a holistic
+          approach to every project. This digital showcase features a curated collection of endeavors that showcase my
+          proficiency in <strong>HTML, CSS,</strong> and <strong>JavaScript,</strong> as well as my dedication to creating functional yet visually
+          captivating websites. Explore the diverse range of projects, and discover how I blend creativity with technical
+          expertise to leave a lasting digital impression.
+        </p>
+        </div>
+        
+        <img src="./assets/cutout.png">
+      </div>
+      
     </section>
 
     <section class="skills-container">
-      <div class="developer-container">
+      <div class="developer-container skill-box">
         <h2>Developer</h2>
-        <p></p>
-        <h4>Languages</h4>
-        <p>HTML, CSS, Javascript, Python</p>
-        <h4>Tools</h4>
-        <ul>
-          <li>Github</li>
-          <li>Bootstrap</li>
-          <li>Github</li>
-          <li>VS Code</li>
-          <li>Wordpress</li>
-          <li>Wix</li>
-          <li>React</li>
-        </ul>
+        <div class="skill-info">
+          <p>loremi[usm</p>
+          <h4>Languages</h4>
+          <p>HTML, CSS, Javascript, Python</p>
+          <h4>Tools</h4>
+          <p>Github,
+            Bootstrap,
+            Github,
+            VS Code,
+            Wordpress,
+            Wix,
+            React</p>
+          <ul>
+
+          </ul>
+        </div>
+
       </div>
-      <div class="designer-container">
+      <div class="designer-container skill-box">
         <h2>Designer</h2>
-        <p></p>
-        <h4>Tools</h4>
-        <ul>
-          <li>Illustrator</li>
-          <li>InDesign</li>
-          <li>XD</li>
-          <li>Photoshop</li>
-          <li>Illustrator</li>
-          <li>Figma</li>
-        </ul>
+        <div class="skill-info">
+          <p>lorem </p>
+          <h4>Tools</h4>
+          <ul>
+            <li>Illustrator</li>
+            <li>InDesign</li>
+            <li>XD</li>
+            <li>Photoshop</li>
+            <li>Illustrator</li>
+            <li>Figma</li>
+          </ul>
+        </div>
+
       </div>
     </section>
 
 
 
-    <section class="job-container">
-      <div class="job-grid">
-        <div class="job-cell left-grid" id="one">
-          <div class="inactive-cell" id="inactive-nutmeg">
-            <div class="inactive-cell">
-              <h2>Nutmeg</h2>
-              <h4>Lead Designer</h4>
-            </div>
-  
-          </div>
-          <div class="job-info-container display-none" id="active-nutmeg">
-            <div class="job-header-bg">
-              <div class="job-header">
-                <h3>Lead Designer</h3>
-                <h2>Nutmeg Publishing</h2>
-                <h4>June 2021 - Present</h4>
-                <button class="primary-btn secondary-btn"><a target="_blank" href="https://www.nutmeguconn.com">Visit
-                    Site</a></button>
+    <section class="job-container" id="jobs">
+      <div class="container">
+        <h2>Professional Experience</h2>
+        <div class="job-grid">
+          <div class="job-cell left-grid" id="one">
+            <div class="inactive-cell" id="inactive-nutmeg">
+              <div class="inactive-cell">
+                <h2>Nutmeg</h2>
+                <h4>Lead Designer</h4>
               </div>
-  
+
             </div>
-            <div class="job-info">
-              <p>
-                As the Lead Designer at Nutmeg Publishing, I held a key position within this student-run organization
-                responsible for crafting the University of Connecticut's yearbook. My role involved overseeing the design
-                process from concept to completion, leading a team of designers, and ensuring a cohesive and visually
-                compelling final product.
-              </p>
-              <br>
-              <p>
-                Central to my responsibilities was the creation of spreads within the yearbook, expertly blending a mix of
-                photos and text to tell the story of the academic year. To accomplish this, I proficiently utilized
-                industry-standard design software including Illustrator, Photoshop, and InDesign.
-              </p>
-              <br>
-              <p>
-                By orchestrating the design process, collaborating closely with team members, and harnessing my skills in
-                graphic design, I played a pivotal role in producing a memorable and cherished memento for the university
-                community. This role demanded a keen eye for detail, strong leadership abilities, and a deep commitment to
-                preserving the essence of each academic year through visual storytelling.
-              </p>
-              <br>
-              <button class="primary-btn secondary-btn" id="nutmeg-book-button">See Work</button></div>
-  
-          </div>
-        </div>
-  
-        <div class="job-cell primary-grid" id="two">
-          <div class="inactive-cell display-none" id="inactive-dxg">
-            <div class="inactive-cell">
-              <h2>DX Group</h2>
-              <h4>Frontend Developer</h4>
+            <div class="job-info-container display-none" id="active-nutmeg">
+              <div class="job-header-bg">
+                <div class="job-header">
+                  <h3>Lead Designer</h3>
+                  <h2>Nutmeg Publishing</h2>
+                  <h4>June 2021 - Present</h4>
+                  <button class="primary-btn secondary-btn"><a target="_blank" href="https://www.nutmeguconn.com">Visit
+                      Site</a></button>
+                </div>
+
+              </div>
+              <div class="job-info">
+                <p><strong>Overview</strong></p>
+                <p>
+                  As the Lead Designer at Nutmeg Publishing, I held a key position within this student-run organization
+                  responsible for crafting the University of Connecticut's yearbook. My role involved overseeing the
+                  design
+                  process from concept to completion, leading a team of designers, and ensuring a cohesive and visually
+                  compelling final product.
+                </p>
+                <br>
+                <p>
+                  Central to my responsibilities was the creation of spreads within the yearbook, expertly blending a
+                  mix
+                  of
+                  photos and text to tell the story of the academic year. To accomplish this, I proficiently utilized
+                  industry-standard design software including Illustrator, Photoshop, and InDesign.
+                </p>
+                <br>
+                <p>
+                  By orchestrating the design process, collaborating closely with team members, and harnessing my skills
+                  in
+                  graphic design, I played a pivotal role in producing a memorable and cherished memento for the
+                  university
+                  community. This role demanded a keen eye for detail, strong leadership abilities, and a deep
+                  commitment
+                  to
+                  preserving the essence of each academic year through visual storytelling.
+                </p>
+                <br>
+                <button class="primary-btn secondary-btn" id="nutmeg-book-button">See Work</button>
+              </div>
+
             </div>
-  
           </div>
-          <div class="job-info-container" id="active-dxg">
-            <div class="job-header-bg">
-              <div class="job-header">
-                <h3>Frontend Developer</h3>
-                <h2>Digital Experience Group</h2>
-                <h4>April 2022 - Present</h4>
-                <button class="primary-btn secondary-btn"><a target="_blank" href="https://dxgroup.core.uconn.edu">Visit
-                    Site</a></button>
+
+          <div class="job-cell primary-grid" id="two">
+            <div class="inactive-cell display-none" id="inactive-dxg">
+              <div class="inactive-cell">
+                <h2>DX Group</h2>
+                <h4>Frontend Developer</h4>
+              </div>
+
+            </div>
+            <div class="job-info-container" id="active-dxg">
+              <div class="job-header-bg">
+                <div class="job-header">
+                  <h3>Frontend Developer</h3>
+                  <h2>Digital Experience Group</h2>
+                  <h4>April 2022 - Present</h4>
+                  <button class="primary-btn secondary-btn"><a target="_blank"
+                      href="https://dxgroup.core.uconn.edu">Visit
+                      Site</a></button>
+                </div>
+              </div>
+
+              <div class="job-info">
+                <h4><strong>Overview</strong></h4>
+                <p>
+                  As a Frontend Developer at the Digital Experience Group, I played a pivotal role in crafting seamless
+                  and
+                  visually engaging digital interfaces for the University of Connecticut. Specializing in web and app
+                  development, I leveraged my expertise in HTML, CSS, and JavaScript to create intuitive and
+                  aesthetically
+                  pleasing user
+                  experiences.
+                </p>
+                <br>
+                <p>
+                  My responsibilities included working extensively with popular hosting platforms such as WordPress and
+                  Wix,
+                  where I implemented frontend solutions that seamlessly integrated with these environments. This
+                  involved
+                  ensuring that the designs were not only visually appealing but also functionally effective, providing
+                  users
+                  with a smooth and satisfying interaction.
+                </p>
+                <br>
+
+                <p>
+
+                  Furthermore, I collaborated closely with the design and backend development teams to bring projects to
+                  fruition, ensuring a cohesive and user-centric final product. This role demanded a keen attention to
+                  detail,
+                  a solid
+                  understanding of best practices, and a commitment to delivering high-quality, accessible digital
+                  experiences.
+                </p>
+                <br>
+                <button class="primary-btn secondary-btn" id=""><a href="#projects">See Work</a></button>
               </div>
             </div>
-  
-            <div class="job-info">
-              <p>
-                As a Frontend Developer at the Digital Experience Group, I played a pivotal role in crafting seamless and
-                visually engaging digital interfaces for the University of Connecticut. Specializing in web and app
-                development, I leveraged my expertise in HTML, CSS, and JavaScript to create intuitive and aesthetically
-                pleasing user
-                experiences.
-              </p>
-              <br>
-              <p>
-                My responsibilities included working extensively with popular hosting platforms such as WordPress and Wix,
-                where I implemented frontend solutions that seamlessly integrated with these environments. This involved
-                ensuring that the designs were not only visually appealing but also functionally effective, providing
-                users
-                with a smooth and satisfying interaction.
-              </p>
-              <br>
-  
-              <p>
-  
-                Furthermore, I collaborated closely with the design and backend development teams to bring projects to
-                fruition, ensuring a cohesive and user-centric final product. This role demanded a keen attention to
-                detail,
-                a solid
-                understanding of best practices, and a commitment to delivering high-quality, accessible digital
-                experiences.
-              </p>
-              </p>
-            </div>
           </div>
-  
-        </div>
 
 
-        <div class="job-cell right-grid" id="three">
-  
-          <div class="inactive-cell" id="inactive-freelance">
-            <div class="inactive-cell">
-              <h2>Haydn Kerr Design</h2>
-              <h4>Freelance</h4>
-            </div>
-  
-          </div>
-          <div class="job-info-container display-none" id="active-freelance">
-  
-  
-            <div class="job-header-bg">
-              <div class="job-header">
-                <h3>Freelance</h3>
+
+          <div class="job-cell right-grid" id="three">
+
+            <div class="inactive-cell" id="inactive-freelance">
+              <div class="inactive-cell">
                 <h2>Haydn Kerr Design</h2>
-                <h4>January 2020 - Present</h4>
-                <button class="primary-btn secondary-btn"><a target="_blank" href="https://dxgroup.core.uconn.edu">Visit
-                    Site</a></button>
+                <h4>Freelance</h4>
               </div>
+
             </div>
-  
-            <div class="job-info">
-  
-              <p>
-                In my role as a freelance designer, I undertook a diverse range of projects spanning various creative
-                domains.
-                This encompassed dynamic web design, where I conceptualized and developed visually appealing and
-                user-friendly
-                interfaces. Additionally, I engaged in crafting distinctive and memorable logos that encapsulated the
-                essence
-                of each brand.
-              </p>
-              <br>
-              <p>
-  
-  
-                Furthermore, my responsibilities extended to social media marketing, where I curated engaging content and
-                designed visually striking posts to bolster brand presence and engagement. Beyond client work, I dedicated
-                time to extracurricular projects through platforms like Frontend Mentor, honing my skills and taking on
-                challenges to further develop my proficiency in frontend development.
-  
-  
-              </p>
-              <br>
-              <p>
-                Overall, my freelance endeavors were characterized by adaptability, creativity, and a commitment to
-                delivering
-                high-quality design solutions tailored to each client's unique vision and requirements.
-              </p>
-              <br>
+            <div class="job-info-container display-none" id="active-freelance">
+
+
+              <div class="job-header-bg">
+                <div class="job-header">
+                  <h3>Freelance</h3>
+                  <h2>Haydn Kerr Design</h2>
+                  <h4>January 2020 - Present</h4>
+
+                </div>
+              </div>
+
+              <div class="job-info">
+                <p><strong>Overview</strong></p>
+
+                <p>
+                  In my role as a freelance designer, I undertook a diverse range of projects spanning various creative
+                  domains.
+                  This encompassed dynamic web design, where I conceptualized and developed visually appealing and
+                  user-friendly
+                  interfaces. Additionally, I engaged in crafting distinctive and memorable logos that encapsulated the
+                  essence
+                  of each brand.
+                </p>
+                <br>
+                <p>
+
+
+                  Furthermore, my responsibilities extended to social media marketing, where I curated engaging content
+                  and
+                  designed visually striking posts to bolster brand presence and engagement. Beyond client work, I
+                  dedicated
+                  time to extracurricular projects through platforms like Frontend Mentor, honing my skills and taking
+                  on
+                  challenges to further develop my proficiency in frontend development.
+
+
+                </p>
+                <br>
+                <p>
+                  Overall, my freelance endeavors were characterized by adaptability, creativity, and a commitment to
+                  delivering
+                  high-quality design solutions tailored to each client's unique vision and requirements.
+                </p>
+                <br>
+                <button class="primary-btn secondary-btn"><a href="#projects">See Work</a></button>
+              </div>
+
             </div>
-  
           </div>
         </div>
       </div>
-      
+
+
     </section>
 
     <section class="book-container display-none" id="book-container">
-       <!-- Previous Button -->
-    <button>
-      <img id="prev-btn" class="btn" src="./assets/previous.png">
-  </button>
-      
+      <!-- Previous Button -->
+      <button>
+        <img id="prev-btn" class="btn" src="./assets/previous.png">
+      </button>
 
 
-  <!-- Book -->
-  <div id="book" class="book">
-      <!-- Paper 1 -->
-      <div id="p1" class="paper">
+
+      <!-- Book -->
+      <div id="book" class="book">
+        <!-- Paper 1 -->
+        <div id="p1" class="paper">
           <div class="front">
-              <div id="f1" class="front-content">
+            <div id="f1" class="front-content">
 
-              </div>
+            </div>
           </div>
           <div class="back">
-              <div id="b1" class="back-content">
-                  
-              </div>
+            <div id="b1" class="back-content">
+
+            </div>
           </div>
-      </div>
-      <!-- Paper 2 -->
-      <div id="p2" class="paper">
+        </div>
+        <!-- Paper 2 -->
+        <div id="p2" class="paper">
           <div class="front">
-              <div id="f2" class="front-content">
-                  
-              </div>
+            <div id="f2" class="front-content">
+
+            </div>
           </div>
           <div class="back">
-              <div id="b2" class="back-content">
-              </div>
+            <div id="b2" class="back-content">
+            </div>
           </div>
-      </div>
-      <!-- Paper 3 -->
-      <div id="p3" class="paper">
+        </div>
+        <!-- Paper 3 -->
+        <div id="p3" class="paper">
           <div class="front">
-              <div id="f3" class="front-content">
-              </div>
+            <div id="f3" class="front-content">
+            </div>
           </div>
           <div class="back">
-              <div id="b3" class="back-content">
-              </div>
+            <div id="b3" class="back-content">
+            </div>
           </div>
+        </div>
+
+        <!-- Paper 4 -->
+        <div id="p4" class="paper">
+          <div class="front">
+            <div id="f4" class="front-content">
+            </div>
+          </div>
+          <div class="back">
+            <div id="b4" class="back-content">
+            </div>
+          </div>
+        </div>
+
+        <!-- Paper 5 -->
+        <div id="p5" class="paper">
+          <div class="front">
+            <div id="f5" class="front-content">
+            </div>
+          </div>
+          <div class="back">
+            <div id="b5" class="back-content">
+            </div>
+          </div>
+        </div>
+
+        <!-- Paper 6 -->
+        <div id="p6" class="paper">
+          <div class="front">
+            <div id="f6" class="front-content">
+            </div>
+          </div>
+          <div class="back">
+            <div id="b6" class="back-content">
+            </div>
+          </div>
+        </div>
+
+        <!-- Paper 7 -->
+        <div id="p7" class="paper">
+          <div class="front">
+            <div id="f7" class="front-content">
+            </div>
+          </div>
+          <div class="back">
+            <div id="b7" class="back-content">
+            </div>
+          </div>
+        </div>
+
+        <!-- Paper 8 -->
+        <div id="p8" class="paper">
+          <div class="front">
+            <div id="f8" class="front-content">
+            </div>
+          </div>
+          <div class="back">
+            <div id="b8" class="back-content">
+            </div>
+          </div>
+        </div>
+
+        <!-- Paper 9 -->
+        <div id="p9" class="paper">
+          <div class="front">
+            <div id="f9" class="front-content">
+            </div>
+          </div>
+          <div class="back">
+            <div id="b9" class="back-content">
+            </div>
+          </div>
+        </div>
+
+        <!-- Paper 10 -->
+        <div id="p10" class="paper">
+          <div class="front">
+            <div id="f10" class="front-content">
+            </div>
+          </div>
+          <div class="back">
+            <div id="b10" class="back-content">
+            </div>
+          </div>
+        </div>
+
+        <!-- Paper 11 -->
+        <div id="p11" class="paper">
+          <div class="front">
+            <div id="f11" class="front-content">
+            </div>
+          </div>
+          <div class="back">
+            <div id="b11" class="back-content">
+            </div>
+          </div>
+        </div>
+
+        <!-- Paper 12 -->
+        <div id="p12" class="paper">
+          <div class="front">
+            <div id="f12" class="front-content">
+            </div>
+          </div>
+          <div class="back">
+            <div id="b12" class="back-content">
+            </div>
+          </div>
+        </div>
+
+        <!-- Paper 13 -->
+        <div id="p13" class="paper">
+          <div class="front">
+            <div id="f13" class="front-content">
+            </div>
+          </div>
+          <div class="back">
+            <div id="b13" class="back-content">
+            </div>
+          </div>
+        </div>
+
+        <!-- Paper 14 -->
+        <div id="p14" class="paper">
+          <div class="front">
+            <div id="f14" class="front-content">
+            </div>
+          </div>
+          <div class="back">
+            <div id="b14" class="back-content">
+            </div>
+          </div>
+        </div>
+
+        <!-- Paper 15 -->
+        <div id="p15" class="paper">
+          <div class="front">
+            <div id="f15" class="front-content">
+            </div>
+          </div>
+          <div class="back">
+            <div id="b15" class="back-content">
+            </div>
+          </div>
+        </div>
+
+        <!-- Paper 16 -->
+        <div id="p16" class="paper">
+          <div class="front">
+            <div id="f16" class="front-content">
+            </div>
+          </div>
+          <div class="back">
+            <div id="b16" class="back-content">
+            </div>
+          </div>
+        </div>
+
+        <!-- Paper 17 -->
+        <div id="p17" class="paper">
+          <div class="front">
+            <div id="f17" class="front-content">
+            </div>
+          </div>
+          <div class="back">
+            <div id="b17" class="back-content">
+            </div>
+          </div>
+        </div>
+
+        <!-- Paper 18 -->
+        <div id="p18" class="paper">
+          <div class="front">
+            <div id="f18" class="front-content">
+            </div>
+          </div>
+          <div class="back">
+            <div id="b18" class="back-content">
+            </div>
+          </div>
+        </div>
+
+        <!-- Paper 19 -->
+        <div id="p19" class="paper">
+          <div class="front">
+            <div id="f19" class="front-content">
+            </div>
+          </div>
+          <div class="back">
+            <div id="b19" class="back-content">
+            </div>
+          </div>
+        </div>
+
+        <!-- Paper 20 -->
+        <div id="p20" class="paper">
+          <div class="front">
+            <div id="f20" class="front-content">
+            </div>
+          </div>
+          <div class="back">
+            <div id="b20" class="back-content">
+            </div>
+          </div>
+        </div>
+
+        <!-- Paper 21 -->
+        <div id="p21" class="paper">
+          <div class="front">
+            <div id="f21" class="front-content">
+            </div>
+          </div>
+          <div class="back">
+            <div id="b21" class="back-content">
+              <img src="./assets/print-designs/white-logo.svg">
+            </div>
+          </div>
+        </div>
       </div>
 
-      <!-- Paper 4 -->
-      <div id="p4" class="paper">
-          <div class="front">
-              <div id="f4" class="front-content">
-              </div>
-          </div>
-          <div class="back">
-              <div id="b4" class="back-content">
-              </div>
-          </div>
-      </div>
-
-      <!-- Paper 5 -->
-      <div id="p5" class="paper">
-          <div class="front">
-              <div id="f5" class="front-content">
-              </div>
-          </div>
-          <div class="back">
-              <div id="b5" class="back-content">
-              </div>
-          </div>
-      </div>
-
-      <!-- Paper 6 -->
-      <div id="p6" class="paper">
-          <div class="front">
-              <div id="f6" class="front-content">
-              </div>
-          </div>
-          <div class="back">
-              <div id="b6" class="back-content">
-              </div>
-          </div>
-      </div>
-
-      <!-- Paper 7 -->
-      <div id="p7" class="paper">
-          <div class="front">
-              <div id="f7" class="front-content">
-              </div>
-          </div>
-          <div class="back">
-              <div id="b7" class="back-content">
-              </div>
-          </div>
-      </div>
-
-      <!-- Paper 8 -->
-      <div id="p8" class="paper">
-          <div class="front">
-              <div id="f8" class="front-content">
-              </div>
-          </div>
-          <div class="back">
-              <div id="b8" class="back-content">
-              </div>
-          </div>
-      </div>
-
-      <!-- Paper 9 -->
-      <div id="p9" class="paper">
-          <div class="front">
-              <div id="f9" class="front-content">
-              </div>
-          </div>
-          <div class="back">
-              <div id="b9" class="back-content">
-              </div>
-          </div>
-      </div>
-
-      <!-- Paper 10 -->
-      <div id="p10" class="paper">
-          <div class="front">
-              <div id="f10" class="front-content">
-              </div>
-          </div>
-          <div class="back">
-              <div id="b10" class="back-content">
-              </div>
-          </div>
-      </div>
-
-      <!-- Paper 11 -->
-      <div id="p11" class="paper">
-          <div class="front">
-              <div id="f11" class="front-content">
-              </div>
-          </div>
-          <div class="back">
-              <div id="b11" class="back-content">
-              </div>
-          </div>
-      </div>
-
-      <!-- Paper 12 -->
-      <div id="p12" class="paper">
-          <div class="front">
-              <div id="f12" class="front-content">
-              </div>
-          </div>
-          <div class="back">
-              <div id="b12" class="back-content">
-              </div>
-          </div>
-      </div>
-
-      <!-- Paper 13 -->
-      <div id="p13" class="paper">
-          <div class="front">
-              <div id="f13" class="front-content">
-              </div>
-          </div>
-          <div class="back">
-              <div id="b13" class="back-content">
-              </div>
-          </div>
-      </div>
-
-      <!-- Paper 14 -->
-      <div id="p14" class="paper">
-          <div class="front">
-              <div id="f14" class="front-content">
-              </div>
-          </div>
-          <div class="back">
-              <div id="b14" class="back-content">
-              </div>
-          </div>
-      </div>
-
-      <!-- Paper 15 -->
-      <div id="p15" class="paper">
-          <div class="front">
-              <div id="f15" class="front-content">
-              </div>
-          </div>
-          <div class="back">
-              <div id="b15" class="back-content">
-              </div>
-          </div>
-      </div>
-
-      <!-- Paper 16 -->
-      <div id="p16" class="paper">
-          <div class="front">
-              <div id="f16" class="front-content">
-              </div>
-          </div>
-          <div class="back">
-              <div id="b16" class="back-content">
-              </div>
-          </div>
-      </div>
-
-      <!-- Paper 17 -->
-      <div id="p17" class="paper">
-          <div class="front">
-              <div id="f17" class="front-content">
-              </div>
-          </div>
-          <div class="back">
-              <div id="b17" class="back-content">
-              </div>
-          </div>
-      </div>
-
-      <!-- Paper 18 -->
-      <div id="p18" class="paper">
-          <div class="front">
-              <div id="f18" class="front-content">
-              </div>
-          </div>
-          <div class="back">
-              <div id="b18" class="back-content">
-              </div>
-          </div>
-      </div>
-
-      <!-- Paper 19 -->
-      <div id="p19" class="paper">
-          <div class="front">
-              <div id="f19" class="front-content">
-              </div>
-          </div>
-          <div class="back">
-              <div id="b19" class="back-content">
-              </div>
-          </div>
-      </div>
-
-      <!-- Paper 20 -->
-      <div id="p20" class="paper">
-          <div class="front">
-              <div id="f20" class="front-content">
-              </div>
-          </div>
-          <div class="back">
-              <div id="b20" class="back-content">
-              </div>
-          </div>
-      </div>
-
-      <!-- Paper 21 -->
-      <div id="p21" class="paper">
-          <div class="front">
-              <div id="f21" class="front-content">
-              </div>
-          </div>
-          <div class="back">
-              <div id="b21" class="back-content">
-                  <img src="./assets/print-designs/white-logo.svg">
-              </div>
-          </div>
-      </div>
-  </div>
-
-  <!-- Next Button -->
-  <button>
-      <img onclick="" id="next-btn" class="btn" src="./assets/next.png">
-  </button>
+      <!-- Next Button -->
+      <button>
+        <img onclick="" id="next-btn" class="btn" src="./assets/next.png">
+      </button>
     </section>
 
-    <section class="projects-grid">
-      <div class="project-cell" id="connect-four-project">
-        <div class="project-info">
-          <h2>Desktop Game</h2>
-          <a id="connect-four-learn-more">Learn More</a>
+    <section class="projects-container" id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <div class="project-cell" id="connect-four-project">
+            <div class="project-info">
+              <h2>Desktop Game</h2>
+              <a id="connect-four-learn-more">Learn More</a>
+            </div>
+          </div>
+
+          <div class="project-cell" id="miracles-project">
+            <div class="project-info">
+              <h2>Website Redesign</h2>
+              <a id="miracles-learn-more">Learn More</a>
+            </div>
+          </div>
+
+          <div class="project-cell" id="space-project">
+            <div class="project-info">
+              <h2>Interactive Exhibit</h2>
+              <a id="space-learn-more">Learn More</a>
+            </div>
+          </div>
+
+          <div class="project-cell" id="ctnerr-project">
+            <div class="project-info">
+              <h2>Landing Page</h2>
+              <a id="ctnerr-learn-more">Learn More</a>
+            </div>
+
+          </div>
+          <div class="project-cell" id="core-project">
+            <div class="project-info">
+              <h2>Website Redesign</h2>
+              <a id="core-learn-more">Learn More</a>
+            </div>
+          </div>
+
+          <div class="project-cell" id="pr-archive-project">
+            <div class="project-info">
+              <h2>Website Series</h2>
+              <a id="pr-archive-learn-more">Learn More</a>
+            </div>
+          </div>
+          <div class="project-cell" id="floe-project">
+            <div class="project-info">
+              <h2>Website Redesign</h2>
+              <a id="floe-learn-more">Learn More</a>
+            </div>
+          </div>
+          <div class="project-cell" id="turfgrass-project">
+            <div class="project-info">
+              <h2>Mobile App</h2>
+              <a id="turfgrass-learn-more">Learn More</a>
+            </div>
+          </div>
+          <div class="project-cell" id="crosshairs-project">
+            <div class="project-info">
+              <h2>Website</h2>
+              <a id="crosshairs-learn-more">Learn More</a>
+            </div>
+          </div>
+
+          <div class="project-cell" id="frontend-mentor-project">
+            <div class="project-info">
+              <h2>Coding Challenges</h2>
+              <a id="frontend-mentor-learn-more">Learn More</a>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="project-cell" id="miracles-project">
-        <div class="project-info">
-          <h2>Website Redesign</h2>
-          <a id="miracles-learn-more">Learn More</a>
-        </div>
-      </div>
 
-      <div class="project-cell" id="space-project">
-        <div class="project-info">
-          <h2>Interactive Exhibit</h2>
-          <a id="space-learn-more">Learn More</a>
-        </div>
-      </div>
-
-      <div class="project-cell" id="ctnerr-project">
-        <div class="project-info">
-          <h2>Landing Page</h2>
-          <a id="ctnerr-learn-more">Learn More</a>
-        </div>
-
-      </div>
-      <div class="project-cell" id="core-project">
-        <div class="project-info">
-          <h2>Website Redesign</h2>
-          <a id="core-learn-more">Learn More</a>
-        </div>
-      </div>
-
-      <div class="project-cell" id="pr-archive-project">
-        <div class="project-info">
-          <h2>Website Series</h2>
-          <a id="pr-archive-learn-more">Learn More</a>
-        </div>
-      </div>
-      <div class="project-cell" id="floe-project">
-        <div class="project-info">
-          <h2>Website Redesign</h2>
-          <a id="floe-learn-more">Learn More</a>
-        </div>
-      </div>
-      <div class="project-cell" id="turfgrass-project">
-        <div class="project-info">
-          <h2>Mobile App</h2>
-          <a id="turfgrass-learn-more">Learn More</a>
-        </div>
-      </div>
-      <div class="project-cell" id="crosshairs-project">
-        <div class="project-info">
-          <h2>Website</h2>
-          <a id="crosshairs-learn-more">Learn More</a>
-        </div>
-      </div>
-
-      <div class="project-cell" id="frontend-mentor-project">
-        <div class="project-info">
-          <h2>Coding Challenges</h2>
-          <a id="frontend-mentor-learn-more">Learn More</a>
-        </div>
-      </div>
     </section>
 
     <section class="job-description-container display-none" id="job-description-container">
@@ -785,6 +868,270 @@
         </div>
       </div>
 
+      <div class="job-description display-none" id="core-description">
+        <div class="left-side center">
+
+        </div>
+        <div class="right-side space-between">
+          <p class="project-close-btn">X</p>
+          <h3>Wordpress Site</h3>
+          <h2>
+            COR&sup2E Facility
+          </h2>
+          <h5>Center for Open Research Resources & Equipment</h5>
+          <h4>
+            <span class="purple">UI/UX</span>
+          </h4>
+
+          <p>
+            I took on the challenge of migrating and redesigning the <a href="https://core.uconn.edu"
+              target="_blank">University of Connecticut COR&sup2E Facility's</a>
+            website to facilitate easy content management for non-technical users. The primary goal was to transition
+            the site to WordPress, providing an intuitive platform for updates and modifications. Concurrently, we
+            focused on revamping the user interface to create a visually appealing and user-friendly experience.
+
+          </p>
+          <br>
+
+          <p>
+            Through meticulous customization and user-centric features, we ensured that individuals without coding
+            expertise could efficiently manage and update the website. This strategic migration empowered the University
+            of Connecticut Core Facility staff to effortlessly modify content, keeping their online presence current.
+            The redesigned layout and improved navigation menus streamlined the user's journey, making it easier for
+            visitors to find relevant information.
+
+
+          </p>
+          <br>
+          <p>
+            The project's success lies in the seamless WordPress migration and the thoughtful redesign. This
+            transformation not only enabled hassle-free content management but also elevated the website's overall user
+            experience. The project showcases our dedication to delivering accessible and aesthetically pleasing web
+            solutions that meet the unique needs of our clients.
+
+
+          </p>
+          <br>
+
+          <button class="primary-btn">
+            <a href="https://core.uconn.edu" target="_blank">Visit Site</a>
+          </button>
+        </div>
+      </div>
+
+      <div class="job-description display-none" id="frontend-mentor-description">
+        <div class="left-side center">
+
+        </div>
+        <div class="right-side space-between">
+          <div>
+            <p class="project-close-btn">X</p>
+            <h3>Coding Challenges</h3>
+            <h2>
+              Frontend Mentor
+            </h2>
+            <h4>
+              <span class="blue">HTML</span><span class="green">CSS</span><span class="red">JS</span>
+            </h4>
+
+            <p>
+              Maintaining a record of progress, regardless of perceived proficiency, is a pivotal aspect of any
+              developmental journey. As I ventured into frontend development, Frontend Mentor emerged as a vital
+              platform for both practice and learning.
+
+            </p>
+            <br>
+            <br>
+            <p>
+              While my earlier projects may not boast the same level of finesse as my recent endeavors, they stand as
+              testaments to my unwavering commitment to growth and improvement. Each project represents a milestone, a
+              tangible marker of progress along this dynamic learning path.
+
+            </p>
+            <br>
+            <p>
+              <strong>In the future</strong> I aim to revisit these early
+              projects, armed with the enhanced skills and knowledge I've acquired since their creation. Moreover, I'm
+              eager to take on more of the challenging examples
+              that Frontend Mentor has to offer. Armed with a deeper understanding and refined skill set, I'm confident
+              in my ability to tackle complex projects with creativity and precision. Each endeavor will serve as both a
+              testament to my growth and a platform for continuous learning and exploration in the world of frontend
+              development.
+            </p>
+
+            <br>
+          </div>
+
+          <button class="primary-btn">
+            <a href="https://www.frontendmentor.io/profile/haydnkerr" target="_blank">Visit Profile</a>
+          </button>
+        </div>
+
+      </div>
+
+      <div class="job-description display-none" id="pr-description">
+        <div class="left-side center">
+
+        </div>
+        <div class="right-side space-between">
+          <div>
+            <p class="project-close-btn">X</p>
+            <h3>Wordpress Sites</h3>
+            <h2>
+              Puerto Rico Archive Sites
+            </h2>
+            <h4>
+              <span class="prurple">UI/UX Design</span>
+            </h4>
+
+
+
+
+
+
+
+
+
+            <p>
+              Our team embarked on a significant project centered around Puerto Rico's political history and archival
+              data. We designed three distinct WordPress websites, each dedicated to different aspects of Puerto Rico's
+              political journey. The primary challenge was collating a vast amount of archival data and presenting it in
+              a way that offered users an intuitive and seamless exploration experience.
+
+            </p>
+
+            <p>
+              The project's core objective was to create a comprehensive repository of Puerto Rico's political history
+              through meticulous archival documentation. This involved the integration of three distinct platforms, each
+              tailored to highlight specific historical periods or themes. The focus on intuitive navigation and
+              user-friendly features ensured that visitors could easily access and explore the wealth of historical
+              information.
+
+            </p>
+
+            <p>
+              Through careful design choices and interactive elements, we aimed to make the exploration of Puerto Rico's
+              political history engaging and immersive. The project serves as a testament to our commitment to
+              preserving and sharing the historical narratives of this vibrant region. The user-centric approach has
+              transformed accessibility and understanding, providing a valuable resource for anyone interested in Puerto
+              Rico's political evolution.
+
+            </p>
+
+            <br>
+          </div>
+
+          <button class="primary-btn">
+            <a href="https://www.frontendmentor.io/profile/haydnkerr" target="_blank">Visit Profile</a>
+          </button>
+        </div>
+
+      </div>
+
+      <div class="job-description display-none" id="crosshairs-description">
+        <div class="left-side center">
+          <img class="miracles-mockup" src="./assets/miracles-mockup-laptop.png">
+        </div>
+        <div class="right-side space-between">
+          <p class="project-close-btn miracles-close">X</p>
+          <h3>Wix Website</h3>
+          <h2>
+            Miracles for Satos Rescue
+          </h2>
+          <h4>
+            <span class="purple">UI/UX</span>
+          </h4>
+
+          <p>
+            One of my most gratifying projects involved a pro bono collaboration with the <strong><a
+                href="https://www.miraclesforsatosrescue.org" target="_blank">"Miracles for Sato Rescue"</a></strong> in
+            Puerto Rico. This non-profit organization, dedicated to canine welfare, entrusted me with the task of
+            completely revamping their website to create a more user-friendly and visually appealing experience.
+          </p>
+          <br>
+          <p>
+            This endeavor marked my <strong>inaugural venture into Wix</strong>, providing me with a hands-on
+            introduction to the
+            platform. As I immersed myself in this project, I gained a comprehensive understanding of Wix's capabilities
+            and identified areas for improvement.
+          </p>
+          <br>
+          <p>
+            During our consultations, the owners expressed concerns about the perceived professionalism of their
+            previous website, noting its lackluster design and absence of visually captivating elements. With their
+            trust and support, I assumed <strong>full creative control</strong> of the redesign process.
+          </p>
+          <br>
+          <p>
+            Upon the unveiling of the revamped site, the "Miracles for Sato Rescue" experienced a remarkable
+            <strong>surge in
+              engagement and inquiries</strong>. Witnessing the tangible impact of the redesign not only validated the
+            significance
+            of user-centric UI/UX design but also reaffirmed my belief in the power of design to drive positive change.
+          </p>
+          <br>
+
+
+          <button class="primary-btn">
+            <a href="https://www.miraclesforsatosrescue.org" target="_blank">Visit Site</a>
+          </button>
+
+        </div>
+
+      </div>
+
+      <div class="job-description display-none" id="floe-description">
+        <div class="left-side center">
+          <img class="miracles-mockup" src="./assets/miracles-mockup-laptop.png">
+        </div>
+        <div class="right-side space-between">
+          <p class="project-close-btn miracles-close">X</p>
+          <h3>Wix Website</h3>
+          <h2>
+            Miracles for Satos Rescue
+          </h2>
+          <h4>
+            <span class="purple">UI/UX</span>
+          </h4>
+
+          <p>
+            One of my most gratifying projects involved a pro bono collaboration with the <strong><a
+                href="https://www.miraclesforsatosrescue.org" target="_blank">"Miracles for Sato Rescue"</a></strong> in
+            Puerto Rico. This non-profit organization, dedicated to canine welfare, entrusted me with the task of
+            completely revamping their website to create a more user-friendly and visually appealing experience.
+          </p>
+          <br>
+          <p>
+            This endeavor marked my <strong>inaugural venture into Wix</strong>, providing me with a hands-on
+            introduction to the
+            platform. As I immersed myself in this project, I gained a comprehensive understanding of Wix's capabilities
+            and identified areas for improvement.
+          </p>
+          <br>
+          <p>
+            During our consultations, the owners expressed concerns about the perceived professionalism of their
+            previous website, noting its lackluster design and absence of visually captivating elements. With their
+            trust and support, I assumed <strong>full creative control</strong> of the redesign process.
+          </p>
+          <br>
+          <p>
+            Upon the unveiling of the revamped site, the "Miracles for Sato Rescue" experienced a remarkable
+            <strong>surge in
+              engagement and inquiries</strong>. Witnessing the tangible impact of the redesign not only validated the
+            significance
+            of user-centric UI/UX design but also reaffirmed my belief in the power of design to drive positive change.
+          </p>
+          <br>
+
+
+          <button class="primary-btn">
+            <a href="https://www.miraclesforsatosrescue.org" target="_blank">Visit Site</a>
+          </button>
+
+        </div>
+
+      </div>
+
       <div class="job-description display-none" id="frontend-mentor-description">
         <div class="left-side center">
 
@@ -838,15 +1185,11 @@
   </main>
 
 
-
-
-
-
   <div class="loading-screen">
     <div class="loading-content">
       <img class="face" src="./assets/illustrated_face.png">
       <h1>Hello, I'm Haydn. <br> Developer & Designer</h1>
-      <h4>My portfolio is currently under construction. Feel free to explore my other pages</h4>
+      <h4>Portfolio Under Construction</h4>
       <div class="social-media-container">
         <a alt="Instagram" target="_blank" href="https://www.instagram.com/haydnkerr.design/"><img
             src="./assets/5279112_camera_instagram_social media_instagram logo_icon.png"></a>
@@ -913,11 +1256,24 @@
   let inactiveNutmeg = document.getElementById('inactive-nutmeg')
   let bookBtn = document.getElementById('nutmeg-book-button')
   let bookContainer = document.getElementById('book-container')
+  let resumeBtn = document.getElementById('resume-link')
+  let resumeCloseBtn = document.getElementById('resume-close-btn')
+  let resume = document.querySelector('.resume-container')
+
+
 
   one.addEventListener('click', oneTransition);
   two.addEventListener('click', twoTransition);
   three.addEventListener('click', threeTransition);
   bookBtn.addEventListener('click', openBook);
+  resumeBtn.addEventListener('click',resumeToggle);
+  resumeCloseBtn.addEventListener('click', resumeToggle);
+
+  function resumeToggle() {
+    resume.classList.toggle('display-none')
+  }
+
+
 
   function openBook() {
     bookContainer.classList.remove('display-none')
