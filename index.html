@@ -721,59 +721,45 @@
       <div class="container">
         <h2>Physical Art</h2>
         <div class="projects-grid">
-          <div class="project-cell" id="mensah-logo">
+          <div class="project-cell" id="zebra-drawing">
             <div class="project-info">
-              <h2>Logo</h2>
-              <a id="connect-four-learn-more">Learn More</a>
+              <h2>Charcoal</h2>
+              <a id="zebra-drawing-expand">Expand</a>
             </div>
           </div>
 
-          <div class="project-cell" id="greenwood-logo">
+          <div class="project-cell" id="farming-drawing">
             <div class="project-info">
-              <h2>Logo</h2>
-              <a id="miracles-learn-more">Learn More</a>
+              <h2>Ink</h2>
+              <a id="farming-drawing-expand">Expand</a>
             </div>
           </div>
 
-          <div class="project-cell" id="fbf-logo">
+          <div class="project-cell" id="shading-drawing">
             <div class="project-info">
-              <h2>Logo</h2>
-              <a id="space-learn-more">Learn More</a>
+              <h2>Charcoal</h2>
+              <a id="shading-drawing-expand">Expand</a>
             </div>
           </div>
 
-          <div class="project-cell" id="hk-logo">
+          <div class="project-cell" id="striped-paper-drawing">
             <div class="project-info">
-              <h2>Logo</h2>
-              <a id="ctnerr-learn-more">Learn More</a>
+              <h2>Charcoal</h2>
+              <a id="striped-paper-drawing-expand">Expand</a>
             </div>
 
           </div>
-          <div class="project-cell" id="tr-logo">
+          <div class="project-cell" id="paper-drawing">
             <div class="project-info">
-              <h2>Logo</h2>
-              <a id="core-learn-more">Learn More</a>
+              <h2>Charcoal</h2>
+              <a id="paper-drawing-expand">Expand</a>
             </div>
           </div>
 
-          <div class="project-cell" id="top-5">
+          <div class="project-cell" id="plant-drawing">
             <div class="project-info">
-              <h2>Social Media</h2>
-              <a id="core-learn-more">Learn More</a>
-            </div>
-          </div>
-
-          <div class="project-cell" id="kicking-camp">
-            <div class="project-info">
-              <h2>Social Media</h2>
-              <a id="core-learn-more">Learn More</a>
-            </div>
-          </div>
-
-          <div class="project-cell" id="nutmeg-spreads">
-            <div class="project-info">
-              <h2>Digital Spreads</h2>
-              <a id="nutmeg-spreads-btn">See Spreads</a>
+              <h2>Charcoal</h2>
+              <a id="plant-drawing-expand">Expand</a>
             </div>
           </div>
 
@@ -1315,6 +1301,35 @@
 
       </div>
     </section>
+
+
+    <section class="art-view-container display-none" id="art-view-container">
+      <p id="art-view-close-btn">X</p>
+      <div class="display-none"  id="farming-drawing-full-size">
+        <img class="landscape-view" src="./assets/farming-drawing.jpg">
+      </div>
+
+      <div class="display-none"  id="plant-drawing-full-size">
+        <img class="landscape-view" src="./assets/plant-drawing.jpg">
+      </div>
+
+      <div class="display-none"   id="paper-drawing-full-size">
+        <img class="portrait-view" src="./assets/paper-drawing.jpg">
+      </div>
+
+      <div class="display-none"   id="zebra-drawing-full-size">
+        <img class="landscape-view" src="./assets/zebra-drawing.jpg">
+      </div>
+
+      <div class="display-none"   id="striped-paper-drawing-full-size">
+        <img class="landscape-view" src="./assets/striped-paper-drawing.jpg">
+      </div>
+
+      <div class="display-none"   id="shadow-drawing-full-size">
+        <img class="landscape-view" src="./assets/shading-drawing.jpg">
+      </div>
+
+    </section>
   </main>
 
 
@@ -1392,6 +1407,21 @@
   let resumeBtn = document.getElementById('resume-link')
   let resumeCloseBtn = document.getElementById('resume-close-btn')
   let resume = document.querySelector('.resume-container')
+  let artCloseBtn = document.getElementById('art-view-close-btn');
+  let artView = document.getElementById('art-view-container');
+  let farmFullSize = document.getElementById('farming-drawing-full-size');
+  let shadeFullSize = document.getElementById('shadow-drawing-full-size');
+  let paperFullSize = document.getElementById('paper-drawing-full-size');
+  let stripedPaperFullSize = document.getElementById('striped-paper-drawing-full-size');
+  let plantFullSize = document.getElementById('plant-drawing-full-size');
+  let zebraFullSize = document.getElementById('zebra-drawing-full-size');
+  let zebraExpandBtn = document.getElementById('zebra-drawing-expand');
+  let paperExpandBtn = document.getElementById('paper-drawing-expand');
+  let stripedPaperExpandBtn = document.getElementById('striped-paper-drawing-expand');
+  let plantExpandBtn = document.getElementById('plant-drawing-expand');
+  let shadowExpandBtn = document.getElementById('shading-drawing-expand');
+  let farmExpandBtn = document.getElementById('farming-drawing-expand');
+
 
 
 
@@ -1401,6 +1431,49 @@
   bookBtn.addEventListener('click', openBook);
   resumeBtn.addEventListener('click', resumeToggle);
   resumeCloseBtn.addEventListener('click', resumeToggle);
+  artCloseBtn.addEventListener('click',toggleArtView);
+  
+  zebraExpandBtn.addEventListener('click', function() {
+    artView .classList.remove('display-none')
+    zebraFullSize.classList.remove('display-none')
+  })
+
+  paperExpandBtn.addEventListener('click', function() {
+    artView .classList.remove('display-none')
+    paperFullSize.classList.remove('display-none')
+  })
+
+  stripedPaperExpandBtn.addEventListener('click', function() {
+    artView .classList.remove('display-none')
+    stripedPaperFullSize.classList.remove('display-none')
+  })
+
+  plantExpandBtn.addEventListener('click', function() {
+    artView .classList.remove('display-none')
+    plantFullSize.classList.remove('display-none')
+  })
+
+  shadowExpandBtn.addEventListener('click', function() {
+    artView .classList.remove('display-none')
+    shadeFullSize.classList.remove('display-none')
+  })
+
+  farmExpandBtn.addEventListener('click', function() {
+    artView .classList.remove('display-none')
+    farmFullSize.classList.remove('display-none')
+  })
+
+
+
+
+  function toggleArtView() {
+    artView.classList.toggle('display-none')
+    farmFullSize.classList.add('display-none')
+    paperFullSize.classList.add('display-none')
+    stripedPaperFullSize.classList.add('display-none')
+    shadeFullSize.classList.add('display-none')
+    plantFullSize.classList.add('display-none')
+  }
 
   function resumeToggle() {
     resume.classList.toggle('display-none')

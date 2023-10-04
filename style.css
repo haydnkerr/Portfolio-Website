@@ -618,6 +618,37 @@ top: 0;
 
 }
 
+
+#plant-drawing {
+  background-image: url("./assets/plant-drawing.jpeg");
+  background-size: 140%;
+}
+
+#zebra-drawing {
+  background-image: url("./assets/zebra-drawing.jpeg");
+  background-size: 140%;
+}
+
+#paper-drawing {
+  background-image: url("./assets/paper-drawing.jpeg");
+  background-size: 110%;
+}
+
+#striped-paper-drawing {
+  background-image: url("./assets/striped-paper-drawing.jpeg");
+  background-size: 140%;
+}
+
+#shading-drawing {
+  background-image: url("./assets/shading-drawing.jpeg");
+  background-size: 140%;
+}
+
+#farming-drawing {
+  background-image: url("./assets/farming-drawing.jpeg");
+  background-size: 140%;
+}
+
 /* Project Description Modal */
 #job-description-container {
   position: fixed;
@@ -743,6 +774,46 @@ top: 0;
 
 .purple {
   color: blueviolet;
+}
+
+
+/* Art Full Size View Container */
+.art-view-container {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 100px;
+  z-index: 46;
+}
+
+#art-view-close-btn {
+  position: absolute;
+  font-size:3rem;
+  color: white;
+  top: 25px;
+  right: 35px;
+  font-weight: 600;
+}
+
+#art-view-close-btn:hover {
+  cursor: pointer;
+}
+
+.landscape-view {
+  height: 80vh;
+  width: auto;
+  background: none;
+}
+
+.portrait-view {
+  height: 90vh;
+  width: auto;
 }
 
 @media screen and (max-width: 992px)  {
