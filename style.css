@@ -222,6 +222,7 @@ top: 0;
   display: flex;
   justify-content: center;
   align-items: stretch;
+  flex-wrap: wrap;
   padding: 100px;
   gap: 10px;
 }
@@ -280,9 +281,10 @@ top: 0;
 
 .job-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 3fr;
-  width: 700px;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+  max-width: 1000px;
   gap: 15px;
   margin: 0 auto
   
@@ -339,8 +341,8 @@ top: 0;
 
 
 .job-info p {
-  font-weight: 300;
-  font-size: 0.85rem;
+  font-weight: 400;
+  font-size: 1rem;
 }
 
 .inactive-cell {
@@ -351,7 +353,7 @@ top: 0;
   background-size: cover;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.40);
+  background-color: rgba(0, 0, 0, 0.50);
   color: white;
   box-shadow: 0px 1px 7px #00000030;
 }
@@ -359,6 +361,7 @@ top: 0;
 .inactive-cell h2{
   font-size: 1.6rem;
   font-weight: 500;
+  text-align: center;
 }
 
 .inactive-cell h4{
@@ -370,7 +373,7 @@ top: 0;
 
 #inactive-nutmeg {
   background-image: url("./assets/uconn-bg.jpg");
-  
+  background-position: bottom;
 }
 
 #inactive-freelance {
@@ -411,12 +414,17 @@ top: 0;
   padding: 25px;
 }
 
+.job-info h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
 
 .primary-grid {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
   transition: 2s;
 
 }
@@ -430,12 +438,46 @@ top: 0;
 }
 
 .right-grid {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
   transition: 2s;
 }
+
+@media screen and (max-width: 850px){ 
+  .job-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  }
+  
+  .primary-grid {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 5;
+  
+  }
+  
+  .left-grid {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  
+  .right-grid {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+
+  .job-container {
+    padding: 25px;
+  }
+}
+
 
 
 /* Project Section */
@@ -448,9 +490,11 @@ top: 0;
 }
 
 .projects-grid {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: 1fr; */
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
   max-width: 1300px;
   gap: 15px;
@@ -724,6 +768,7 @@ top: 0;
 
 
 
+
 #connect-four-description .left-side {
   background-image: url("./assets/connect-four-bg.png");
   background-position: center;
@@ -958,11 +1003,42 @@ top: 0;
 
 
 @media screen and (max-width: 700px)  {
-  main {
-    display: none
+  .projects-grid {
+    grid-template-columns: 2fr;
   }
-  .loading-screen {
-    display: flex;
+
+  .introduction {
+    flex-direction: column;
+  }
+
+  .face-img {
+    display: none;
+  }
+
+  .job-container {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 1000px)  {
+  .projects-grid {
+    grid-template-columns: 3fr;
+  }
+
+}
+
+@media screen and (max-width: 875px)  {
+  .face-img {
+    height: 50vh;
+    width: auto;
+  }
+
+}
+
+@media screen and (max-width: 550px)  {
+  .projects-grid {
+    grid-template-columns: 1fr;
   }
 
 }
