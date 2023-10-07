@@ -57,6 +57,7 @@
 
 .back {
     z-index: 0;
+    
 }
 
 .front-content,
@@ -69,8 +70,9 @@
 }
 
 .back-content {
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
+    /* -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg); */
+    transform: scaleX(-1);
 }
 
 /* Paper flip effect */
