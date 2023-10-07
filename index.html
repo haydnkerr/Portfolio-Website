@@ -43,7 +43,9 @@
     <div class="">
 
       <h1>I'm Haydn. <br> <span class="navy">Developer</span> & Designer</h1>
-      <h2>I like to bring ideas to life. Seamlessly bridging <br><i><strong>code</strong></i> and <i><strong>creativity</strong></i> for engaging UX</h2>
+      <h2>I like to bring ideas to life. Seamlessly bridging <br><i><strong>code</strong></i> and
+        <i><strong>creativity</strong></i> for engaging UX
+      </h2>
       <div class="social-media-container">
         <a alt="Instagram" target="_blank" href="https://www.instagram.com/haydnkerr.design/"><img
             src="./assets/5279112_camera_instagram_social media_instagram logo_icon.png"></a>
@@ -63,12 +65,15 @@
           <h2>In A Nutshell</h2>
           <p>
             Hello there, I'm Haydn Kerr. Part-time <i><strong><span>Developer</span></strong></i>, part-time
-            <i><strong><span>Designer</span></strong></i>, retired college athlete. As a frontend developer, my passion is
+            <i><strong><span>Designer</span></strong></i>, retired college athlete. As a frontend developer, my passion
+            is
             utilizing my coding skills to craft immersive and user-centric web experiences. With a background in UI/UX
-            design and proficiency in <i><strong>Adobe Suite</strong> </i>products like Illustrator, Photoshop, and InDesign, I
+            design and proficiency in <i><strong>Adobe Suite</strong> </i>products like Illustrator, Photoshop, and
+            InDesign, I
             bring a holistic
             approach to every project. This digital showcase features a curated collection of endeavors that showcase my
-            proficiency in <strong>HTML, CSS,</strong> and <i><strong>JavaScript,</strong></i> as well as my dedication to
+            proficiency in <strong>HTML, CSS,</strong> and <i><strong>JavaScript,</strong></i> as well as my dedication
+            to
             creating functional yet visually
             captivating websites. Explore the diverse range of projects, and discover how I blend creativity with
             technical
@@ -85,9 +90,14 @@
       <div class="developer-container skill-box">
         <h2>Developer</h2>
         <div class="skill-info">
-          <p>loremi[usm</p>
+          <p>As a developer, I find immense satisfaction in employing logic and problem-solving skills to unravel
+            challenges and make things function seamlessly. Nothing beats the gratification I feel when I finally
+            crack a bug that has consumed hours of my time. This inclination for problem-solving extends to a deep
+            fascination with a wide array of puzzles</p>
+            <br>
           <h4>Languages</h4>
           <p>HTML, CSS, Javascript, Python</p>
+          <br>
           <h4>Tools</h4>
           <p>Github,
             Bootstrap,
@@ -105,16 +115,15 @@
       <div class="designer-container skill-box">
         <h2>Designer</h2>
         <div class="skill-info">
-          <p>lorem </p>
-          <h4>Tools</h4>
-          <ul>
-            <li>Illustrator</li>
-            <li>InDesign</li>
-            <li>XD</li>
-            <li>Photoshop</li>
-            <li>Illustrator</li>
-            <li>Figma</li>
-          </ul>
+          <p>As a designer, I find great joy in channeling my creativity into crafting unique and captivating designs.
+            This encompasses a wide range of projects, from creating eye-catching logos to designing engaging print
+            media and conceptualizing website/app mockups. Each endeavor presents an exciting opportunity to fuse
+            artistry with functionality, ensuring a seamless and visually stunning end result </p>
+            <br>
+          <h4>What I use:</h4>
+          <p>
+            Illustrator, InDesign, XD, Photoshop, Illustrator, Figma, pencil & paper, paint on canvas
+          </p>
         </div>
 
       </div>
@@ -656,6 +665,13 @@
       <div class="container">
         <h2>Digital</h2>
         <div class="projects-grid">
+          <div class="project-cell" id="nutmeg-spreads">
+            <div class="project-info">
+              <h2>Digital Spreads</h2>
+              <a id="nutmeg-spreads-btn">See Spreads</a>
+            </div>
+          </div>
+
           <div class="project-cell" id="mensah-logo">
             <div class="project-info">
               <h2>Logo</h2>
@@ -705,12 +721,7 @@
             </div>
           </div>
 
-          <div class="project-cell" id="nutmeg-spreads">
-            <div class="project-info">
-              <h2>Digital Spreads</h2>
-              <a id="nutmeg-spreads-btn">See Spreads</a>
-            </div>
-          </div>
+          
 
 
         </div>
@@ -1305,27 +1316,27 @@
 
     <section class="art-view-container display-none" id="art-view-container">
       <p id="art-view-close-btn">X</p>
-      <div class="display-none"  id="farming-drawing-full-size">
+      <div class="display-none" id="farming-drawing-full-size">
         <img class="landscape-view" src="./assets/farming-drawing.jpg">
       </div>
 
-      <div class="display-none"  id="plant-drawing-full-size">
+      <div class="display-none" id="plant-drawing-full-size">
         <img class="landscape-view" src="./assets/plant-drawing.jpg">
       </div>
 
-      <div class="display-none"   id="paper-drawing-full-size">
+      <div class="display-none" id="paper-drawing-full-size">
         <img class="portrait-view" src="./assets/paper-drawing.jpg">
       </div>
 
-      <div class="display-none"   id="zebra-drawing-full-size">
+      <div class="display-none" id="zebra-drawing-full-size">
         <img class="landscape-view" src="./assets/zebra-drawing.jpg">
       </div>
 
-      <div class="display-none"   id="striped-paper-drawing-full-size">
+      <div class="display-none" id="striped-paper-drawing-full-size">
         <img class="landscape-view" src="./assets/striped-paper-drawing.jpg">
       </div>
 
-      <div class="display-none"   id="shadow-drawing-full-size">
+      <div class="display-none" id="shadow-drawing-full-size">
         <img class="landscape-view" src="./assets/shading-drawing.jpg">
       </div>
 
@@ -1415,35 +1426,35 @@
   bookBtn.addEventListener('click', openBook);
   resumeBtn.addEventListener('click', resumeToggle);
   resumeCloseBtn.addEventListener('click', resumeToggle);
-  artCloseBtn.addEventListener('click',toggleArtView);
-  
-  zebraExpandBtn.addEventListener('click', function() {
-    artView .classList.remove('display-none')
+  artCloseBtn.addEventListener('click', toggleArtView);
+
+  zebraExpandBtn.addEventListener('click', function () {
+    artView.classList.remove('display-none')
     zebraFullSize.classList.remove('display-none')
   })
 
-  paperExpandBtn.addEventListener('click', function() {
-    artView .classList.remove('display-none')
+  paperExpandBtn.addEventListener('click', function () {
+    artView.classList.remove('display-none')
     paperFullSize.classList.remove('display-none')
   })
 
-  stripedPaperExpandBtn.addEventListener('click', function() {
-    artView .classList.remove('display-none')
+  stripedPaperExpandBtn.addEventListener('click', function () {
+    artView.classList.remove('display-none')
     stripedPaperFullSize.classList.remove('display-none')
   })
 
-  plantExpandBtn.addEventListener('click', function() {
-    artView .classList.remove('display-none')
+  plantExpandBtn.addEventListener('click', function () {
+    artView.classList.remove('display-none')
     plantFullSize.classList.remove('display-none')
   })
 
-  shadowExpandBtn.addEventListener('click', function() {
-    artView .classList.remove('display-none')
+  shadowExpandBtn.addEventListener('click', function () {
+    artView.classList.remove('display-none')
     shadeFullSize.classList.remove('display-none')
   })
 
-  farmExpandBtn.addEventListener('click', function() {
-    artView .classList.remove('display-none')
+  farmExpandBtn.addEventListener('click', function () {
+    artView.classList.remove('display-none')
     farmFullSize.classList.remove('display-none')
   })
 
