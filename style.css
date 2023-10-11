@@ -859,6 +859,22 @@ header a:hover {
   width: 90%;
 }
 
+#space-description .left-side {
+  background-image: url("./assets/stars-bg.png");
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sun {
+  background: radial-gradient(circle, rgb(255, 174, 0), orange, #fde025 75%);
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px 5px #fde025;
+}
+
 
 .project-close-btn {
   position: absolute;
