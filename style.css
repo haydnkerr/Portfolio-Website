@@ -20,7 +20,7 @@ main {
 
 
 
-.primary-btn {
+/* .btn {
   background-color: dodgerblue;
   text-decoration: none;
   border: none;
@@ -30,7 +30,7 @@ main {
   overflow: hidden;
   width: 150px;
   margin-right: 25px;
-}
+} */
 
 .secondary-btn {
   background-color: rgb(0, 208, 38);
@@ -39,11 +39,13 @@ main {
   color: white;
 }
 
-.hero-btn {
+.btn-primary {
+  display: block;
   background-color: #113361;
   text-decoration: none;
   border: none;
   border: 1px solid #113361;
+  text-align: center;
   border-radius: 8px;
   padding: 8px;
   overflow: hidden;
@@ -54,18 +56,47 @@ main {
   font-weight: 500;
 }
 
-.hero-btn:hover {
-  background: none;
-  transition: 0.7s;
-  cursor: pointer;
-  color: #113361;
-  
+.light-blue {
+  background-color: #47b8ff;
+  border: 1px solid #47b8ff;
 }
 
-.primary-btn a {
+.btn-primary:hover {
+  background: none;
+  transition: 0.4s;
+  cursor: pointer;
+  color: #113361;
+}
+
+.light-blue:hover {
+  background: none;
+  transition: 0.4s;
+  cursor: pointer;
+  color: #47b8ff;
+}
+
+.btn-secondary {
+  display: block;
+  background-color: rgb(0, 208, 38);
   text-decoration: none;
+  border: none;
+  border: 1px solid rgb(0, 208, 38);
+  text-align: center;
+  border-radius: 8px;
+  padding: 8px;
+  overflow: hidden;
+  width: 150px;
+  margin-top: 15px;
   color: white;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.btn-secondary:hover {
+  background: none;
+  transition: 0.4s;
+  cursor: pointer;
+  color: rgb(0, 208, 38);
 }
 
 header {
@@ -79,13 +110,36 @@ header {
   align-items: center;
   background: #f3e8e076;
   padding: 10px 25px;
+  z-index: 49;
 }
 
 
-
-header img {
+#header-img {
   height: 100%;
-  width: auto
+  width: auto;
+  padding: 3px;
+}
+
+#header-img:hover{
+  animation: logoSpin 0.7s linear;
+  padding: 0px;
+}
+
+@keyframes logoSpin{
+  30% {
+    transform: rotate(-20deg);
+  }
+
+
+  100% {
+    transform: rotate(360deg);
+  }
+
+
+}
+
+#header-img img {
+  height: 100%;
 }
 
 header ul {
@@ -771,6 +825,7 @@ header a:hover {
   left: 0;
   padding: 50px;
   overflow: scroll;
+  z-index: 999
 }
 
 .job-description-container {
@@ -875,6 +930,26 @@ header a:hover {
   box-shadow: 0px 0px 15px 5px #fde025;
 }
 
+#ct-nerr-description .left-side {
+  background-color: rgb(192, 255, 195);
+  background-image: url("./assets/CTNERR-logo_digital-circle-color.png");
+  background-position: center;
+  background-size: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#core-description .left-side {
+  background-color: #d9363e;
+  background-image: url("./assets/core-bg.png");
+  background-position: center;
+  background-size: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .project-close-btn {
   position: absolute;
@@ -921,7 +996,7 @@ header a:hover {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.75);
   padding: 100px;
-  z-index: 46;
+  z-index: 999;
 }
 
 #art-view-close-btn {
@@ -1056,40 +1131,6 @@ header a:hover {
   display: none;
 }
 
-/*
-
-.snow {
-  position: absolute;
-  width: 100vw;
-  height: 75vh;
-  display: flex;
-  justify-content: space-between;
-  background-color: #3854A5;
-}
-
-.snow-ball {
-
-  border-radius: 50%;
-  background-color: white;
-  /* animation: fall 5s linear infinite; */
-/* position: absolute;
-  top: 0;
-  right: 590px
-}
-
-@keyframes fall {
-  0% {
-
-  }
-
-
-  100% {
-    opacity: 0%;
-    transform: translateY(450px);
-  }
-}
-
-*/
 
 
 
