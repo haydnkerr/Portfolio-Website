@@ -11,6 +11,7 @@ body {
   align-items: center;
   flex-direction: column;
   background-color: #F3E8E0;
+  width: 100vw;
 
 }
 
@@ -104,7 +105,7 @@ header {
   top: 0;
   left: 0;
   height: 75px;
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -220,6 +221,14 @@ header a:hover {
   top: 0;
 }
 
+@media screen and (max-width: 650px) {
+  #desktop-nav {
+    display: none;
+  }
+}
+
+/********************** Hero Section ****************/
+
 .hero-section {
   display: flex;
   justify-content: space-between;
@@ -244,10 +253,29 @@ header a:hover {
 
 .face-img {
   height: 80vh;
+  max-height: 900px;
   width: auto;
 }
 
-/* Intro/skills */
+@media screen and (max-width: 750px) {
+  .face-img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .hero-section {
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+/*********************** Intro/skills ************************/
 .wavy-line {
   width: 100vw;
   height: auto;
@@ -310,7 +338,7 @@ header a:hover {
 
 .skill-box {
   background: white;
-  width: 500px;
+  max-width: 500px;
   border-radius: 15px;
   overflow: hidden;
 }
@@ -348,7 +376,7 @@ header a:hover {
 
 
 
-/* Jobs Section */
+/************************* Jobs Section  ************************/
 .job-container {
   background: #ffffff;
   padding: 50px;
@@ -568,16 +596,21 @@ header a:hover {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .job-container {
+    display: none;
+  }
+}
 
 
-/* Project Section */
+
+/******************************* Project Section *******************************/
 .projects-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 100px;
-  padding-bottom: 0px;
-  ;
+  padding: 50px;
+  padding-bottom: 0px;;
   flex-direction: column;
 }
 
@@ -586,7 +619,7 @@ header a:hover {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   /* display: flex;
   flex-wrap: wrap; */
-  width: 100%;
+  width: 100vw;
   max-width: 1300px;
   gap: 15px;
   justify-content: center;
@@ -611,7 +644,7 @@ header a:hover {
   background-size: cover;
 }
 
-.project-cell:hover {
+.project-cell:hover, .project-cell:active {
   transition: 0.5s;
   border-radius: 0px;
 }
@@ -641,36 +674,36 @@ header a:hover {
   text-decoration: underline;
 }
 
-.project-info:hover {
+.project-info:hover, .project-info:active {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.75);
   opacity: 100%;
   transition: 1s;
 }
 
-.project-info:active {
+/* .project-info:active {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.75);
   opacity: 100%;
   transition: 1s;
-}
+} */
 
-.project-info:active>h2 {
+.project-info:active > h2 {
   transform: translateY(0px);
   transition: 1s;
 }
 
-.project-info:active>a {
+.project-info:active > a {
   transform: translateY(0px);
   transition: 1s;
 }
 
-.project-info:hover>h2 {
+.project-info:hover > h2 {
   transform: translateY(0px);
   transition: 1s;
 }
 
-.project-info:hover>a {
+.project-info:hover > a {
   transform: translateY(0px);
   transition: 1s;
 }
@@ -1028,7 +1061,7 @@ header a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   padding: 25px;
   background: #113361;
   color: white;
@@ -1156,9 +1189,6 @@ header a:hover {
     flex-direction: column;
   }
 
-  .face-img {
-    display: none;
-  }
 
   .job-container {
     display: none;
