@@ -617,11 +617,9 @@ header a:hover {
 .projects-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  /* display: flex;
-  flex-wrap: wrap; */
   width: 100vw;
   max-width: 1300px;
-  gap: 15px;
+  gap: 25px;
   justify-content: center;
   align-items: center;
 
@@ -1016,6 +1014,55 @@ header a:hover {
   color: blueviolet;
 }
 
+/* Digital Art Full Size View Container */
+.logo-view-container {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 100px;
+  z-index: 990;
+}
+
+#logo-view-close-btn {
+  position: absolute;
+  font-size: 3rem;
+  color: white;
+  top: 25px;
+  right: 35px;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+#logo-view-close-btn:hover {
+  cursor: pointer;
+  transform: rotate(180deg);
+}
+
+.logo-view {
+  width: 50vw;
+  height: auto;
+}
+
+#mensah-logo-full-size {
+  background-color: white;
+  padding: 15px 50px;
+}
+
+#hk-logo-full-size {
+  background-color: #dfdfdf;
+  padding: 15px 50px;
+}
+
+#fbf-logo-full-size {
+  background-color: black;
+  padding: 15px 50px;
+}
 
 /* Art Full Size View Container */
 .art-view-container {
@@ -1039,10 +1086,12 @@ header a:hover {
   top: 25px;
   right: 35px;
   font-weight: 600;
+  transition: 0.5s;
 }
 
 #art-view-close-btn:hover {
   cursor: pointer;
+  transform: rotate(180deg);
 }
 
 .landscape-view {
@@ -1182,7 +1231,7 @@ header a:hover {
 
 @media screen and (max-width: 700px) {
   .projects-grid {
-    grid-template-columns: 2fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .introduction {
@@ -1198,7 +1247,7 @@ header a:hover {
 
 @media screen and (max-width: 1000px) {
   .projects-grid {
-    grid-template-columns: 3fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
 }
