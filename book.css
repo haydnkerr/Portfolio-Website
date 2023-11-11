@@ -41,6 +41,8 @@
     position: relative;
     width: 400px;
     height: 515px;
+    /* width: 200px;
+    height: 257px; */
     transition: transform 0.3s;
 }
 
