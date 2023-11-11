@@ -1029,6 +1029,16 @@ header a:hover {
   align-items: center;
 }
 
+#frontend-mentor-description .left-side {
+  background-color: white;
+  background-image: url("./assets/frontend-logo.svg");
+  background-position: center;
+  background-size: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .project-close-btn {
   position: absolute;
