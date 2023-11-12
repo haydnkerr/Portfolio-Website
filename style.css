@@ -154,13 +154,14 @@ header ul {
 
 header li {
   list-style-type: none;
+  margin-left: 50px;
 
 }
 
 header a {
   color: black;
   text-decoration: none;
-  margin-left: 50px;
+  
   font-weight: 400;
 }
 
@@ -252,6 +253,27 @@ header a:hover {
   font-weight: 500;
 }
 
+.face {
+  height: 300px;
+  width: auto
+}
+
+.social-media-container {
+  display: flex;
+}
+
+.social-media-container img {
+  height: 45px;
+  width: auto;
+  margin-right: 15px;
+  margin-top: 15px;
+  padding: 5px;
+}
+
+.social-media-container img:hover {
+  padding: 0px
+}
+
 .navy {
   color: #113361;
 }
@@ -265,6 +287,19 @@ header a:hover {
 @media screen and (max-width: 750px) {
   .face-img {
     display: none;
+  }
+
+  .social-media-container {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -377,6 +412,16 @@ header a:hover {
 
 .developer-container h2 {
   font-family: 'cousine';
+}
+
+@media screen and (max-width: 750px) {
+  .intro-info {
+    width: 100%
+  }
+
+  .introduction-container img {
+    width: 100%;
+  }
 }
 
 
@@ -1226,26 +1271,7 @@ header a:hover {
   display: none;
 }
 
-.face {
-  height: 300px;
-  width: auto
-}
 
-.social-media-container {
-  display: flex;
-}
-
-.social-media-container img {
-  height: 45px;
-  width: auto;
-  margin-right: 15px;
-  margin-top: 15px;
-  padding: 5px;
-}
-
-.social-media-container img:hover {
-  padding: 0px
-}
 
 .loading-content {
   max-width: 350px;
