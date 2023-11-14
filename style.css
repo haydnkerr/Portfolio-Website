@@ -820,6 +820,12 @@ header a:hover {
   background-size: 85%;
 }
 
+#neuro-project {
+  background-color: black;
+  background-image: url("./assets/neuro.jpg");
+  background-size: 110%;
+}
+
 #core-project {
   background-color: #d9363e;
   background-image: url("./assets/core-bg.png");
@@ -1064,6 +1070,17 @@ header a:hover {
   justify-content: center;
   align-items: center;
 }
+
+#neuro-description .left-side {
+  background-color: black;
+  background-image: url("./assets/neuro.jpg");
+  background-position: center;
+  background-size: 110%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 #core-description .left-side {
   background-color: #d9363e;
