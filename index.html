@@ -1309,6 +1309,10 @@
         <img class="logo-view" src="./assets/tr-multi-logo.png">
       </div>
 
+      <div class="display-none" id="top-5-full-size">
+        <img class="logo-view" src="./assets/top-5-post.png">
+      </div>
+
 
     </section>
 
@@ -1448,34 +1452,41 @@
   mensahExpandBtn.addEventListener('click', function () {
     logoView.classList.remove('display-none')
     mensahLogoFullSize.classList.remove('display-none')
+    document.body.style.overflow = "hidden";
   })
 
   greenwoodExpandBtn.addEventListener('click', function () {
     logoView.classList.remove('display-none')
     greenwoodLogoFullSize.classList.remove('display-none')
+    document.body.style.overflow = "hidden";
   })
 
   fbfExpandBtn.addEventListener('click', function () {
     logoView.classList.remove('display-none')
     fbfLogoFullSize.classList.remove('display-none')
+    document.body.style.overflow = "hidden";
   })
 
   hkExpandBtn.addEventListener('click', function () {
     logoView.classList.remove('display-none')
     hkLogoFullSize.classList.remove('display-none')
+    document.body.style.overflow = "hidden";
   })
 
   trExpandBtn.addEventListener('click', function () {
     logoView.classList.remove('display-none')
     trLogoFullSize.classList.remove('display-none')
+    document.body.style.overflow = "hidden";
   })
 
   top5ExpandBtn.addEventListener('click', function () {
     logoView.classList.remove('display-none')
-    top5LogoFullSize.classList.remove('display-none')
+    top5FullSize.classList.remove('display-none')
+    document.body.style.overflow = "hidden";
   })
 
   function toggleLogoView() {
+    document.body.style.overflow = "scroll";
     logoView.classList.toggle('display-none')
     mensahLogoFullSize.classList.add('display-none')
     greenwoodLogoFullSize.classList.add('display-none')
@@ -1483,6 +1494,7 @@
     trLogoFullSize.classList.add('display-none')
     fbfLogoFullSize.classList.add('display-none')
     top5FullSize.classList.add('display-none')
+
   }
 
 
@@ -1501,37 +1513,44 @@
   zebraExpandBtn.addEventListener('click', function () {
     artView.classList.remove('display-none')
     zebraFullSize.classList.remove('display-none')
+    document.body.style.overflow = "hidden";
   })
 
   paperExpandBtn.addEventListener('click', function () {
     artView.classList.remove('display-none')
     paperFullSize.classList.remove('display-none')
+    document.body.style.overflow = "hidden";
   })
 
   stripedPaperExpandBtn.addEventListener('click', function () {
     artView.classList.remove('display-none')
     stripedPaperFullSize.classList.remove('display-none')
+    document.body.style.overflow = "hidden";
   })
 
   plantExpandBtn.addEventListener('click', function () {
     artView.classList.remove('display-none')
     plantFullSize.classList.remove('display-none')
+    document.body.style.overflow = "hidden";
   })
 
   shadowExpandBtn.addEventListener('click', function () {
     artView.classList.remove('display-none')
     shadeFullSize.classList.remove('display-none')
+    document.body.style.overflow = "hidden";
   })
 
   farmExpandBtn.addEventListener('click', function () {
     artView.classList.remove('display-none')
     farmFullSize.classList.remove('display-none')
+    document.body.style.overflow = "hidden";
   })
 
 
 
 
   function toggleArtView() {
+    document.body.style.overflow = "scroll";
     artView.classList.toggle('display-none')
     farmFullSize.classList.add('display-none')
     paperFullSize.classList.add('display-none')
@@ -1539,6 +1558,7 @@
     shadeFullSize.classList.add('display-none')
     plantFullSize.classList.add('display-none')
     zebraFullSize.classList.add('display-none')
+    
   }
 
   function resumeToggle() {
