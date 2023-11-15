@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height:100vh;
+    overflow: scroll
+}
+
+.scroll-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: auto;
+    width: 100vw;
+}
+
+.landing-page-img {
+    width: 100%;
+}
+
+.old-site {
+    background-color: white;
+    background: white;
+    background-size: 100vw;
+    width: 50%;
+    height: 600%;
+    background-repeat: no-repeat;
+    border-right: 4px solid #00c1ff;
+    box-shadow: 0px 1px 7px #00c1ff;
+    
+}
+
+#old-nerr {
+    background-image: url("./assets/ctnerr-old-landing-page.jpg");  
+}
+
+#old-neuro {
+    background-image: url("./assets/old-neuro.jpg");  
+}
+
+#old-miracles {
+    background-image: url("./assets/miracles-old.jpg");  
+}
+
+.new-nerr {
+    background-image: url("./assets/new-nerr.jpg");
+    background-size: 100vw;
+}
+
+.new-img {
+    width: 100vw;
+    height: 100%
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #00c1ff;
+    position: sticky;
+    top:50vh;
+}
+
