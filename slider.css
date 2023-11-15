@@ -26,7 +26,6 @@ html,body {
     background: white;
     background-size: 100vw;
     width: 50%;
-    height: 600%;
     background-repeat: no-repeat;
     border-right: 4px solid #00c1ff;
     box-shadow: 0px 1px 7px #00c1ff;
@@ -34,15 +33,18 @@ html,body {
 }
 
 #old-nerr {
-    background-image: url("./assets/ctnerr-old-landing-page.jpg");  
+    background-image: url("./assets/old-nerr.jpg");  
+    height: 300%;
 }
 
 #old-neuro {
     background-image: url("./assets/old-neuro.jpg");  
+    height: 350%;
 }
 
 #old-miracles {
     background-image: url("./assets/miracles-old.jpg");  
+    height: 450%;
 }
 
 .new-nerr {
