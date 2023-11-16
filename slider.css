@@ -34,17 +34,17 @@ html,body {
 
 #old-nerr {
     background-image: url("./assets/old-nerr.jpg");  
-    height: 300%;
+    height: 500%;
 }
 
 #old-neuro {
     background-image: url("./assets/old-neuro.jpg");  
-    height: 350%;
+    height: 600%;
 }
 
 #old-miracles {
     background-image: url("./assets/miracles-old.jpg");  
-    height: 450%;
+    height: 550%;
 }
 
 .new-nerr {

@@ -780,22 +780,22 @@ header a:hover {
   transition: 1s;
 } */
 
-.project-info:active > h2 {
+/* .project-info:active > h2 {
+  transform: translateY(0px);
+  transition: 1s;
+} */
+
+/* .project-info:active > a {
+  transform: translateY(0px);
+  transition: 1s;
+} */
+
+.project-info:hover > h2, .project-info:active > h2 {
   transform: translateY(0px);
   transition: 1s;
 }
 
-.project-info:active > a {
-  transform: translateY(0px);
-  transition: 1s;
-}
-
-.project-info:hover > h2 {
-  transform: translateY(0px);
-  transition: 1s;
-}
-
-.project-info:hover > a {
+.project-info:hover > a, .project-info:active > a {
   transform: translateY(0px);
   transition: 1s;
 }
@@ -1328,9 +1328,20 @@ header a:hover {
 
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 650px) {
   .projects-grid {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .project-cell {
+    width: 300px;
+    height: 300px;
+  }
+
+  .skills-container {
+    padding: 15px;
   }
 
 }
