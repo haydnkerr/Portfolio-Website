@@ -1615,11 +1615,18 @@
     document.body.style.overflow = "scroll";
   }
 
+  bookCloseBtn.addEventListener("click", closeBook)
+
 
 
   function openBook() {
     bookContainer.classList.toggle('display-none')
     document.body.style.overflow = "hidden";
+  }
+
+  function closeBook() {
+    bookContainer.classList.add('display-none')
+    document.body.style.overflow = "scroll";
   }
 
 
