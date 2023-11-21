@@ -12,6 +12,7 @@ body {
   flex-direction: column;
   background-color: #F3E8E0;
   width: 100vw;
+  overflow-x: hidden;
   
 }
 
