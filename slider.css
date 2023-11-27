@@ -47,6 +47,39 @@ html,body {
     height: 550%;
 }
 
+#floe-nav {
+    position: absolute;
+    z-index: 10;
+    width: 100vw;
+    height: 100px;
+    background: white;
+    display: flex;
+}
+
+#floe-nav li:hover {
+    cursor: pointer;
+}
+
+#old-floe-home {
+    background-image: url("./assets/old-floesafe-home.jpg");
+    height: 500%;
+}
+
+#old-floe-about {
+    background-image: url("./assets/old-floesafe-about.jpg");
+    height: 500%;
+}
+
+#old-floe-contact {
+    background-image: url("./assets/old-floesafe-contact.jpg");
+    height: 500%;
+}
+
+#old-floe-product {
+    background-image: url("./assets/old-floesafe-product.jpg");
+    height: 500%;
+}
+
 .new-nerr {
     background-image: url("./assets/new-nerr.jpg");
     background-size: 100vw;
@@ -64,5 +97,9 @@ html,body {
     background-color: #00c1ff;
     position: sticky;
     top:50vh;
+}
+
+.hidden {
+    display: none;
 }
 

@@ -15,7 +15,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <title>CT Nerr Site Comparison</title>
+    <title>Floesafe Site Comparison</title>
 
     <link href="slider.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -23,37 +23,125 @@
 </head>
 
 <body>
-
-
-    <div class="scroll-container new-miracles">
-        <img class="new-img" src="./assets/miracles-new.jpg">
-
-
-    </div>
+    <header>
+        <nav id="floe-nav">
+            <li id="home">Homepage</li>
+            <li id="about">About</li>
+            <li id="product">Product</li>
+            <li id="contact">Contact</li>
+        </nav>
+    </header>
+    <section id="home-container">
+        <div class="scroll-container new-floe-home">
+            <img class="new-img" src="./assets/miracles-new.jpg">
+        </div>
+        
     
+        <div class="scroll-container old-site" id="old-floe-home">
+    
+        </div>
+    </section>
 
-    <div class="scroll-container old-site" id="old-miracles">
+    <section class="hidden" id="about-container">
+        <div class="scroll-container new-floe-home">
+            <img class="new-img" src="./assets/miracles-new.jpg">
+        </div>
+        
+    
+        <div class="scroll-container old-site" id="old-floe-about">
+    
+        </div>
+    </section>
 
-    </div>
+    <section class="hidden" id="product-container">
+        <div class="scroll-container new-floe-home">
+            <img class="new-img" src="./assets/miracles-new.jpg">
+        </div>
+        
+    
+        <div class="scroll-container old-site" id="old-floe-product">
+    
+        </div>
+    </section>
+    
+    <section class="hidden" id="contact-container">
+        <div class="scroll-container new-floe-home">
+            <img class="new-img" src="./assets/miracles-new.jpg">
+        </div>
+        
+    
+        <div class="scroll-container old-site" id="old-floe-contact">
+    
+        </div>
+    </section>
+
+
+
+    
 
   
 
     
 
     <script>
-        let oldMiraclesWidth = document.getElementById('old-miracles')
+        let productMenu = document.getElementById("product")
+        let homeMenu = document.getElementById("home")
+        let aboutMenu = document.getElementById("about")
+        let contactMenu = document.getElementById("contact")
+        let oldFloeHomeWidth = document.getElementById('old-floe-home')
+        let oldFloeAboutWidth = document.getElementById('old-floe-about')
+        let oldFloeProductWidth = document.getElementById('old-floe-product')
+        let oldFloeContactWidth = document.getElementById('old-floe-contact')
+
+        let productContainer = document.getElementById("product-container")
+        let homeContainer = document.getElementById("home-container")
+        let contactContainer = document.getElementById("contact-container")
+        let aboutContainer = document.getElementById("about-container")
+
+        productMenu.addEventListener("click", showProduct)
+        homeMenu.addEventListener("click", showHome)
+        contactMenu.addEventListener("click", showContact)
+        aboutMenu.addEventListener("click", showAbout)
+
+        function showProduct() {
+            productContainer.classList.remove('hidden')
+            homeContainer.classList.add('hidden')
+            contactContainer.classList.add('hidden')
+            aboutContainer.classList.add('hidden')
+        }
+        function showHome() {
+            productContainer.classList.add('hidden')
+            homeContainer.classList.remove('hidden')
+            contactContainer.classList.add('hidden')
+            aboutContainer.classList.add('hidden')
+        }
+        function showContact() {
+            productContainer.classList.add('hidden')
+            homeContainer.classList.add('hidden')
+            contactContainer.classList.remove('hidden')
+            aboutContainer.classList.add('hidden')
+        }
+        function showAbout() {
+            productContainer.classList.add('hidden')
+            homeContainer.classList.add('hidden')
+            contactContainer.classList.add('hidden')
+            aboutContainer.classList.remove('hidden')
+        }
 
 
 
         let width = (innerWidth / 10)
-        oldMiraclesWidth.style.width = '50%';
+        oldFloeHomeWidth.style.width = '50%';
 
         function mouseXPosition(event) {
  
             var mouseX = event.clientX;
 
 
-            oldMiraclesWidth.style.width = mouseX + 'px';
+            oldFloeHomeWidth.style.width = mouseX + 'px';
+            oldFloeContactWidth.style.width = mouseX + 'px';
+            oldFloeAboutWidth.style.width = mouseX + 'px';
+            oldFloeProductWidth.style.width = mouseX + 'px';
 
 
         }
