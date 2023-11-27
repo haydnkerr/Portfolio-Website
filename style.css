@@ -1542,4 +1542,8 @@ header a:hover {
     
   }
 
+  #job-description-container {
+    padding: 10px
+  }
+
 }
