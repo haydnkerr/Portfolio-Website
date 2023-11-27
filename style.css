@@ -926,7 +926,7 @@ header a:hover {
   text-decoration: underline;
 }
 
-.project-info:hover, .project-info:active {
+.project-info:focus, .project-info:hover {
 
   background-color: rgba(0, 0, 0, 0.75);
 
@@ -952,11 +952,20 @@ header a:hover {
   transition: 1s;
 } */
 
-.project-info:hover > h2, .project-info:active > h2 {
+.project-info:hover > h2, .project-info:focus > h2 {
   transform: translateY(0px);
 }
 
-.project-info:hover > a, .project-info:active > a {
+.project-info:hover > a, .project-info:focus > a {
+  transform: translateY(0px);
+  
+}
+
+ .project-info:focus > h2 {
+  transform: translateY(0px);
+}
+
+ .project-info:focus > a {
   transform: translateY(0px);
   
 }
@@ -1515,6 +1524,22 @@ header a:hover {
   .job-description-container {
     align-items: flex-start;
     padding: 10px 10px 25px 10px;
+  }
+
+  .project-info {
+
+    background-color: rgba(0, 0, 0, 0.50);
+  
+    transition: 1s;
+  }
+  
+  .project-info > h2 {
+    transform: translateY(0px);
+  }
+  
+  .project-info > a  {
+    transform: translateY(0px);
+    
   }
 
 }
