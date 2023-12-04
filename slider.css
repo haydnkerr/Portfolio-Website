@@ -9,6 +9,31 @@ html,body {
     overflow: scroll
 }
 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+#floe-nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    gap: 10px;
+    font-family: sans-serif;
+    height: 50px;
+    position:fixed;
+    top: 0;
+}
+
+#floe-nav li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
 .scroll-container {
     position: absolute;
     left: 0;
@@ -62,17 +87,17 @@ html,body {
 
 #old-floe-home {
     background-image: url("./assets/old-floesafe-home.jpg");
-    height: 500%;
+    height: 550%;
 }
 
 #old-floe-about {
     background-image: url("./assets/old-floesafe-about.jpg");
-    height: 500%;
+    height: 450%;
 }
 
 #old-floe-contact {
     background-image: url("./assets/old-floesafe-contact.jpg");
-    height: 500%;
+    height: 200%;
 }
 
 #old-floe-product {
