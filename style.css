@@ -1129,7 +1129,7 @@ header a:hover {
 #job-description-container {
   position: fixed;
   width: 100vw;
-  height: 100vh;
+  height: 100svh;
   background-color: rgba(0, 0, 0, 0.90);
   top: 0;
   left: 0;
