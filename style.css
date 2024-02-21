@@ -428,13 +428,21 @@ header a:hover {
 .introduction-container {
   background: white;
   color: black;
-  padding: 0px 50px 75px 50px;
+  padding:0px 50px 75px 50px;
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: center;
 
 }
+
+@media screen and (max-width: 900px) {
+  .introduction-container {
+    padding-top: 50px;
+  }
+}
+
+
 
 .introduction {
   display: flex;
