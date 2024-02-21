@@ -33,39 +33,29 @@
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
       <!-- <li id="resume-link"><a class="resume-link" download="haydnKerrResume">Resume</a></li> -->
-      <li id=""><a class="resume-link" href="./assets/haydnKerr-2024-Resume.pdf" download="haydnKerrResume">Resume</a></li>
+      <li id=""><a class="resume-link" href="./assets/haydnKerr-2024-Resume.pdf" download="haydnKerrResume">Resume</a>
+      </li>
     </ul>
-    <div class="mobile-nav display-none">
-
+    <div class="hamburger-btn">
+      <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
     </div>
+
+    <div class="mobile-navbar display-none" id="mobile-nav-container">
+      <p class="mobile-modal-close-btn">X</p>
+      <div class="menu-items">
+        <li><a class="mobile-link" href="#projects">Projects</a></li>
+        <li><a class="mobile-link" href="#contact">Contact</a></li>
+        <li id=""><a class="resume-link mobile-link" href="./assets/new_resume.pdf"
+            download="haydnKerrResume">Resume</a></li>
+      </div>
+    </div>
+
 
 
   </header>
 
-  <nav class="mobile-nav-container display-none">
-    
-    <div class="mobile-nav-header">
-      <div class="logo">
-        <img src="./assets/hk-logo.png">
-      </div>
-      <input class="checkbox" type="checkbox" name="" id="hamburger" />
-      <label for="hamburger" class="hamburger-lines">
-        <span class="line line1"></span>
-        <span class="line line2"></span>
-        <span class="line line3"></span>
-      </label>
-      
-    </div>
-
-    <div class="mobile-navbar display-none">
-      <div class="menu-items">
-        <li><a href="#">Experience</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-        <li id=""><a class="resume-link" href="./assets/new_resume.pdf" download="haydnKerrResume">Resume</a></li>
-      </div>
-    </div>
-  </nav>
 
   <section class="resume-container display-none">
     <img src="./assets/haydn-kerr-resume.pdf" class="resume">
@@ -1471,6 +1461,27 @@
 
 
 
+  let mobileNav = document.getElementById('mobile-nav-container');
+  let mobileModalCloseBtn = document.querySelector('.mobile-modal-close-btn');
+  let mobileLink = document.querySelectorAll('.mobile-link');
+  let hamburgerBtn = document.querySelector('.hamburger-btn')
+
+  mobileLink.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      toggleMobileNav()
+    })
+  });
+
+
+
+  hamburgerBtn.addEventListener('click', toggleMobileNav)
+
+  mobileModalCloseBtn.addEventListener('click', toggleMobileNav)
+
+  function toggleMobileNav() {
+    console.log('click')
+    mobileNav.classList.toggle('display-none')
+  }
 
   let one = document.getElementById('one')
   let two = document.getElementById('two')
