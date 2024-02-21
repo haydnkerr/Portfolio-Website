@@ -297,7 +297,7 @@ header a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 6rem;
+  gap: 3rem;
   width: 100%;
   padding: 0px;
 }
