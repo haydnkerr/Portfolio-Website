@@ -492,6 +492,8 @@ header a:hover {
   max-width: 500px;
   border-radius: 15px;
   overflow: hidden;
+  flex: 1;
+  min-width: 300px;
 }
 
 .skill-box p {
