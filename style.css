@@ -630,7 +630,8 @@ header a:hover {
 
 
 .job-info p {
-  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0.2px;
   font-size: 1rem;
 }
 
@@ -941,6 +942,10 @@ header a:hover {
   background-image: url('./assets/space-bg.png');
 }
 
+#beehive-project {
+  background-image: url('./assets/beehive-invert.png');
+}
+
 #ctnerr-project {
   background-color: rgb(192, 255, 195);
   background-image: url("./assets/CTNERR-logo_digital-circle-color.png");
@@ -1143,7 +1148,8 @@ header a:hover {
 }
 
 .job-description p {
-  font-weight: 300;
+  letter-spacing: 0.2px;
+  line-height: 1.5rem;
   font-size: 1rem;
 }
 
@@ -1157,6 +1163,14 @@ header a:hover {
 
 #connect-four-description .left-side img {
   width: 90%;
+}
+
+#beehive-description .left-side {
+  background-color: #c7831c;
+}
+
+#beehive-description .left-side img {
+  width: 50%;
 }
 
 #miracles-description h2 {
@@ -1173,20 +1187,20 @@ header a:hover {
 }
 
 #space-description .left-side {
-  background-image: url("./assets/stars-bg.png");
+  background-image: url("./assets/space-mockup.jpg");
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#sun {
+/* #sun {
   background: radial-gradient(circle, rgb(255, 174, 0), orange, #fde025 75%);
   width: 15vw;
   height: 15vw;
   border-radius: 50%;
   box-shadow: 0px 0px 15px 5px #fde025;
-}
+} */
 
 #ct-nerr-description .left-side {
   background-color: rgb(192, 255, 195);
@@ -1227,6 +1241,12 @@ header a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 200px
+
 }
 
 
@@ -1366,19 +1386,17 @@ header a:hover {
   margin-top: 50px;
 }
 
-.challenge-container {
+/* .challenge-container {
   display: flex;
   align-items: stretch;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 25px;
-}
+} */
 
 .challenge {
   background: white;
-  flex: 1;
-  min-width: 250px;
-  flex-grow: 1;
+
 }
 
 @media screen and (max-width: 992px) {

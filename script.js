@@ -189,6 +189,7 @@ let jobDescriptionContainer = document.getElementById('job-description-container
 let n = 0;
 
 let connectFourOpen = document.getElementById('connect-four-learn-more');
+let beehiveOpen = document.getElementById('beehive-learn-more');
 let miraclesOpen = document.getElementById('miracles-learn-more');
 let ctnerrOpen = document.getElementById('ctnerr-learn-more');
 let spaceOpen = document.getElementById('space-learn-more');
@@ -199,8 +200,9 @@ let floeOpen = document.getElementById('floe-learn-more');
 let frontendMentorOpen = document.getElementById('frontend-mentor-learn-more');
 
 
-let connectFourDesc = document.getElementById('connect-four-description');
+let connectFourDesc = document.getElementById('connect-four-decription');
 let miraclesDesc = document.getElementById('miracles-description');
+let beehiveDesc = document.getElementById('beehive-description');
 let ctnerrDesc = document.getElementById('ct-nerr-description');
 let spaceDesc = document.getElementById('space-description');
 let coreDesc = document.getElementById('core-description');
@@ -210,6 +212,7 @@ let floeDesc = document.getElementById('floe-description');
 let frontendMentorDesc = document.getElementById('frontend-mentor-description');
 
 connectFourOpen.addEventListener('click', openConnectProject);
+beehiveOpen.addEventListener('click', openBeehiveProject);
 miraclesOpen.addEventListener('click', openMiraclesProject);
 ctnerrOpen.addEventListener('click', openCtnerrProject);
 spaceOpen.addEventListener('click', openSpaceProject);
@@ -220,53 +223,60 @@ floeOpen.addEventListener('click', openFloeProject);
 frontendMentorOpen.addEventListener('click', openFrontendMentorProject);
 
 function openConnectProject() {
-  connectFourDesc.classList.remove('display-none')
+  beehiveDesc.classList.remove('display-none')
   jobDescriptionContainer.classList.remove('display-none')
   n = 0
   projectCloseBtn[n] = projectCloseBtn[n]
 }
 
+function openBeehiveProject() {
+  beehiveDesc.classList.remove('display-none')
+  jobDescriptionContainer.classList.remove('display-none')
+  n = 1
+}
+
 function openMiraclesProject() {
   miraclesDesc.classList.remove('display-none')
   jobDescriptionContainer.classList.remove('display-none')
-  n = 1
-  projectCloseBtn[n] = projectCloseBtn[1]
+  n = 2
 }
+
+
 
 function openCtnerrProject() {
   ctnerrDesc.classList.remove('display-none')
   jobDescriptionContainer.classList.remove('display-none')
-  n = 2
+  n = 3
 }
 function openSpaceProject() {
   spaceDesc.classList.remove('display-none')
   jobDescriptionContainer.classList.remove('display-none')
-  n = 3
+  n = 4
 }
 function openCoreProject() {
   coreDesc.classList.remove('display-none')
   jobDescriptionContainer.classList.remove('display-none')
-  n = 4
+  n = 5
 }
 function openPrArchivesProject() {
   prArchivesDesc.classList.remove('display-none')
   jobDescriptionContainer.classList.remove('display-none')
-  n = 5
+  n = 6
 }
 function openCrosshairsProject() {
   crosshairsDesc.classList.remove('display-none')
   jobDescriptionContainer.classList.remove('display-none')
-  n = 6
+  n = 7
 }
 function openFloeProject() {
   floeDesc.classList.remove('display-none')
   jobDescriptionContainer.classList.remove('display-none')
-  n = 7
+  n = 8
 }
 function openFrontendMentorProject() {
   frontendMentorDesc.classList.remove('display-none')
   jobDescriptionContainer.classList.remove('display-none')
-  n = 8
+  n = 9
 }
 
 
@@ -280,9 +290,10 @@ projectCloseBtn[2].addEventListener('click', closeProjectModal);
 projectCloseBtn[3].addEventListener('click', closeProjectModal);
 projectCloseBtn[4].addEventListener('click', closeProjectModal);
 projectCloseBtn[5].addEventListener('click', closeProjectModal);
-// projectCloseBtn[6].addEventListener('click', closeProjectModal);
-// projectCloseBtn[7].addEventListener('click', closeProjectModal);
-// projectCloseBtn[8].addEventListener('click', closeProjectModal);
+projectCloseBtn[6].addEventListener('click', closeProjectModal);
+projectCloseBtn[7].addEventListener('click', closeProjectModal);
+projectCloseBtn[8].addEventListener('click', closeProjectModal);
+projectCloseBtn[9].addEventListener('click', closeProjectModal);
 
 
 
@@ -290,6 +301,7 @@ projectCloseBtn[5].addEventListener('click', closeProjectModal);
 function closeProjectModal() {
   jobDescriptionContainer.classList.add('display-none')
   connectFourDesc.classList.add('display-none')
+  beehiveDesc.classList.add('display-none')
   miraclesDesc.classList.add('display-none')
   ctnerrDesc.classList.add('display-none')
   spaceDesc.classList.add('display-none')
