@@ -1490,6 +1490,16 @@ header a:hover {
 }
 
 @media screen and (max-width: 650px) {
+  .flex-row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .flex-row a {
+    width: 100%;
+  }
+
   .projects-grid {
     display: flex;
     flex-direction: column;
