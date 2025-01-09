@@ -554,6 +554,9 @@ header a:hover {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
 }
 
 .container>h2 {
@@ -575,7 +578,6 @@ header a:hover {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0px 1px 7px #00000030;
-
 }
 
 .job-cell:hover {
@@ -643,7 +645,7 @@ header a:hover {
   background-size: cover;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.50);
+  background-color: rgba(0, 0, 0, 0.60);
   color: white;
   box-shadow: 0px 1px 7px #00000030;
 }
@@ -657,6 +659,7 @@ header a:hover {
   font-size: 1.6rem;
   font-weight: 500;
   text-align: center;
+  margin: 0px 10px;
 }
 
 .inactive-cell h4 {
@@ -664,6 +667,9 @@ header a:hover {
   text-transform: uppercase;
   font-size: 0.7rem;
   letter-spacing: 4px;
+  text-align: center;
+  margin: 0px 10px;
+
 }
 
 #inactive-nutmeg {
@@ -672,7 +678,7 @@ header a:hover {
 }
 
 #inactive-freelance {
-  background-image: url("./assets/desk-bg.jpg");
+  background-image: url("./assets/dinosaur-big-adventures-reduced.jpg");
   background-position: center;
 
 }
@@ -697,9 +703,9 @@ header a:hover {
 }
 
 #active-freelance .job-header-bg {
-  background-image: url("./assets/desk-bg.jpg");
+  background-image: url("./assets/dinosaur-big-adventures-reduced.jpg");
   color: white;
-  background-position-y: 64%;
+  background-position-y: 20%;
   background-size: 100%;
 }
 
@@ -825,7 +831,7 @@ header a:hover {
 .projects-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: 100vw;
+  width: 100%;
   max-width: 1300px;
   gap: 25px;
   justify-content: center;
@@ -835,8 +841,8 @@ header a:hover {
 }
 
 .project-cell {
-  height: 200px;
-  width: 200px;
+  width: 100%;
+  aspect-ratio: 1;
   border-radius: 15px;
   overflow: hidden;
   display: flex;
