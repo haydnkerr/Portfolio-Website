@@ -961,6 +961,7 @@ header a:hover {
   background-image: url("./assets/ssmc-logo.png");
 }
 
+
 #memory-project {
   background-color: #4ca8f8;
   background-image: url("./assets/lillie-pad.png");
@@ -1182,11 +1183,24 @@ header a:hover {
   background-position: center;
 }
 
+#ssmc-description .left-side {
+  background-image: url("./assets/ssmc-bg.png");
+  background-position-y: 45%;
+  background-size: 100%;
+  background-color: rgb(240, 240, 240);
+}
+
+#ssmc-description .left-side img {
+  width: 105%;
+}
+
 #memory-pad-description .left-side {
   background-color: #1a2837;
   background-position: center;
   overflow: hidden;
 }
+
+
 
 #memory-pad-description .left-side img {
   width: 105%;
