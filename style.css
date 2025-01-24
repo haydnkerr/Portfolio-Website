@@ -957,6 +957,16 @@ header a:hover {
   background-image: url('./assets/beehive-invert.png');
 }
 
+#ssmc-project {
+  background-image: url("./assets/ssmc-logo.png");
+}
+
+#memory-project {
+  background-color: #4ca8f8;
+  background-image: url("./assets/lillie-pad.png");
+  background-size: 80%;
+}
+
 #ctnerr-project {
   background-color: rgb(192, 255, 195);
   background-image: url("./assets/CTNERR-logo_digital-circle-color.png");
@@ -1271,8 +1281,8 @@ header a:hover {
 
 .project-close-btn {
   position: absolute;
-  right: 15px;
-  top: 7px;
+  right: 20px;
+  top: 20px;
   font-size: 2rem !important;
   font-weight: 600 !important;
   color: dimgray;
