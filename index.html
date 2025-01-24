@@ -1,2053 +1,2561 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta property="og:title" content="Haydn Kerr Portfolio"/>
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/haydnkerr/Portfolio-Website/main/assets/tab-image.png"
+/>
+    <meta property="og:url" content="http://haydnkerr.com"/>
+    <meta property="og:type" content="website"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cousine:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+/>
+    <title>Haydn Kerr Portfolio</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:title" content="Haydn Kerr Portfolio">
-  <meta property="og:image"
-    content="https://raw.githubusercontent.com/haydnkerr/Portfolio-Website/main/assets/tab-image.png" />
-  <meta property="og:url" content="http://haydnkerr.com">
-  <meta property="og:type" content="website">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cousine:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-  <title>Haydn Kerr Portfolio</title>
+    <link href="book.css" rel="stylesheet"/>
+    <script src="book.js" defer></script>
+    <link href="style.css" rel="stylesheet"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
 
-
-  <link href="book.css" rel="stylesheet">
-  <script src="book.js" defer></script>
-  <link href="style.css" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-</head>
-
-<body>
-  <header class="">
-    <a id="header-img" href="#top"><img src="./assets/hk-logo.png"></a>
-    <ul id="desktop-nav">
-      <li><a href="#jobs">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <!-- <li id="resume-link"><a class="resume-link" download="haydnKerrResume">Resume</a></li> -->
-      <li id=""><a class="resume-link" href="./assets/Haydn Kerr 2025 Resume.pdf" download="haydnKerrResume">Resume</a>
-      </li>
-    </ul>
-    <div class="hamburger-btn">
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-    </div>
-
-    <div class="mobile-navbar display-none" id="mobile-nav-container">
-      <p class="mobile-modal-close-btn">X</p>
-      <div class="menu-items">
-        <li><a class="mobile-link" href="#projects">Projects</a></li>
-        <li><a class="mobile-link" href="#contact">Contact</a></li>
-        <li id=""><a class="resume-link mobile-link" href="./assets/Haydn Kerr 2025 Resume.pdf"
-            download="haydnKerrResume">Resume</a></li>
+  <body>
+    <header class="">
+      <a id="header-img" href="#top"><img src="./assets/hk-logo.png"/></a>
+      <ul id="desktop-nav">
+        <li>
+          <a href="#jobs">Experience</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+        <!-- <li id="resume-link"><a class="resume-link" download="haydnKerrResume">Resume</a></li> -->
+        <li id="">
+          <a
+            class="resume-link"
+            href="./assets/Haydn Kerr 2025 Resume.pdf"
+            download="haydnKerrResume"
+            >Resume</a
+          >
+        </li>
+      </ul>
+      <div class="hamburger-btn">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
       </div>
-    </div>
 
-
-
-  </header>
-
-
-  <section class="resume-container display-none">
-    <img src="./assets/Haydn Kerr 2025 Resume.pdf" class="resume">
-    <p id="resume-close-btn">X</p>
-  </section>
-
-  <section class="hero-section">
-    <img data-aos="fade-right" data-aos-duration="1000" class="face-img" src="./assets/right-face.png">
-    <div data-aos-delay="400" data-aos-duration="1000" data-aos="fade-up" class="hero-info-container">
-
-      <h1>I'm Haydn. <br> <span class="navy">UX Engineer</span></h1>
-      <h2>I like to bring ideas to life. Seamlessly bridging <br><i><strong>code</strong></i> and
-        <i><strong>creativity</strong></i> for engaging UI/UX
-      </h2>
-      <a href="#projects" class="btn-primary">See Work</a>
-      <div class="social-media-container">
-        <a alt="Youtube" target="_blank" href="https://www.youtube.com/channel/UCpFe7-ADQpEgjnGJnQei8dA"><img
-            src="./assets/youtube.png"></a>
-        <a alt="LinkedIn" target="_blank" href="https://www.linkedin.com/in/haydn-kerr-354899202/"><img
-            src="./assets/linkedin.png"></a>
-        <a alt="GitHub" target="_blank" href="https://github.com/haydnkerr"><img src="./assets/github.png"></a>
-      </div>
-    </div>
-    <img data-aos="fade-left" data-aos-duration="1000" class="face-img" src="./assets/left-face.png">
-  </section>
-  <main class="">
-    <img class="wavy-line" src="./assets/wavy-line.png">
-
-    <section class="introduction-container">
-      <div class="introduction">
-        <div data-aos-anchor-placement="center-bottom" data-aos-duration="1000" data-aos-delay="" data-aos="fade-up"
-          class="intro-info">
-          <h2>In A Nutshell</h2>
-          <p>
-            Hello there, I'm Haydn, <i><strong><span>UX Engineer</span></strong></i> and retired college athlete. As a
-            developer, my passion
-            is
-            utilizing my coding skills to craft immersive and user-centric web experiences. With a background in UI/UX
-            design and proficiency in <i><strong>Adobe Suite</strong> </i>products like Illustrator, Photoshop, and
-            InDesign, I
-            bring a holistic
-            approach to every project. This digital showcase features a curated collection of endeavors that showcase my
-            proficiency in <i><strong>HTML, CSS,</strong></i> and <i><strong>JavaScript,</strong></i> as well as my
-            dedication
-            to
-            creating functional yet visually
-            captivating websites. Explore the diverse range of projects, and discover how I blend creativity with
-            technical
-            expertise to leave a lasting digital impression.
-          </p>
-          <a href="#projects" class="btn-primary">See Work</a>
+      <div class="mobile-navbar display-none" id="mobile-nav-container">
+        <p class="mobile-modal-close-btn">X</p>
+        <div class="menu-items">
+          <li>
+            <a class="mobile-link" href="#projects">Projects</a>
+          </li>
+          <li>
+            <a class="mobile-link" href="#contact">Contact</a>
+          </li>
+          <li id="">
+            <a
+              class="resume-link mobile-link"
+              href="./assets/Haydn Kerr 2025 Resume.pdf"
+              download="haydnKerrResume"
+              >Resume</a
+            >
+          </li>
         </div>
-
-        <img data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000" data-aos-delay="200"
-          data-aos="flip-left" src="./assets/cutout.png">
       </div>
+    </header>
 
+    <section class="resume-container display-none">
+      <img src="./assets/Haydn Kerr 2025 Resume.pdf" class="resume"/>
+      <p id="resume-close-btn">X</p>
     </section>
 
-    <section class="skills-container">
-      <div data-aos-anchor-placement="center-bottom" data-aos-delay="250" data-aos-duration="1000" data-aos="fade-up"
-        class="developer-container skill-box">
-        <h2>Developer</h2>
-        <div class="skill-info">
-          <p>As a developer, I find immense satisfaction in employing logic and problem-solving skills to unravel
-            challenges and make things function seamlessly. Nothing beats the gratification I feel when I finally
-            crack a bug that has consumed hours of my time. This inclination for problem-solving extends to a deep
-            fascination with a wide array of puzzles</p>
-          <br>
-          <h4>Languages</h4>
-          <p>HTML, CSS, Javascript, Python</p>
-          <br>
-          <h4>Tools</h4>
-          <p>Github,
-            Bootstrap,
-            Github,
-            VS Code, Webflow, 
-            Wordpress,
-            React</p>
-          <ul>
-
-          </ul>
+    <section class="hero-section">
+      <img
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        class="face-img"
+        src="./assets/right-face.png"
+/>
+      <div
+        data-aos-delay="400"
+        data-aos-duration="1000"
+        data-aos="fade-up"
+        class="hero-info-container"
+      >
+        <h1>
+          I'm Haydn. <br/>
+          <span class="navy">UX Engineer</span>
+        </h1>
+        <h2>
+          I like to bring ideas to life. Seamlessly bridging <br/>
+          <i>
+            <strong>code</strong>
+          </i>
+          and
+          <i>
+            <strong>creativity</strong>
+          </i>
+          for engaging UI/UX
+        </h2>
+        <a href="#projects" class="btn-primary">See Work</a>
+        <div class="social-media-container">
+          <a
+            alt="Youtube"
+            target="_blank"
+            href="https://www.youtube.com/channel/UCpFe7-ADQpEgjnGJnQei8dA"
+            ><img src="./assets/youtube.png"
+/></a>
+          <a
+            alt="LinkedIn"
+            target="_blank"
+            href="https://www.linkedin.com/in/haydn-kerr-354899202/"
+            ><img src="./assets/linkedin.png"
+/></a>
+          <a alt="GitHub" target="_blank" href="https://github.com/haydnkerr"
+            ><img src="./assets/github.png"
+/></a>
         </div>
-
       </div>
-      <div data-aos-anchor-placement="center-bottom" data-aos-delay="500" data-aos-duration="1000" data-aos="fade-up"
-        class="designer-container skill-box">
-        <h2>Designer</h2>
-        <div class="skill-info">
-          <p>
-            As a designer, I find great joy in channeling my creativity into crafting unique and captivating designs.
-            This encompasses a wide range of projects, from creating eye-catching logos to designing engaging print
-            media and conceptualizing website/app mockups. Each endeavor presents an exciting opportunity to fuse
-            artistry with functionality, ensuring a seamless and visually stunning end result
-          </p>
-          <br>
-          <h4>What I use:</h4>
-          <p>
-            Illustrator, InDesign, XD, Photoshop, Illustrator, Figma, pencil & paper, paint on canvas
-          </p>
-        </div>
-
-      </div>
-
-      <div data-aos-anchor-placement="center-bottom" data-aos-delay="750" data-aos-duration="1000" data-aos="fade-up"
-        class="educator-container skill-box">
-        <h2>Educator</h2>
-        <div class="skill-info">
-          <p>
-            As an educator, I've long been aware of the privilege bestowed upon me by access to abundant resources and a
-            quality education. This awareness has ignited within me a fervent commitment to democratizing knowledge and
-            championing accessibility. I've recently embarked on a new venture: a YouTube
-            channel. Through this platform, I aim to offer easily digestible tutorials and project-based learning
-            sessions. My goal is to serve as a guide for aspiring web
-            developers, providing them with the tools and confidence they need to embark on their own learning journeys.
-          </p>
-          <br>
-          <h4>Platform:</h4>
-          <p>
-            <a href="https://www.youtube.com/channel/UCpFe7-ADQpEgjnGJnQei8dA" target="_blank">Youtube</a>
-          </p>
-        </div>
-
-      </div>
+      <img
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        class="face-img"
+        src="./assets/left-face.png"
+/>
     </section>
+    <main class="">
+      <img class="wavy-line" src="./assets/wavy-line.png"/>
 
-
-
-    <section class="job-container" id="jobs">
-      <div class="container">
-        <h2>Professional Experience</h2>
-        <div class="job-grid">
-
-          <div data-aos-anchor-placement="top-center" data-aos-delay="200" data-aos-duration="1000"
-            data-aos="fade-right" class="inactive-cell job-cell" id="inactive-nutmeg">
-            <div class="inactive-cell">
-              <h2>Nutmeg</h2>
-              <h4>Lead Designer</h4>
-            </div>
-
+      <section class="introduction-container">
+        <div class="introduction">
+          <div
+            data-aos-anchor-placement="center-bottom"
+            data-aos-duration="1000"
+            data-aos-delay=""
+            data-aos="fade-up"
+            class="intro-info"
+          >
+            <h2>In A Nutshell</h2>
+            <p>
+              Hello there, I'm Haydn,
+              <i>
+                <strong>
+                  <span>UX Engineer</span></strong>
+              </i>
+              and retired college athlete. As a developer, my passion is
+              utilizing my coding skills to craft immersive and user-centric web
+              experiences. With a background in UI/UX design and proficiency in
+              <i>
+                <strong>Adobe Suite</strong>
+              </i
+              >products like Illustrator, Photoshop, and InDesign, I bring a
+              holistic approach to every project. This digital showcase features
+              a curated collection of endeavors that showcase my proficiency in
+              <i>
+                <strong>HTML, CSS,</strong>
+              </i>
+              and
+              <i>
+                <strong>JavaScript,</strong>
+              </i>
+              as well as my dedication to creating functional yet visually
+              captivating websites. Explore the diverse range of projects, and
+              discover how I blend creativity with technical expertise to leave
+              a lasting digital impression.
+            </p>
+            <a href="#projects" class="btn-primary">See Work</a>
           </div>
 
-          <div data-aos-anchor-placement="top-center" data-aos-delay="" data-aos-duration="1000" data-aos="fade-right"
-            class="inactive-cell job-cell" id="inactive-dxg">
-            <div class="inactive-cell">
-              <h2>DX Group</h2>
-              <h4>Frontend Developer</h4>
-            </div>
+          <img
+            data-aos-anchor-placement="bottom-bottom"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+            data-aos="flip-left"
+            src="./assets/cutout.png"
+/>
+        </div>
+      </section>
 
+      <section class="skills-container">
+        <div
+          data-aos-anchor-placement="center-bottom"
+          data-aos-delay="250"
+          data-aos-duration="1000"
+          data-aos="fade-up"
+          class="developer-container skill-box"
+        >
+          <h2>Developer</h2>
+          <div class="skill-info">
+            <p>
+              As a developer, I find immense satisfaction in employing logic and
+              problem-solving skills to unravel challenges and make things
+              function seamlessly. Nothing beats the gratification I feel when I
+              finally crack a bug that has consumed hours of my time. This
+              inclination for problem-solving extends to a deep fascination with
+              a wide array of puzzles
+            </p>
+            <br/>
+            <h4>Languages</h4>
+            <p>HTML, CSS, Javascript, Python</p>
+            <br/>
+            <h4>Tools</h4>
+            <p>Github, Bootstrap, Github, VS Code, Webflow, Wordpress, React</p>
+            <ul></ul>
           </div>
-
-          <div data-aos-anchor-placement="botttom-bottom" data-aos-delay="1000" data-aos-duration="1000"
-            data-aos="fade-right" class="inactive-cell job-cell" id="inactive-freelance">
-            <div class="inactive-cell">
-              <h2>Stepping Stones</h2>
-              <h4>Frontend Designer / Developer</h4>
-            </div>
-
+        </div>
+        <div
+          data-aos-anchor-placement="center-bottom"
+          data-aos-delay="500"
+          data-aos-duration="1000"
+          data-aos="fade-up"
+          class="designer-container skill-box"
+        >
+          <h2>Designer</h2>
+          <div class="skill-info">
+            <p>
+              As a designer, I find great joy in channeling my creativity into
+              crafting unique and captivating designs. This encompasses a wide
+              range of projects, from creating eye-catching logos to designing
+              engaging print media and conceptualizing website/app mockups. Each
+              endeavor presents an exciting opportunity to fuse artistry with
+              functionality, ensuring a seamless and visually stunning end
+              result
+            </p>
+            <br/>
+            <h4>What I use:</h4>
+            <p>
+              Illustrator, InDesign, XD, Photoshop, Illustrator, Figma, pencil &
+              paper, paint on canvas
+            </p>
           </div>
+        </div>
 
-          <div 
-            class="job-info-container display-none" id="active-dxg">
-            <div class="job-header-bg">
-              <div class="job-header">
-                <h3>Frontend Developer</h3>
-                <h2>Digital Experience Group</h2>
-                <h4>April 2022 - June 2024</h4>
-                <a class="btn-secondary" target="_blank" href="https://dxgroup.core.uconn.edu">Visit
-                  Site</a>
+        <div
+          data-aos-anchor-placement="center-bottom"
+          data-aos-delay="750"
+          data-aos-duration="1000"
+          data-aos="fade-up"
+          class="educator-container skill-box"
+        >
+          <h2>Educator</h2>
+          <div class="skill-info">
+            <p>
+              As an educator, I've long been aware of the privilege bestowed
+              upon me by access to abundant resources and a quality education.
+              This awareness has ignited within me a fervent commitment to
+              democratizing knowledge and championing accessibility. I've
+              recently embarked on a new venture: a YouTube channel. Through
+              this platform, I aim to offer easily digestible tutorials and
+              project-based learning sessions. My goal is to serve as a guide
+              for aspiring web developers, providing them with the tools and
+              confidence they need to embark on their own learning journeys.
+            </p>
+            <br/>
+            <h4>Platform:</h4>
+            <p>
+              <a
+                href="https://www.youtube.com/channel/UCpFe7-ADQpEgjnGJnQei8dA"
+                target="_blank"
+                >Youtube</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="job-container" id="jobs">
+        <div class="container">
+          <h2>Professional Experience</h2>
+          <div class="job-grid">
+            <div
+              data-aos-anchor-placement="top-center"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos="fade-right"
+              class="inactive-cell job-cell"
+              id="inactive-nutmeg"
+            >
+              <div class="inactive-cell">
+                <h2>Nutmeg</h2>
+                <h4>Lead Designer</h4>
               </div>
             </div>
 
-            <div class="job-info">
-              <h4><strong>Overview</strong></h4>
-              <p>
-                As a Frontend Developer at the Digital Experience Group, I played a pivotal role in crafting seamless
-                and
-                visually engaging digital interfaces for the University of Connecticut. Specializing in web and app
-                development, I leveraged my expertise in HTML, CSS, and JavaScript to create intuitive and
-                aesthetically
-                pleasing user
-                experiences.
-              </p>
-              <br>
-              <p>
-                My responsibilities included working extensively with popular hosting platforms such as WordPress and
-                Wix,
-                where I implemented frontend solutions that seamlessly integrated with these environments. This
-                involved
-                ensuring that the designs were not only visually appealing but also functionally effective, providing
-                users
-                with a smooth and satisfying interaction.
-              </p>
-              <br>
-
-              <p>
-
-                Furthermore, I collaborated closely with the design and backend development teams to bring projects to
-                fruition, ensuring a cohesive and user-centric final product. This role demanded a keen attention to
-                detail,
-                a solid
-                understanding of best practices, and a commitment to delivering high-quality, accessible digital
-                experiences.
-              </p>
-              <br>
-              <a class="btn-primary" href="#projects">See Work</a>
-            </div>
-          </div>
-
-          <div class="job-info-container display-none" id="active-nutmeg">
-            <div class="job-header-bg">
-              <div class="job-header">
-                <h3>Lead Designer</h3>
-                <h2>Nutmeg Publishing</h2>
-                <h4>June 2021 - June 2024</h4>
-                <a class="btn-secondary" target="_blank" href="https://www.nutmeguconn.com">Visit
-                  Site</a>
-              </div>
-
-            </div>
-            <div class="job-info">
-              <h4><strong>Overview</strong></h4>
-              <p>
-                As the Lead Designer at Nutmeg Publishing, I held a key position within this student-run organization
-                responsible for crafting the University of Connecticut's yearbook. My role involved overseeing the
-                design
-                process from concept to completion, leading a team of designers, and ensuring a cohesive and visually
-                compelling final product.
-              </p>
-              <br>
-              <p>
-                Central to my responsibilities was the creation of spreads within the yearbook, expertly blending a
-                mix
-                of
-                photos and text to tell the story of the academic year. To accomplish this, I proficiently utilized
-                industry-standard design software including Illustrator, Photoshop, and InDesign.
-              </p>
-              <br>
-              <p>
-                By orchestrating the design process, collaborating closely with team members, and harnessing my skills
-                in
-                graphic design, I played a pivotal role in producing a memorable and cherished memento for the
-                university
-                community. This role demanded a keen eye for detail, strong leadership abilities, and a deep
-                commitment
-                to
-                preserving the essence of each academic year through visual storytelling.
-              </p>
-              <br>
-              <button class="btn-primary" id="nutmeg-book-button">See Work</button>
-            </div>
-
-          </div>
-
-          <div data-aos-anchor-placement="top-center" data-aos-delay="" data-aos-duration="1000" data-aos="fade-left" class="job-info-container" id="active-freelance">
-
-
-            <div class="job-header-bg">
-              <div class="job-header">
-                <h3>Frontend Developer/Designer</h3>
-                <h2>Stepping Stones Museum for Children</h2>
-                <h4>June 2024 - Present</h4>
-                <a class="btn-secondary" target="_blank" href="https://www.steppingstonesmuseum.org/">Visit
-                  Site</a>
+            <div
+              data-aos-anchor-placement="top-center"
+              data-aos-delay=""
+              data-aos-duration="1000"
+              data-aos="fade-right"
+              class="inactive-cell job-cell"
+              id="inactive-dxg"
+            >
+              <div class="inactive-cell">
+                <h2>DX Group</h2>
+                <h4>Frontend Developer</h4>
               </div>
             </div>
 
-            <div class="job-info">
-              <h4><strong>Overview</strong></h4>
-
-              <p>
-                In my role as the Designer and Developer for the museum's website, I led efforts to significantly enhance its online presence, visibility, and user engagement. This included a complete redesign and launch of a modern, streamlined website with over 20 pages. The redesign focused on improving user experience, reducing unnecessary elements, and ensuring alignment with the museum’s playful and vibrant brand identity as a children’s museum.
-              </p>
-              <br>
-              <p>
-                Collaborating closely with the graphic design, marketing, and museum exhibits teams, I managed the entire design process—from conceptual graphic design and user-centric web design to final development and deployment using Webflow. Additionally, I optimized website performance by increasing SEO scores from 88% to 95% and boosting organic traffic by 34%, contributing to greater visibility and enhanced user engagement.
-
-              </p>
-              <br>
-              <p>
-                This comprehensive project cultivated my expertise in interdisciplinary collaboration, creative problem-solving, and full-cycle web development. It resulted in a website that not only reflects the museum’s mission but also delivers measurable results in terms of performance and audience reach.
-              </p>
-         
-              
+            <div
+              data-aos-anchor-placement="botttom-bottom"
+              data-aos-delay="1000"
+              data-aos-duration="1000"
+              data-aos="fade-right"
+              class="inactive-cell job-cell"
+              id="inactive-freelance"
+            >
+              <div class="inactive-cell">
+                <h2>Stepping Stones</h2>
+                <h4>Frontend Designer / Developer</h4>
+              </div>
             </div>
 
-          </div>
+            <div class="job-info-container display-none" id="active-dxg">
+              <div class="job-header-bg">
+                <div class="job-header">
+                  <h3>Frontend Developer</h3>
+                  <h2>Digital Experience Group</h2>
+                  <h4>April 2022 - June 2024</h4>
+                  <a
+                    class="btn-secondary"
+                    target="_blank"
+                    href="https://dxgroup.core.uconn.edu"
+                    >Visit Site</a
+                  >
+                </div>
+              </div>
 
+              <div class="job-info">
+                <h4>
+                  <strong>Overview</strong>
+                </h4>
+                <p>
+                  As a Frontend Developer at the Digital Experience Group, I
+                  played a pivotal role in crafting seamless and visually
+                  engaging digital interfaces for the University of Connecticut.
+                  Specializing in web and app development, I leveraged my
+                  expertise in HTML, CSS, and JavaScript to create intuitive and
+                  aesthetically pleasing user experiences.
+                </p>
+                <br/>
+                <p>
+                  My responsibilities included working extensively with popular
+                  hosting platforms such as WordPress and Wix, where I
+                  implemented frontend solutions that seamlessly integrated with
+                  these environments. This involved ensuring that the designs
+                  were not only visually appealing but also functionally
+                  effective, providing users with a smooth and satisfying
+                  interaction.
+                </p>
+                <br/>
 
+                <p>
+                  Furthermore, I collaborated closely with the design and
+                  backend development teams to bring projects to fruition,
+                  ensuring a cohesive and user-centric final product. This role
+                  demanded a keen attention to detail, a solid understanding of
+                  best practices, and a commitment to delivering high-quality,
+                  accessible digital experiences.
+                </p>
+                <br/>
+                <a class="btn-primary" href="#projects">See Work</a>
+              </div>
+            </div>
 
-        </div>
-      </div>
+            <div class="job-info-container display-none" id="active-nutmeg">
+              <div class="job-header-bg">
+                <div class="job-header">
+                  <h3>Lead Designer</h3>
+                  <h2>Nutmeg Publishing</h2>
+                  <h4>June 2021 - June 2024</h4>
+                  <a
+                    class="btn-secondary"
+                    target="_blank"
+                    href="https://www.nutmeguconn.com"
+                    >Visit Site</a
+                  >
+                </div>
+              </div>
+              <div class="job-info">
+                <h4>
+                  <strong>Overview</strong>
+                </h4>
+                <p>
+                  As the Lead Designer at Nutmeg Publishing, I held a key
+                  position within this student-run organization responsible for
+                  crafting the University of Connecticut's yearbook. My role
+                  involved overseeing the design process from concept to
+                  completion, leading a team of designers, and ensuring a
+                  cohesive and visually compelling final product.
+                </p>
+                <br/>
+                <p>
+                  Central to my responsibilities was the creation of spreads
+                  within the yearbook, expertly blending a mix of photos and
+                  text to tell the story of the academic year. To accomplish
+                  this, I proficiently utilized industry-standard design
+                  software including Illustrator, Photoshop, and InDesign.
+                </p>
+                <br/>
+                <p>
+                  By orchestrating the design process, collaborating closely
+                  with team members, and harnessing my skills in graphic design,
+                  I played a pivotal role in producing a memorable and cherished
+                  memento for the university community. This role demanded a
+                  keen eye for detail, strong leadership abilities, and a deep
+                  commitment to preserving the essence of each academic year
+                  through visual storytelling.
+                </p>
+                <br/>
+                <button class="btn-primary" id="nutmeg-book-button">
+                  See Work
+                </button>
+              </div>
+            </div>
 
+            <div
+              data-aos-anchor-placement="top-center"
+              data-aos-delay=""
+              data-aos-duration="1000"
+              data-aos="fade-left"
+              class="job-info-container"
+              id="active-freelance"
+            >
+              <div class="job-header-bg">
+                <div class="job-header">
+                  <h3>Frontend Developer/Designer</h3>
+                  <h2>Stepping Stones Museum for Children</h2>
+                  <h4>June 2024 - Present</h4>
+                  <a
+                    class="btn-secondary"
+                    target="_blank"
+                    href="https://www.steppingstonesmuseum.org/"
+                    >Visit Site</a
+                  >
+                </div>
+              </div>
 
-    </section>
+              <div class="job-info">
+                <h4>
+                  <strong>Overview</strong>
+                </h4>
 
-    <section class="book-container display-none" id="book-container">
-      <p id="book-close-btn">X</p>
-      <!-- Previous Button -->
-      <button>
-        <img id="prev-btn" class="btn" src="./assets/previous.png">
-      </button>
-
-
-
-      <!-- Book -->
-      <div id="book" class="book">
-        <!-- Paper 1 -->
-        <div id="p1" class="paper">
-          <div class="front">
-            <div id="f1" class="front-content">
-
-            </div>
-          </div>
-          <div class="back">
-            <div id="b1" class="back-content">
-
-            </div>
-          </div>
-        </div>
-        <!-- Paper 2 -->
-        <div id="p2" class="paper">
-          <div class="front">
-            <div id="f2" class="front-content">
-
-            </div>
-          </div>
-          <div class="back">
-            <div id="b2" class="back-content">
-            </div>
-          </div>
-        </div>
-        <!-- Paper 3 -->
-        <div id="p3" class="paper">
-          <div class="front">
-            <div id="f3" class="front-content">
-            </div>
-          </div>
-          <div class="back">
-            <div id="b3" class="back-content">
-            </div>
-          </div>
-        </div>
-
-        <!-- Paper 4 -->
-        <div id="p4" class="paper">
-          <div class="front">
-            <div id="f4" class="front-content">
-            </div>
-          </div>
-          <div class="back">
-            <div id="b4" class="back-content">
-            </div>
-          </div>
-        </div>
-
-        <!-- Paper 5 -->
-        <div id="p5" class="paper">
-          <div class="front">
-            <div id="f5" class="front-content">
-            </div>
-          </div>
-          <div class="back">
-            <div id="b5" class="back-content">
-            </div>
-          </div>
-        </div>
-
-        <!-- Paper 6 -->
-        <div id="p6" class="paper">
-          <div class="front">
-            <div id="f6" class="front-content">
-            </div>
-          </div>
-          <div class="back">
-            <div id="b6" class="back-content">
-            </div>
-          </div>
-        </div>
-
-        <!-- Paper 7 -->
-        <div id="p7" class="paper">
-          <div class="front">
-            <div id="f7" class="front-content">
-            </div>
-          </div>
-          <div class="back">
-            <div id="b7" class="back-content">
-            </div>
-          </div>
-        </div>
-
-        <!-- Paper 8 -->
-        <div id="p8" class="paper">
-          <div class="front">
-            <div id="f8" class="front-content">
-            </div>
-          </div>
-          <div class="back">
-            <div id="b8" class="back-content">
-            </div>
-          </div>
-        </div>
-
-        <!-- Paper 9 -->
-        <div id="p9" class="paper">
-          <div class="front">
-            <div id="f9" class="front-content">
-            </div>
-          </div>
-          <div class="back">
-            <div id="b9" class="back-content">
-            </div>
-          </div>
-        </div>
-
-        <!-- Paper 10 -->
-        <div id="p10" class="paper">
-          <div class="front">
-            <div id="f10" class="front-content">
-            </div>
-          </div>
-          <div class="back">
-            <div id="b10" class="back-content">
-            </div>
-          </div>
-        </div>
-
-        <!-- Paper 11 -->
-        <div id="p11" class="paper">
-          <div class="front">
-            <div id="f11" class="front-content">
-            </div>
-          </div>
-          <div class="back">
-            <div id="b11" class="back-content">
-            </div>
-          </div>
-        </div>
-
-        <!-- Paper 12 -->
-        <div id="p12" class="paper">
-          <div class="front">
-            <div id="f12" class="front-content">
-            </div>
-          </div>
-          <div class="back">
-            <div id="b12" class="back-content">
+                <p>
+                  In my role as the Designer and Developer for the museum's
+                  website, I led efforts to significantly enhance its online
+                  presence, visibility, and user engagement. This included a
+                  complete redesign and launch of a modern, streamlined website
+                  with over 20 pages. The redesign focused on improving user
+                  experience, reducing unnecessary elements, and ensuring
+                  alignment with the museum’s playful and vibrant brand identity
+                  as a children’s museum.
+                </p>
+                <br/>
+                <p>
+                  Collaborating closely with the graphic design, marketing, and
+                  museum exhibits teams, I managed the entire design
+                  process—from conceptual graphic design and user-centric web
+                  design to final development and deployment using Webflow.
+                  Additionally, I optimized website performance by increasing
+                  SEO scores from 88% to 95% and boosting organic traffic by
+                  34%, contributing to greater visibility and enhanced user
+                  engagement.
+                </p>
+                <br/>
+                <p>
+                  This comprehensive project cultivated my expertise in
+                  interdisciplinary collaboration, creative problem-solving, and
+                  full-cycle web development. It resulted in a website that not
+                  only reflects the museum’s mission but also delivers
+                  measurable results in terms of performance and audience reach.
+                </p>
+              </div>
             </div>
           </div>
         </div>
+      </section>
 
-        <!-- Paper 13 -->
-        <div id="p13" class="paper">
-          <div class="front">
-            <div id="f13" class="front-content">
+      <section class="book-container display-none" id="book-container">
+        <p id="book-close-btn">X</p>
+        <!-- Previous Button -->
+        <button>
+          <img id="prev-btn" class="btn" src="./assets/previous.png"/>
+        </button>
+
+        <!-- Book -->
+        <div id="book" class="book">
+          <!-- Paper 1 -->
+          <div id="p1" class="paper">
+            <div class="front">
+              <div id="f1" class="front-content"></div>
+            </div>
+            <div class="back">
+              <div id="b1" class="back-content"></div>
             </div>
           </div>
-          <div class="back">
-            <div id="b13" class="back-content">
+          <!-- Paper 2 -->
+          <div id="p2" class="paper">
+            <div class="front">
+              <div id="f2" class="front-content"></div>
+            </div>
+            <div class="back">
+              <div id="b2" class="back-content"></div>
+            </div>
+          </div>
+          <!-- Paper 3 -->
+          <div id="p3" class="paper">
+            <div class="front">
+              <div id="f3" class="front-content"></div>
+            </div>
+            <div class="back">
+              <div id="b3" class="back-content"></div>
+            </div>
+          </div>
+
+          <!-- Paper 4 -->
+          <div id="p4" class="paper">
+            <div class="front">
+              <div id="f4" class="front-content"></div>
+            </div>
+            <div class="back">
+              <div id="b4" class="back-content"></div>
+            </div>
+          </div>
+
+          <!-- Paper 5 -->
+          <div id="p5" class="paper">
+            <div class="front">
+              <div id="f5" class="front-content"></div>
+            </div>
+            <div class="back">
+              <div id="b5" class="back-content"></div>
+            </div>
+          </div>
+
+          <!-- Paper 6 -->
+          <div id="p6" class="paper">
+            <div class="front">
+              <div id="f6" class="front-content"></div>
+            </div>
+            <div class="back">
+              <div id="b6" class="back-content"></div>
+            </div>
+          </div>
+
+          <!-- Paper 7 -->
+          <div id="p7" class="paper">
+            <div class="front">
+              <div id="f7" class="front-content"></div>
+            </div>
+            <div class="back">
+              <div id="b7" class="back-content"></div>
+            </div>
+          </div>
+
+          <!-- Paper 8 -->
+          <div id="p8" class="paper">
+            <div class="front">
+              <div id="f8" class="front-content"></div>
+            </div>
+            <div class="back">
+              <div id="b8" class="back-content"></div>
+            </div>
+          </div>
+
+          <!-- Paper 9 -->
+          <div id="p9" class="paper">
+            <div class="front">
+              <div id="f9" class="front-content"></div>
+            </div>
+            <div class="back">
+              <div id="b9" class="back-content"></div>
+            </div>
+          </div>
+
+          <!-- Paper 10 -->
+          <div id="p10" class="paper">
+            <div class="front">
+              <div id="f10" class="front-content"></div>
+            </div>
+            <div class="back">
+              <div id="b10" class="back-content"></div>
+            </div>
+          </div>
+
+          <!-- Paper 11 -->
+          <div id="p11" class="paper">
+            <div class="front">
+              <div id="f11" class="front-content"></div>
+            </div>
+            <div class="back">
+              <div id="b11" class="back-content"></div>
+            </div>
+          </div>
+
+          <!-- Paper 12 -->
+          <div id="p12" class="paper">
+            <div class="front">
+              <div id="f12" class="front-content"></div>
+            </div>
+            <div class="back">
+              <div id="b12" class="back-content"></div>
+            </div>
+          </div>
+
+          <!-- Paper 13 -->
+          <div id="p13" class="paper">
+            <div class="front">
+              <div id="f13" class="front-content"></div>
+            </div>
+            <div class="back">
+              <div id="b13" class="back-content"></div>
+            </div>
+          </div>
+
+          <!-- Paper 14 -->
+          <div id="p14" class="paper">
+            <div class="front">
+              <div id="f14" class="front-content"></div>
+            </div>
+            <div class="back">
+              <div id="b14" class="back-content"></div>
+            </div>
+          </div>
+
+          <!-- Paper 15 -->
+          <div id="p15" class="paper">
+            <div class="front">
+              <div id="f15" class="front-content"></div>
+            </div>
+            <div class="back">
+              <div id="b15" class="back-content"></div>
+            </div>
+          </div>
+
+          <!-- Paper 16 -->
+          <div id="p16" class="paper">
+            <div class="front">
+              <div id="f16" class="front-content"></div>
+            </div>
+            <div class="back">
+              <div id="b16" class="back-content"></div>
+            </div>
+          </div>
+
+          <!-- Paper 17 -->
+          <div id="p17" class="paper">
+            <div class="front">
+              <div id="f17" class="front-content"></div>
+            </div>
+            <div class="back">
+              <div id="b17" class="back-content"></div>
+            </div>
+          </div>
+
+          <!-- Paper 18 -->
+          <div id="p18" class="paper">
+            <div class="front">
+              <div id="f18" class="front-content"></div>
+            </div>
+            <div class="back">
+              <div id="b18" class="back-content"></div>
+            </div>
+          </div>
+
+          <!-- Paper 19 -->
+          <div id="p19" class="paper">
+            <div class="front">
+              <div id="f19" class="front-content"></div>
+            </div>
+            <div class="back">
+              <div id="b19" class="back-content"></div>
+            </div>
+          </div>
+
+          <!-- Paper 20 -->
+          <div id="p20" class="paper">
+            <div class="front">
+              <div id="f20" class="front-content"></div>
+            </div>
+            <div class="back">
+              <div id="b20" class="back-content"></div>
+            </div>
+          </div>
+
+          <!-- Paper 21 -->
+          <div id="p21" class="paper">
+            <div class="front">
+              <div id="f21" class="front-content"></div>
+            </div>
+            <div class="back">
+              <div id="b21" class="back-content">
+                <img src="./assets/print-designs/white-logo.svg"/>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Paper 14 -->
-        <div id="p14" class="paper">
-          <div class="front">
-            <div id="f14" class="front-content">
-            </div>
-          </div>
-          <div class="back">
-            <div id="b14" class="back-content">
-            </div>
-          </div>
-        </div>
+        <!-- Next Button -->
+        <button>
+          <img onclick="" id="next-btn" class="btn" src="./assets/next.png"/>
+        </button>
+      </section>
 
-        <!-- Paper 15 -->
-        <div id="p15" class="paper">
-          <div class="front">
-            <div id="f15" class="front-content">
-            </div>
-          </div>
-          <div class="back">
-            <div id="b15" class="back-content">
-            </div>
-          </div>
-        </div>
-
-        <!-- Paper 16 -->
-        <div id="p16" class="paper">
-          <div class="front">
-            <div id="f16" class="front-content">
-            </div>
-          </div>
-          <div class="back">
-            <div id="b16" class="back-content">
-            </div>
-          </div>
-        </div>
-
-        <!-- Paper 17 -->
-        <div id="p17" class="paper">
-          <div class="front">
-            <div id="f17" class="front-content">
-            </div>
-          </div>
-          <div class="back">
-            <div id="b17" class="back-content">
-            </div>
-          </div>
-        </div>
-
-        <!-- Paper 18 -->
-        <div id="p18" class="paper">
-          <div class="front">
-            <div id="f18" class="front-content">
-            </div>
-          </div>
-          <div class="back">
-            <div id="b18" class="back-content">
-            </div>
-          </div>
-        </div>
-
-        <!-- Paper 19 -->
-        <div id="p19" class="paper">
-          <div class="front">
-            <div id="f19" class="front-content">
-            </div>
-          </div>
-          <div class="back">
-            <div id="b19" class="back-content">
-            </div>
-          </div>
-        </div>
-
-        <!-- Paper 20 -->
-        <div id="p20" class="paper">
-          <div class="front">
-            <div id="f20" class="front-content">
-            </div>
-          </div>
-          <div class="back">
-            <div id="b20" class="back-content">
-            </div>
-          </div>
-        </div>
-
-        <!-- Paper 21 -->
-        <div id="p21" class="paper">
-          <div class="front">
-            <div id="f21" class="front-content">
-            </div>
-          </div>
-          <div class="back">
-            <div id="b21" class="back-content">
-              <img src="./assets/print-designs/white-logo.svg">
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Next Button -->
-      <button>
-        <img onclick="" id="next-btn" class="btn" src="./assets/next.png">
-      </button>
-    </section>
-
-
-
-    <section class="projects-container" id="projects">
-      <div class="container">
-        <h2>Web Development</h2>
-        <!-- <p>
+      <section class="projects-container" id="projects">
+        <div class="container">
+          <h2>Web Development</h2>
+          <!-- <p>
           Below is a showcase of some of the projects that I have been involved in both professionally and recreationally
         </p> -->
-        <div class="projects-grid">
-          <div data-aos-anchor-placement="bottom-bottom" data-aos-delay="200" data-aos-duration="1000"
-            data-aos="flip-down" class="project-cell" id="space-project">
-            <div class="project-info">
-              <h2>Interactive Exhibit</h2>
-              <a id="space-learn-more">Learn More</a>
-            </div>
-          </div>
-
-          <div data-aos-anchor-placement="bottom-bottom" data-aos-delay="200" data-aos-duration="1000"
-            data-aos="flip-down" class="project-cell" id="beehive-project">
-            <div class="project-info">
-              <h2>Fullstack App</h2>
-              <a id="beehive-learn-more">Learn More</a>
-            </div>
-          </div>
-
-
-          <div data-aos-anchor-placement="bottom-bottom" data-aos-delay="" data-aos-duration="1000" data-aos="flip-down"
-            class="project-cell" id="connect-four-project">
-            <div class="project-info">
-              <h2>Online Game</h2>
-              <a id="connect-four-learn-more">Learn More</a>
-            </div>
-          </div>
-
-
-
-
-
-          <div data-aos-anchor-placement="bottom-bottom" data-aos-delay="400" data-aos-duration="1000"
-            data-aos="flip-down" class="project-cell display-none" id="frontend-mentor-project">
-            <div class="project-info">
-              <h2>Coding Challenges</h2>
-              <a id="frontend-mentor-learn-more">Learn More</a>
-            </div>
-          </div>
-
-          <div data-aos-anchor-placement="bottom-bottom" data-aos-delay="400" data-aos-duration="1000"
-            data-aos="flip-down" class="project-cell" id="memory-project">
-            <div class="project-info">
-              <h2>Online Game</h2>
-              <a id="memory-learn-more">Learn More</a>
-            </div>
-          </div>
-
-          <div data-aos-anchor-placement="bottom-bottom" data-aos-delay="600" data-aos-duration="1000"
-            data-aos="flip-down" class="project-cell" id="ssmc-project">
-            <div class="project-info">
-              <h2>Website Redesign</h2>
-              <a id="ssmc-learn-more">Learn More</a>
-            </div>
-          </div>
-
-          <div data-aos-anchor-placement="bottom-bottom" data-aos-delay="600" data-aos-duration="1000"
-            data-aos="flip-down" class="project-cell" id="miracles-project">
-            <div class="project-info">
-              <h2>Website Redesign</h2>
-              <a id="miracles-learn-more">Learn More</a>
-            </div>
-          </div>
-
-          
-
-          <div data-aos-anchor-placement="bottom-bottom" data-aos-delay="800" data-aos-duration="1000"
-            data-aos="flip-down" class="project-cell" id="floe-project">
-            <div class="project-info">
-              <h2>Website Redeisgn</h2>
-              <a id="floe-learn-more">Learn More</a>
+          <div class="projects-grid">
+            <div
+              data-aos-anchor-placement="bottom-bottom"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos="flip-down"
+              class="project-cell"
+              id="space-project"
+            >
+              <div class="project-info">
+                <h2>Interactive Exhibit</h2>
+                <a id="space-learn-more">Learn More</a>
+              </div>
             </div>
 
-          </div>
-
-
-          <div data-aos-anchor-placement="bottom-bottom" data-aos-delay="700" data-aos-duration="1000"
-            data-aos="flip-down" class="project-cell display-none" id="neuro-project">
-            <div class="project-info">
-              <h2>Landing Page</h2>
-              <a id="neuro-learn-more">Learn More</a>
+            <div
+              data-aos-anchor-placement="bottom-bottom"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos="flip-down"
+              class="project-cell"
+              id="beehive-project"
+            >
+              <div class="project-info">
+                <h2>Fullstack App</h2>
+                <a id="beehive-learn-more">Learn More</a>
+              </div>
             </div>
 
-          </div>
-
-
-
-          <div class="display-none" data-aos-anchor-placement="bottom-bottom" data-aos-delay="800"
-            data-aos-duration="1000" data-aos="flip-down" class="project-cell display-none" id="ctnerr-project">
-            <div class="project-info">
-              <h2>Landing Page</h2>
-              <a id="ctnerr-learn-more">Learn More</a>
+            <div
+              data-aos-anchor-placement="bottom-bottom"
+              data-aos-delay=""
+              data-aos-duration="1000"
+              data-aos="flip-down"
+              class="project-cell"
+              id="connect-four-project"
+            >
+              <div class="project-info">
+                <h2>Online Game</h2>
+                <a id="connect-four-learn-more">Learn More</a>
+              </div>
             </div>
 
-          </div>
-
-          
-
-
-          <div data-aos-anchor-placement="bottom-bottom" data-aos-delay="1000" data-aos-duration="1000"
-            data-aos="flip-down" class="project-cell" id="core-project">
-            <div class="project-info">
-              <h2>Website Redesign</h2>
-              <a id="core-learn-more">Learn More</a>
-            </div>
-          </div>
-
-
-          <div class="display-none" data-aos-anchor-placement="bottom-bottom" data-aos-delay="800"
-            data-aos-duration="1000" data-aos="flip-down" class="project-cell" id="ctnerr-project">
-            <div class="project-info">
-              <h2>Landing Page</h2>
-              <a id="ctnerr-learn-more">Learn More</a>
+            <div
+              data-aos-anchor-placement="bottom-bottom"
+              data-aos-delay="400"
+              data-aos-duration="1000"
+              data-aos="flip-down"
+              class="project-cell display-none"
+              id="frontend-mentor-project"
+            >
+              <div class="project-info">
+                <h2>Coding Challenges</h2>
+                <a id="frontend-mentor-learn-more">Learn More</a>
+              </div>
             </div>
 
-          </div>
+            <div
+              data-aos-anchor-placement="bottom-bottom"
+              data-aos-delay="400"
+              data-aos-duration="1000"
+              data-aos="flip-down"
+              class="project-cell"
+              id="memory-project"
+            >
+              <div class="project-info">
+                <h2>Online Game</h2>
+                <a id="memory-learn-more">Learn More</a>
+              </div>
+            </div>
 
+            <div
+              data-aos-anchor-placement="bottom-bottom"
+              data-aos-delay="600"
+              data-aos-duration="1000"
+              data-aos="flip-down"
+              class="project-cell"
+              id="ssmc-project"
+            >
+              <div class="project-info">
+                <h2>Website Redesign</h2>
+                <a id="ssmc-learn-more">Learn More</a>
+              </div>
+            </div>
 
+            <div
+              data-aos-anchor-placement="bottom-bottom"
+              data-aos-delay="600"
+              data-aos-duration="1000"
+              data-aos="flip-down"
+              class="project-cell"
+              id="miracles-project"
+            >
+              <div class="project-info">
+                <h2>Website Redesign</h2>
+                <a id="miracles-learn-more">Learn More</a>
+              </div>
+            </div>
 
+            <div
+              data-aos-anchor-placement="bottom-bottom"
+              data-aos-delay="800"
+              data-aos-duration="1000"
+              data-aos="flip-down"
+              class="project-cell"
+              id="floe-project"
+            >
+              <div class="project-info">
+                <h2>Website Redeisgn</h2>
+                <a id="floe-learn-more">Learn More</a>
+              </div>
+            </div>
 
-          <div class="display-none" data-aos-anchor-placement="bottom-bottom" data-aos-delay="1400"
-            data-aos-duration="1000" data-aos="flip-down" class="project-cell" id="pr-archive-project">
-            <div class="project-info">
-              <h2>Website Series</h2>
-              <a id="pr-archive-learn-more">Learn More</a>
+            <div
+              data-aos-anchor-placement="bottom-bottom"
+              data-aos-delay="700"
+              data-aos-duration="1000"
+              data-aos="flip-down"
+              class="project-cell display-none"
+              id="neuro-project"
+            >
+              <div class="project-info">
+                <h2>Landing Page</h2>
+                <a id="neuro-learn-more">Learn More</a>
+              </div>
+            </div>
+
+            <div
+              class="display-none"
+              data-aos-anchor-placement="bottom-bottom"
+              data-aos-delay="800"
+              data-aos-duration="1000"
+              data-aos="flip-down"
+              class="project-cell display-none"
+              id="ctnerr-project"
+            >
+              <div class="project-info">
+                <h2>Landing Page</h2>
+                <a id="ctnerr-learn-more">Learn More</a>
+              </div>
+            </div>
+
+            <div
+              data-aos-anchor-placement="bottom-bottom"
+              data-aos-delay="1000"
+              data-aos-duration="1000"
+              data-aos="flip-down"
+              class="project-cell"
+              id="core-project"
+            >
+              <div class="project-info">
+                <h2>Website Redesign</h2>
+                <a id="core-learn-more">Learn More</a>
+              </div>
+            </div>
+
+            <div
+              class="display-none"
+              data-aos-anchor-placement="bottom-bottom"
+              data-aos-delay="800"
+              data-aos-duration="1000"
+              data-aos="flip-down"
+              class="project-cell"
+              id="ctnerr-project"
+            >
+              <div class="project-info">
+                <h2>Landing Page</h2>
+                <a id="ctnerr-learn-more">Learn More</a>
+              </div>
+            </div>
+
+            <div
+              class="display-none"
+              data-aos-anchor-placement="bottom-bottom"
+              data-aos-delay="1400"
+              data-aos-duration="1000"
+              data-aos="flip-down"
+              class="project-cell"
+              id="pr-archive-project"
+            >
+              <div class="project-info">
+                <h2>Website Series</h2>
+                <a id="pr-archive-learn-more">Learn More</a>
+              </div>
+            </div>
+            <div
+              class="display-none"
+              data-aos-anchor-placement="bottom-bottom"
+              data-aos-delay="1600"
+              data-aos-duration="1000"
+              data-aos="flip-down"
+              class="project-cell"
+              id="floe-project"
+            >
+              <div class="project-info">
+                <h2>Website Redesign</h2>
+                <a id="floe-learn-more">Learn More</a>
+              </div>
+            </div>
+            <div
+              class="display-none"
+              data-aos-anchor-placement="bottom-bottom"
+              data-aos-delay="1800"
+              data-aos-duration="1000"
+              data-aos="flip-down"
+              class="project-cell"
+              id="turfgrass-project"
+            >
+              <div class="project-info">
+                <h2>Mobile App</h2>
+                <a id="turfgrass-learn-more">Learn More</a>
+              </div>
+            </div>
+            <div
+              class="display-none"
+              data-aos-anchor-placement="bottom-bottom"
+              data-aos-delay="2000"
+              data-aos-duration="1000"
+              data-aos="flip-down"
+              class="project-cell"
+              id="crosshairs-project"
+            >
+              <div class="project-info">
+                <h2>Website</h2>
+                <a id="crosshairs-learn-more">Learn More</a>
+              </div>
             </div>
           </div>
-          <div class="display-none" data-aos-anchor-placement="bottom-bottom" data-aos-delay="1600"
-            data-aos-duration="1000" data-aos="flip-down" class="project-cell" id="floe-project">
-            <div class="project-info">
-              <h2>Website Redesign</h2>
-              <a id="floe-learn-more">Learn More</a>
-            </div>
-          </div>
-          <div class="display-none" data-aos-anchor-placement="bottom-bottom" data-aos-delay="1800"
-            data-aos-duration="1000" data-aos="flip-down" class="project-cell" id="turfgrass-project">
-            <div class="project-info">
-              <h2>Mobile App</h2>
-              <a id="turfgrass-learn-more">Learn More</a>
-            </div>
-          </div>
-          <div class="display-none" data-aos-anchor-placement="bottom-bottom" data-aos-delay="2000"
-            data-aos-duration="1000" data-aos="flip-down" class="project-cell" id="crosshairs-project">
-            <div class="project-info">
-              <h2>Website</h2>
-              <a id="crosshairs-learn-more">Learn More</a>
-            </div>
-          </div>
-
-
         </div>
-      </div>
+      </section>
 
-
-    </section>
-
-    <section class="projects-container" id="freelance-projects">
-      <div class="container">
-        <h2>Digital Art</h2>
-        <div class="projects-grid">
-          <div data-aos-anchor-placement="bottom-bottom" data-aos-delay="" data-aos-duration="1000" data-aos="flip-down"
-            class="project-cell" id="nutmeg-spreads">
-            <div class="project-info">
-              <h2>Digital Spreads</h2>
-              <a id="nutmeg-spreads-btn">See Spreads</a>
-            </div>
-          </div>
-
-          <div data-aos-anchor-placement="bottom-bottom" data-aos-delay="200" data-aos-duration="1000"
-            data-aos="flip-down" class="project-cell" id="mensah-logo">
-            <div class="project-info">
-              <h2>Logo</h2>
-              <a id="mensah-logo-expand">Expand</a>
-            </div>
-          </div>
-
-          <div data-aos-anchor-placement="bottom-bottom" data-aos-delay="400" data-aos-duration="1000"
-            data-aos="flip-down" class="project-cell" id="greenwood-logo">
-            <div class="project-info">
-              <h2>Logo</h2>
-              <a id="greenwood-logo-expand">Expand</a>
-            </div>
-          </div>
-
-          <div data-aos-anchor-placement="bottom-bottom" data-aos-delay="600" data-aos-duration="1000"
-            data-aos="flip-down" class="project-cell" id="fbf-logo">
-            <div class="project-info">
-              <h2>Logo</h2>
-              <a id="fbf-logo-expand">Expand</a>
-            </div>
-          </div>
-
-          <div data-aos-anchor-placement="bottom-bottom" data-aos-delay="800" data-aos-duration="1000"
-            data-aos="flip-down" class="project-cell" id="hk-logo">
-            <div class="project-info">
-              <h2>Logo</h2>
-              <a id="hk-logo-expand">Expand</a>
+      <section class="projects-container" id="freelance-projects">
+        <div class="container">
+          <h2>Digital Art</h2>
+          <div class="projects-grid">
+            <div
+              data-aos-anchor-placement="bottom-bottom"
+              data-aos-delay=""
+              data-aos-duration="1000"
+              data-aos="flip-down"
+              class="project-cell"
+              id="nutmeg-spreads"
+            >
+              <div class="project-info">
+                <h2>Digital Spreads</h2>
+                <a id="nutmeg-spreads-btn">See Spreads</a>
+              </div>
             </div>
 
-          </div>
-          <div data-aos-anchor-placement="bottom-bottom" data-aos-delay="1000" data-aos-duration="1000"
-            data-aos="flip-down" class="project-cell" id="tr-logo">
-            <div class="project-info">
-              <h2>Logo</h2>
-              <a id="tr-logo-expand">Expand</a>
+            <div
+              data-aos-anchor-placement="bottom-bottom"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos="flip-down"
+              class="project-cell"
+              id="mensah-logo"
+            >
+              <div class="project-info">
+                <h2>Logo</h2>
+                <a id="mensah-logo-expand">Expand</a>
+              </div>
+            </div>
+
+            <div
+              data-aos-anchor-placement="bottom-bottom"
+              data-aos-delay="400"
+              data-aos-duration="1000"
+              data-aos="flip-down"
+              class="project-cell"
+              id="greenwood-logo"
+            >
+              <div class="project-info">
+                <h2>Logo</h2>
+                <a id="greenwood-logo-expand">Expand</a>
+              </div>
+            </div>
+
+            <div
+              data-aos-anchor-placement="bottom-bottom"
+              data-aos-delay="600"
+              data-aos-duration="1000"
+              data-aos="flip-down"
+              class="project-cell"
+              id="fbf-logo"
+            >
+              <div class="project-info">
+                <h2>Logo</h2>
+                <a id="fbf-logo-expand">Expand</a>
+              </div>
+            </div>
+
+            <div
+              data-aos-anchor-placement="bottom-bottom"
+              data-aos-delay="800"
+              data-aos-duration="1000"
+              data-aos="flip-down"
+              class="project-cell"
+              id="hk-logo"
+            >
+              <div class="project-info">
+                <h2>Logo</h2>
+                <a id="hk-logo-expand">Expand</a>
+              </div>
+            </div>
+            <div
+              data-aos-anchor-placement="bottom-bottom"
+              data-aos-delay="1000"
+              data-aos-duration="1000"
+              data-aos="flip-down"
+              class="project-cell"
+              id="tr-logo"
+            >
+              <div class="project-info">
+                <h2>Logo</h2>
+                <a id="tr-logo-expand">Expand</a>
+              </div>
+            </div>
+
+            <div
+              data-aos-anchor-placement="bottom-bottom"
+              data-aos-delay="1200"
+              data-aos-duration="1000"
+              data-aos="flip-down"
+              class="project-cell"
+              id="top-5"
+            >
+              <div class="project-info">
+                <h2>Social Media</h2>
+                <a id="top-5-expand">Expand</a>
+              </div>
+            </div>
+
+            <div
+              data-aos-anchor-placement="bottom-bottom"
+              data-aos-delay="1400"
+              data-aos-duration="1000"
+              data-aos="flip-down"
+              class="project-cell display-none"
+              id="kicking-camp"
+            >
+              <div class="project-info">
+                <h2>Social Media</h2>
+                <a id="kicking-camp-expand">Expand</a>
+              </div>
             </div>
           </div>
-
-          <div data-aos-anchor-placement="bottom-bottom" data-aos-delay="1200" data-aos-duration="1000"
-            data-aos="flip-down" class="project-cell" id="top-5">
-            <div class="project-info">
-              <h2>Social Media</h2>
-              <a id="top-5-expand">Expand</a>
-            </div>
-          </div>
-
-          <div data-aos-anchor-placement="bottom-bottom" data-aos-delay="1400" data-aos-duration="1000"
-            data-aos="flip-down" class="project-cell display-none" id="kicking-camp">
-            <div class="project-info">
-              <h2>Social Media</h2>
-              <a id="kicking-camp-expand">Expand</a>
-            </div>
-          </div>
-
-
-
-
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="projects-container" id="art-projects">
-      <div class="container">
-        <h2>Physical Art</h2>
-        <div class="projects-grid">
-          <div data-aos-anchor-placement="bottom-bottom" data-aos-delay="" data-aos-duration="1000" data-aos="flip-down"
-            class="project-cell" id="zebra-drawing">
-            <div class="project-info">
-              <h2>Charcoal</h2>
-              <a id="zebra-drawing-expand">Expand</a>
-            </div>
-          </div>
-
-          <div data-aos-anchor-placement="bottom-bottom" data-aos-delay="200" data-aos-duration="1000"
-            data-aos="flip-down" class="project-cell" id="farming-drawing">
-            <div class="project-info">
-              <h2>Ink</h2>
-              <a id="farming-drawing-expand">Expand</a>
-            </div>
-          </div>
-
-          <div data-aos-anchor-placement="bottom-bottom" data-aos-delay="400" data-aos-duration="1000"
-            data-aos="flip-down" class="project-cell" id="shading-drawing">
-            <div class="project-info">
-              <h2>Charcoal</h2>
-              <a id="shading-drawing-expand">Expand</a>
-            </div>
-          </div>
-
-          <div data-aos-anchor-placement="bottom-bottom" data-aos-delay="600" data-aos-duration="1000"
-            data-aos="flip-down" class="project-cell" id="striped-paper-drawing">
-            <div class="project-info">
-              <h2>Charcoal</h2>
-              <a id="striped-paper-drawing-expand">Expand</a>
+      <section class="projects-container" id="art-projects">
+        <div class="container">
+          <h2>Physical Art</h2>
+          <div class="projects-grid">
+            <div
+              data-aos-anchor-placement="bottom-bottom"
+              data-aos-delay=""
+              data-aos-duration="1000"
+              data-aos="flip-down"
+              class="project-cell"
+              id="zebra-drawing"
+            >
+              <div class="project-info">
+                <h2>Charcoal</h2>
+                <a id="zebra-drawing-expand">Expand</a>
+              </div>
             </div>
 
-          </div>
-          <div data-aos-anchor-placement="bottom-bottom" data-aos-delay="800" data-aos-duration="1000"
-            data-aos="flip-down" class="project-cell" id="paper-drawing">
-            <div class="project-info">
-              <h2>Charcoal</h2>
-              <a id="paper-drawing-expand">Expand</a>
+            <div
+              data-aos-anchor-placement="bottom-bottom"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos="flip-down"
+              class="project-cell"
+              id="farming-drawing"
+            >
+              <div class="project-info">
+                <h2>Ink</h2>
+                <a id="farming-drawing-expand">Expand</a>
+              </div>
+            </div>
+
+            <div
+              data-aos-anchor-placement="bottom-bottom"
+              data-aos-delay="400"
+              data-aos-duration="1000"
+              data-aos="flip-down"
+              class="project-cell"
+              id="shading-drawing"
+            >
+              <div class="project-info">
+                <h2>Charcoal</h2>
+                <a id="shading-drawing-expand">Expand</a>
+              </div>
+            </div>
+
+            <div
+              data-aos-anchor-placement="bottom-bottom"
+              data-aos-delay="600"
+              data-aos-duration="1000"
+              data-aos="flip-down"
+              class="project-cell"
+              id="striped-paper-drawing"
+            >
+              <div class="project-info">
+                <h2>Charcoal</h2>
+                <a id="striped-paper-drawing-expand">Expand</a>
+              </div>
+            </div>
+            <div
+              data-aos-anchor-placement="bottom-bottom"
+              data-aos-delay="800"
+              data-aos-duration="1000"
+              data-aos="flip-down"
+              class="project-cell"
+              id="paper-drawing"
+            >
+              <div class="project-info">
+                <h2>Charcoal</h2>
+                <a id="paper-drawing-expand">Expand</a>
+              </div>
+            </div>
+
+            <div
+              data-aos-anchor-placement="top-center"
+              data-aos-delay="1000"
+              data-aos-duration="1000"
+              data-aos="flip-down"
+              class="project-cell"
+              id="plant-drawing"
+            >
+              <div class="project-info">
+                <h2>Charcoal</h2>
+                <a id="plant-drawing-expand">Expand</a>
+              </div>
             </div>
           </div>
-
-          <div data-aos-anchor-placement="top-center" data-aos-delay="1000" data-aos-duration="1000"
-            data-aos="flip-down" class="project-cell" id="plant-drawing">
-            <div class="project-info">
-              <h2>Charcoal</h2>
-              <a id="plant-drawing-expand">Expand</a>
-            </div>
-          </div>
-
-
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="job-description-container display-none" id="job-description-container">
-      <div class="job-description display-none" id="connect-four-description">
-        <div class="left-side center">
-          <img src="./assets/connect-four-mockup.png">
-        </div>
-        <div class="right-side space-between">
-          <p class="project-close-btn">X</p>
-          <h3>Online Desktop Game</h3>
-          <h2>
-            Connect Four
-          </h2>
-          <h4>
-            <span class="blue">HTML</span><span class="green">CSS</span><span class="red">Express JS</span><span
-              class="purple">Socket.io</span>
-          </h4>
-          <!-- <p>
+      <section
+        class="job-description-container display-none"
+        id="job-description-container"
+      >
+        <div class="job-description display-none" id="connect-four-description">
+          <div class="left-side center">
+            <img src="./assets/connect-four-mockup.png"/>
+          </div>
+          <div class="right-side space-between">
+            <p class="project-close-btn">X</p>
+            <h3>Online Desktop Game</h3>
+            <h2>Connect Four</h2>
+            <h4>
+              <span class="blue">HTML</span>
+              <span class="green">CSS</span>
+              <span class="red">Express JS</span>
+              <span class="purple">Socket.io</span>
+            </h4>
+            <!-- <p>
             <strong>Disclaimer:</strong> Due to the type of free server used for this project the inital load may take a
             few moments.
           </p>
           <br> -->
-          <p>
-            One of my favored portfolio pieces is the <strong><a target="_blank"
-                href="https://connect-four-online.onrender.com/?">Under the Sea Connect Four-style game</a></strong>.
-            This project was a deliberate showcase of my proficiency in HTML,
-            CSS, and
-            JS,
-            coupled with a flair for creativity. By reimagining a classic game in an underwater setting, I aimed to
-            demonstrate not only technical skills but also a keen eye for design.
-          </p>
-          <br>
-          <p>
-            Throughout the development and <strong>learning process</strong>, I delved deep into various JavaScript
-            techniques, with a strong emphasis on manipulating arrays and optimizing loops. This endeavor led me to
-            revisit and refine my code repeatedly. The process involved streamlining complex segments, resulting in a
-            more
-            concise and efficient codebase.
-          </p>
-          <br>
-          <p>
-            <strong>The latest update,</strong> adds the integration
-            of online multiplayer capabilities, allowing users to compete against opponents remotely, adding a dynamic
-            and
-            interactive dimension to the game. Through the use of <span class="purple">socket.io</span> and hosting the
-            server on render.com this was both a challenging and fun learning experience.
-          </p>
-          <br>
-          <div class="flex-row">
-            <a class='btn-primary' href="https://connect-four-online.onrender.com/?" target="_blank"
-              style="margin-right: 10px">Play Game</a>
-            <!-- <a class='btn-secondary' href="https://haydnkerr.github.io/connect-four/" target="_blank"
+            <p>
+              One of my favored portfolio pieces is the
+              <strong>
+                <a
+                  target="_blank"
+                  href="https://connect-four-online.onrender.com/?"
+                  >Under the Sea Connect Four-style game</a
+                >
+              </strong
+              >. This project was a deliberate showcase of my proficiency in
+              HTML, CSS, and JS, coupled with a flair for creativity. By
+              reimagining a classic game in an underwater setting, I aimed to
+              demonstrate not only technical skills but also a keen eye for
+              design.
+            </p>
+            <br/>
+            <p>
+              Throughout the development and <strong>learning process</strong>,
+              I delved deep into various JavaScript techniques, with a strong
+              emphasis on manipulating arrays and optimizing loops. This
+              endeavor led me to revisit and refine my code repeatedly. The
+              process involved streamlining complex segments, resulting in a
+              more concise and efficient codebase.
+            </p>
+            <br/>
+            <p>
+              <strong>The latest update,</strong> adds the integration of online
+              multiplayer capabilities, allowing users to compete against
+              opponents remotely, adding a dynamic and interactive dimension to
+              the game. Through the use of
+              <span class="purple">socket.io</span> and hosting the server on
+              render.com this was both a challenging and fun learning
+              experience.
+            </p>
+            <br/>
+            <div class="flex-row">
+              <a
+                class="btn-primary"
+                href="https://connect-four-online.onrender.com/?"
+                target="_blank"
+                style="margin-right: 10px"
+                >Play Game</a
+              >
+              <!-- <a class='btn-secondary' href="https://haydnkerr.github.io/connect-four/" target="_blank"
               style="margin-right: 10px">Offline Version</a> -->
-            <a class='btn-primary' href="https://github.com/haydnkerr/connect-four" target="_blank">Git Repo</a>
+              <a
+                class="btn-primary"
+                href="https://github.com/haydnkerr/connect-four"
+                target="_blank"
+                >Git Repo</a
+              >
+            </div>
           </div>
-
         </div>
 
-      </div>
-
-      <div class="job-description display-none" id="memory-pad-description">
-        <div class="left-side center">
-          <img src="./assets/memory-pad.png">
-        </div>
-        <div class="right-side space-between">
-          <p class="project-close-btn">X</p>
-          <h3>Online Desktop Game</h3>
-          <h2>
-            Lillie's Memory Pads
-          </h2>
-          <h4>
-            <span class="blue">HTML</span><span class="green">CSS</span><span class="red">Express JS</span><span
-              class="purple">Supabase</span>
-          </h4>
-          <!-- <p>
+        <div class="job-description display-none" id="memory-pad-description">
+          <div class="left-side center">
+            <img src="./assets/memory-pad.png"/>
+          </div>
+          <div class="right-side space-between">
+            <p class="project-close-btn">X</p>
+            <h3>Online Desktop Game</h3>
+            <h2>Lillie's Memory Pads</h2>
+            <h4>
+              <span class="blue">HTML</span>
+              <span class="green">CSS</span>
+              <span class="red">Express JS</span>
+              <span class="purple">Supabase</span>
+            </h4>
+            <!-- <p>
             <strong>Disclaimer:</strong> Due to the type of free server used for this project the inital load may take a
             few moments.
           </p>
           <br> -->
-          <p>
-            One of my favored portfolio pieces is the <strong><a target="_blank"
-                href="https://connect-four-online.onrender.com/?">Under the Sea Connect Four-style game</a></strong>.
-            This project was a deliberate showcase of my proficiency in HTML,
-            CSS, and
-            JS,
-            coupled with a flair for creativity. By reimagining a classic game in an underwater setting, I aimed to
-            demonstrate not only technical skills but also a keen eye for design.
-          </p>
-          <br>
-          <p>
-            Throughout the development and <strong>learning process</strong>, I delved deep into various JavaScript
-            techniques, with a strong emphasis on manipulating arrays and optimizing loops. This endeavor led me to
-            revisit and refine my code repeatedly. The process involved streamlining complex segments, resulting in a
-            more
-            concise and efficient codebase.
-          </p>
-          <br>
-          <p>
-            <strong>The latest update,</strong> adds the integration
-            of online multiplayer capabilities, allowing users to compete against opponents remotely, adding a dynamic
-            and
-            interactive dimension to the game. Through the use of <span class="purple">socket.io</span> and hosting the
-            server on render.com this was both a challenging and fun learning experience.
-          </p>
-          <br>
-          <div class="flex-row">
-            <a class='btn-primary' href="https://memory-game-7xvy.onrender.com/" target="_blank"
-              style="margin-right: 10px">Play Game</a>
+            <p>
+              One of my projects as a web developer at a children's museum is a
+              <strong>
+                <a target="_blank" href="https://memory-game-7xvy.onrender.com/"
+                  >pond-themed memory game</a
+                >
+              </strong
+              >. featuring lily pads, inspired by our ladybug mascot, Lillie. I
+              built the game using JavaScript and integrated Supabase to create
+              a global leaderboard, which updates every time a player finishes a
+              game and displays the top 8 scores.
+            </p>
+            <br/>
+            <p>
+              During development, I faced a few <strong>key challenges</strong>.
+              One was implementing a filter to remove inappropriate words from
+              user-entered names, ensuring a family-friendly experience. Another
+              was styling the game board to accommodate four different grid
+              sizes, requiring careful adjustments for layout and
+              responsiveness.
+            </p>
+            <br/>
+            <p>
+              The project is still a work in progress—I plan to add animations,
+              sound effects, and further refine the responsiveness to enhance
+              the overall user experience. Despite these remaining tasks, the
+              game is already functional and engaging, and it has been a great
+              opportunity to apply my skills in JavaScript, database management,
+              and UI design.
+            </p>
+            <br/>
+            <div class="flex-row">
+              <a
+                class="btn-primary"
+                href="https://memory-game-7xvy.onrender.com/"
+                target="_blank"
+                style="margin-right: 10px"
+                >Play Game</a
+              >
 
-            <a class='btn-primary' href="https://github.com/haydnkerr/connect-four" target="_blank">Git Repo</a>
+              <a
+                class="btn-primary"
+                href="https://github.com/haydnkerr/memory-game"
+                target="_blank"
+                >Git Repo</a
+              >
+            </div>
           </div>
-
         </div>
 
-      </div>
+        <div class="job-description display-none" id="beehive-description">
+          <div class="left-side center">
+            <img src="./assets/beehive-invert.png"/>
+          </div>
+          <div class="right-side space-between">
+            <p class="project-close-btn">X</p>
+            <h3>Fullstack Web Application</h3>
+            <h2>BeeHive</h2>
+            <h4>
+              <span class="blue">HTML</span>
+              <span class="green">Bootstrap</span>
+              <span class="red">Express.JS</span>
+              <span class="purple">SQL</span>
+            </h4>
 
-
-
-      <div class="job-description display-none" id="beehive-description">
-        <div class="left-side center">
-          <img src="./assets/beehive-invert.png">
-        </div>
-        <div class="right-side space-between">
-          <p class="project-close-btn">X</p>
-          <h3>Fullstack Web Application</h3>
-          <h2>
-            BeeHive
-          </h2>
-          <h4>
-            <span class="blue">HTML</span><span class="green">Bootstrap</span><span class="red">Express.JS</span><span
-              class="purple">SQL</span>
-          </h4>
-
-          <!--< p>
+            <!--< p>
             <strong>Disclaimer:</strong> Due to the type of free server used for this project the inital load may take a
             few moments. Additionally please use the below signin details to access the site.
           </p>
           <br> -->
-          <p>
-            <strong>Username:</strong> beehive@gmail.com
-            <br>
-            <strong>Password:</strong> Bumblebee123!
-          </p>
-          <br>
+            <p>
+              <strong>Username:</strong> beehive@gmail.com
+              <br/>
+              <strong>Password:</strong> Bumblebee123!
+            </p>
+            <br/>
 
-          <p>
-            <strong><a target="_blank" href="https://beehive-hb2p.onrender.com">BeeHive</a></strong> stands as my latest
-            achievement—a full-stack web application developed as part of a semester project. Inspired by prominent
-            social media platforms such as Yik Yak and Reddit, its primary objective was to construct a comprehensive
-            solution from inception to execution. Embracing diverse technologies and frameworks, BeeHive was
-            meticulously crafted to deliver an intuitive and seamless user experience, spanning from initial design to
-            backend implementation.
-
-          </p>
-          <br>
-          <p>
-            Leveraging Nunjucks for dynamic JavaScript functionality and harnessing the power of Bootstrap for sleek and
-            responsive design, the frontend experience is polished to perfection. On the backend, the application is
-            fortified with Express.js, ensuring robust server-side operations. Complementing this framework ecosystem is
-            the integration of a SQL database managed through Supabase, facilitating seamless data storage and retrieval.
-          </p>
-          <br>
-          <p>
-            Being one of my initial forays into full-stack development, BeeHive stands as a testament to my journey and
-            growth in this field. I take immense pride in its creation and view it as a foundation upon which I aim to
-            build further. Moving forward, I am eager to enhance BeeHive with additional features and refinements,
-            leveraging each iteration as an opportunity for continuous learning and improvement.
-          </p>
-          <br>
-          <div class="flex-row">
-            <a class='btn-primary' href="https://beehive-hb2p.onrender.com" target="_blank"
-              style="margin-right: 10px">Visit Site</a>
-            <a class='btn-secondary' href="https://github.com/haydnkerr/connect-four" target="_blank">Git Repo</a>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="job-description display-none" id="miracles-description">
-        <div class="left-side center">
-          <img class="miracles-mockup" src="./assets/miracles-mockup-laptop.png">
-        </div>
-        <div class="right-side space-between">
-          <p class="project-close-btn miracles-close">X</p>
-          <h3>Wix Website</h3>
-          <h2>
-            Miracles for Satos Rescue
-          </h2>
-          <h4>
-            <span class="purple">UI/UX</span>
-          </h4>
-
-          <p>
-            One of my most gratifying projects involved a pro bono collaboration with the <strong><a
-                href="https://www.miraclesforsatosrescue.org" target="_blank">"Miracles for Sato Rescue"</a></strong> in
-            Puerto Rico. This non-profit organization, dedicated to canine welfare, entrusted me with the task of
-            completely revamping their website to create a more user-friendly and visually appealing experience.
-          </p>
-          <br>
-          <p>
-            This endeavor marked my <strong>inaugural venture into Wix</strong>, providing me with a hands-on
-            introduction to the
-            platform. As I immersed myself in this project, I gained a comprehensive understanding of Wix's capabilities
-            and identified areas for improvement.
-          </p>
-          <br>
-          <p>
-            During our consultations, the owners expressed concerns about the perceived professionalism of their
-            previous website, noting its lackluster design and absence of visually captivating elements. With their
-            trust and support, I assumed <strong>full creative control</strong> of the redesign process.
-          </p>
-          <br>
-          <p>
-            Upon the unveiling of the revamped site, the "Miracles for Sato Rescue" experienced a remarkable
-            <strong>surge in
-              engagement and inquiries</strong>. Witnessing the tangible impact of the redesign not only validated the
-            significance
-            of user-centric UI/UX design but also reaffirmed my belief in the power of design to drive positive change.
-          </p>
-          <br>
-
-          <div class="flex-row">
-            <a style="margin-right: 15px" class="btn-primary" href="https://www.miraclesforsatosrescue.org"
-              target="_blank">Visit Site</a>
-            <a class="btn-secondary" href="miracles.html" target="_blank">Site Comparison</a>
-          </div>
-
-
-
-        </div>
-
-      </div>
-
-      <div class="job-description display-none" id="space-description">
-        <div class="left-side center">
-          <div id="sun"></div>
-        </div>
-        <div class="right-side space-between">
-          <p class="project-close-btn">X</p>
-          <h3>Hand Coded Website</h3>
-          <h2>
-            Interactive Solar System
-          </h2>
-          <h4>
-            <span class="blue">HTML</span><span class="green">CSS</span><span class="red">Vanilla JS & Three.JS</span>
-          </h4>
-
-          <p>
-            My latest personal endeavor is an engaging digital experience centered around our <strong><a
-                href="https://haydnkerr.github.io/interactive_solar_system/" target="_blank">Solar System.</a></strong>.
-            Tailored for
-            a younger audience, it combines entertainment with education, offering a captivating journey through the
-            wonders of our celestial neighborhood. This project not only demonstrates my proficiency in HTML, CSS, and
-            JS, but also highlights my expertise in UI/UX design. The user interface is thoughtfully crafted to ensure
-            intuitive navigation and an enjoyable learning experience. Additionally, I incorporated three.js for dynamic
-            3D rendering and utilized Blender in the 3D modeling phase, enhancing the visual richness of the Solar
-            System representation.
-          </p>
-          <br>
-          <p>
-            <strong>Throughout this project,</strong> I gained invaluable insights into the synergistic potential of CSS
-            and JS in crafting an immersive user experience. A notable revelation was the powerful role of CSS
-            animations, which played a pivotal role in vividly illustrating the orbital movements of planets around the
-            sun.
-          </p>
-          <br>
-          <p>
-            In summary, the Solar System Adventure project is a testament to my technical skills in web development and
-            design, as well as my dedication to creating immersive and educational digital experiences. It serves as a
-            gateway to the wonders of space, tailored specifically for the curious minds of tomorrow.
-          </p>
-          <br>
-          <div class="flex-row">
-            <a style="margin-right: 15px" class="btn-primary"
-              href="https://haydnkerr.github.io/interactive_solar_system/" target="_blank">Visit Site</a>
-            <a class="btn-secondary" href="https://github.com/haydnkerr/interactive_solar_system" target="_blank">Git
-              repo</a>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="job-description display-none" id="floe-description">
-        <div class="left-side center">
-          <img src="./assets/floe-logo.png">
-        </div>
-        <div class="right-side space-between">
-          <p class="project-close-btn">X</p>
-          <h3>Wordpress Website</h3>
-          <h2>
-            Floe
-          </h2>
-          <h4>
-            <span class="purple">UI/UX</span> <span class="blue">HTML</span><span class="green">CSS</span><span
-              class="red">JS</span>
-          </h4>
-
-          <p><strong><a href="https://floesafe.com" target="_blank">Floe</a></strong>, a forward-thinking technology company, sought a complete overhaul of their outdated website, which was
-            failing to meet industry standards in both design and SEO. The previous website lacked user engagement and
-            failed to effectively communicate Floe's innovative solutions.
-          </p>
-          <br>
-          <p>
-            In response to Floe's needs, I designed and developed a visually appealing website that prioritized user
-            experience and SEO optimization. Utilizing a combination of modern design principles and intuitive
-            navigation, the new website guided visitors through their exploration based on their interests and needs.
-          </p>
-          <br>
-          <p>
-            The revamped Floe website represents a significant improvement over its predecessor, meeting industry
-            standards and exceeding client expectations. With its intuitive navigation and visually compelling design,
-            the new website enhances user engagement and communicates Floe's value proposition more effectively. 
-          </p>
-
-            <br>
-
-
-            <a class="btn-primary" href="https://floesafe.com" target="_blank">Visit Site</a>
-
-        </div>
-
-      </div>
-
-      <div class="job-description display-none" id="neuro-description">
-        <div class="left-side center">
-
-        </div>
-        <div class="right-side space-between">
-          <p class="project-close-btn">X</p>
-          <h3>Wordpress Site</h3>
-          <h2>
-            UConn Neuroscience Department
-          </h2>
-          <h4>
-            <span class="purple">UI/UX</span>
-          </h4>
-          <p>
-            I am proud to unveil the enhanced landing page for the <strong><a
-                href="https://health.uconn.edu/neuroscience/" target="_blank">University of Connecticut Health Center's
-                Neuroscience Department.</a></strong> This project aimed to elevate user engagement by overhauling the
-            landing page
-            design using WordPress as the foundation. Integrating custom HTML and CSS, I crafted a visually captivating
-            experience, incorporating high-quality images and custom backgrounds to add a unique touch to each section.
-
-          </p>
-          <br>
-
-          <p>
-            The project's key features include a visually appealing design, personalized container backgrounds, and a
-            responsive layout to ensure optimal performance across devices. Despite challenges in aligning the creative
-            vision with WordPress constraints and university standards, the final result surpassed expectations.
-
-
-          </p>
-          <br>
-
-          <p>
-            The upgraded landing page reflects a commitment to excellence, meeting university standards while providing
-            an enriched user experience. Future plans include redesigning the inner pages to extend the improved
-            aesthetics and
-            functionality throughout the entire website.
-
-
-          </p>
-
-          <br>
-          <p>
-            This project showcases my dedication to delivering not just functionality but a visually captivating and
-            standards-compliant online presence. I welcome feedback and anticipate future collaborations to continue
-            enhancing the department's digital presence.
-
-          </p>
-          <br>
-          <div class="flex-row">
-            <a style="margin-right: 15px" class="btn-primary" href="https://health.uconn.edu/neuroscience/"
-              target="_blank">Visit Site</a>
-            <a class="btn-secondary" href="neuro.html" target="_blank">Site Comparison</a>
+            <p>
+              <strong>
+                <a target="_blank" href="https://beehive-hb2p.onrender.com"
+                  >BeeHive</a
+                >
+              </strong>
+              stands as my latest achievement—a full-stack web application
+              developed as part of a semester project. Inspired by prominent
+              social media platforms such as Yik Yak and Reddit, its primary
+              objective was to construct a comprehensive solution from inception
+              to execution. Embracing diverse technologies and frameworks,
+              BeeHive was meticulously crafted to deliver an intuitive and
+              seamless user experience, spanning from initial design to backend
+              implementation.
+            </p>
+            <br/>
+            <p>
+              Leveraging Nunjucks for dynamic JavaScript functionality and
+              harnessing the power of Bootstrap for sleek and responsive design,
+              the frontend experience is polished to perfection. On the backend,
+              the application is fortified with Express.js, ensuring robust
+              server-side operations. Complementing this framework ecosystem is
+              the integration of a SQL database managed through Supabase,
+              facilitating seamless data storage and retrieval.
+            </p>
+            <br/>
+            <p>
+              Being one of my initial forays into full-stack development,
+              BeeHive stands as a testament to my journey and growth in this
+              field. I take immense pride in its creation and view it as a
+              foundation upon which I aim to build further. Moving forward, I am
+              eager to enhance BeeHive with additional features and refinements,
+              leveraging each iteration as an opportunity for continuous
+              learning and improvement.
+            </p>
+            <br/>
+            <div class="flex-row">
+              <a
+                class="btn-primary"
+                href="https://beehive-hb2p.onrender.com"
+                target="_blank"
+                style="margin-right: 10px"
+                >Visit Site</a
+              >
+              <a
+                class="btn-secondary"
+                href="https://github.com/haydnkerr/connect-four"
+                target="_blank"
+                >Git Repo</a
+              >
+            </div>
           </div>
         </div>
-      </div>
 
-
-
-      <div class="job-description display-none" id="ct-nerr-description">
-        <div class="left-side center">
-
-        </div>
-        <div class="right-side space-between">
-          <p class="project-close-btn">X</p>
-          <h3>Wordpress Site</h3>
-          <h2>
-            CT NERR
-          </h2>
-          <h5>Connecticut National Estuarine Research Reserve</h5>
-          <h4>
-            <span class="purple">UI/UX</span>
-          </h4>
-          <p>
-            Redesigning the landing page for the <strong><a target="_blank"
-                href="https://estuarineresearchreserve.center.uconn.edu" target="_blank">Connecticut National Estuarine
-                Research Reserve</a></strong> marked a significant
-            milestone for me, being my inaugural venture
-            into WordPress development. This project not only allowed me to familiarize myself with the platform's
-            functionalities but also posed a <strong>unique challenge:</strong> designing in a way that empowers a
-            non-web designer to
-            seamlessly take over maintenance and make adjustments.
-
-          </p>
-          <br>
-
-          <p>
-            Working within these parameters, I approached the project with a dual focus. Firstly, I sought to create a
-            visually appealing and intuitive landing page that effectively conveyed the organization's message.
-            Secondly, I ensured that the design was structured and documented in a manner that would empower a
-            non-technical user to manage the site effortlessly.
-
-          </p>
-          <br>
-          <p>
-            Through this experience, I gained a deep appreciation for the balance between design aesthetics and
-            user-friendly functionality. The WordPress platform, with its extensive ecosystem of plugins and intuitive
-            interface, provided a robust foundation for achieving these goals.
-
-          </p>
-          <br>
-          <p>
-            The successful launch of the redesigned landing page not only bolstered the online presence of CT NERR but
-            also demonstrated the potential for WordPress to serve as an accessible platform for non-technical users.
-            This project stands as a testament to the power of thoughtful design and user empowerment in web
-            development.
-
-          </p>
-
-          <br>
-          <div class="flex-row">
-            <a style="margin-right: 15px" class="btn-primary" href="https://estuarineresearchreserve.center.uconn.edu"
-              target="_blank">Visit Site</a>
-            <a class="btn-secondary" href="nerr.html" target="_blank">Site Comparison</a>
+        <div class="job-description display-none" id="miracles-description">
+          <div class="left-side center">
+            <img
+              class="miracles-mockup"
+              src="./assets/miracles-mockup-laptop.png"
+/>
           </div>
-        </div>
-      </div>
-
-      <div class="job-description display-none" id="core-description">
-        <div class="left-side center">
-
-        </div>
-        <div class="right-side space-between">
-          <p class="project-close-btn">X</p>
-          <h3>Wordpress Site</h3>
-          <h2>
-            COR&sup2E Facility
-          </h2>
-          <h5>Center for Open Research Resources & Equipment</h5>
-          <h4>
-            <span class="purple">UI/UX</span>
-          </h4>
-
-          <p>
-            I took on the challenge of migrating and redesigning the <a href="https://core.uconn.edu"
-              target="_blank">University of Connecticut COR&sup2E Facility's</a>
-            website to facilitate easy content management for non-technical users. The primary goal was to transition
-            the site to WordPress, providing an intuitive platform for updates and modifications. Concurrently, we
-            focused on revamping the user interface to create a visually appealing and user-friendly experience.
-
-          </p>
-          <br>
-
-          <p>
-            Through meticulous customization and user-centric features, we ensured that individuals without coding
-            expertise could efficiently manage and update the website. This strategic migration empowered the University
-            of Connecticut Core Facility staff to effortlessly modify content, keeping their online presence current.
-            The redesigned layout and improved navigation menus streamlined the user's journey, making it easier for
-            visitors to find relevant information.
-
-
-          </p>
-          <br>
-          <p>
-            The project's success lies in the seamless WordPress migration and the thoughtful redesign. This
-            transformation not only enabled hassle-free content management but also elevated the website's overall user
-            experience. The project showcases our dedication to delivering accessible and aesthetically pleasing web
-            solutions that meet the unique needs of our clients.
-
-
-          </p>
-          <br>
-
-          <a class="btn-primary" href="https://core.uconn.edu" target="_blank">Visit Site</a>
-        </div>
-      </div>
-
-      <div class="job-description display-none" id="frontend-mentor-description">
-        <div class="left-side center">
-
-        </div>
-        <div class="right-side space-between">
-          <div>
-            <p class="project-close-btn">X</p>
-            <h3>Coding Challenges</h3>
-            <h2>
-              Frontend Mentor
-            </h2>
+          <div class="right-side space-between">
+            <p class="project-close-btn miracles-close">X</p>
+            <h3>Wix Website</h3>
+            <h2>Miracles for Satos Rescue</h2>
             <h4>
-              <span class="blue">HTML</span><span class="green">CSS</span><span class="red">JS</span>
+              <span class="purple">UI/UX</span>
             </h4>
 
             <p>
-              Maintaining a record of progress, regardless of perceived proficiency, is a pivotal aspect of any
-              developmental journey. As I ventured into frontend development, Frontend Mentor emerged as a vital
-              platform for both practice and learning.
-
+              One of my most gratifying projects involved a pro bono
+              collaboration with the
+              <strong>
+                <a href="https://www.miraclesforsatosrescue.org" target="_blank"
+                  >"Miracles for Sato Rescue"</a
+                >
+              </strong>
+              in Puerto Rico. This non-profit organization, dedicated to canine
+              welfare, entrusted me with the task of completely revamping their
+              website to create a more user-friendly and visually appealing
+              experience.
             </p>
-            <br>
-            <br>
+            <br/>
             <p>
-              While my earlier projects may not boast the same level of finesse as my recent endeavors, they stand as
-              testaments to my unwavering commitment to growth and improvement. Each project represents a milestone, a
-              tangible marker of progress along this dynamic learning path.
-
+              This endeavor marked my
+              <strong>inaugural venture into Wix</strong>, providing me with a
+              hands-on introduction to the platform. As I immersed myself in
+              this project, I gained a comprehensive understanding of Wix's
+              capabilities and identified areas for improvement.
             </p>
-            <br>
+            <br/>
             <p>
-              <strong>In the future</strong> I aim to revisit these early
-              projects, armed with the enhanced skills and knowledge I've acquired since their creation. Moreover, I'm
-              eager to take on more of the challenging examples
-              that Frontend Mentor has to offer. Armed with a deeper understanding and refined skill set, I'm confident
-              in my ability to tackle complex projects with creativity and precision. Each endeavor will serve as both a
-              testament to my growth and a platform for continuous learning and exploration in the world of frontend
+              During our consultations, the owners expressed concerns about the
+              perceived professionalism of their previous website, noting its
+              lackluster design and absence of visually captivating elements.
+              With their trust and support, I assumed
+              <strong>full creative control</strong> of the redesign process.
+            </p>
+            <br/>
+            <p>
+              Upon the unveiling of the revamped site, the "Miracles for Sato
+              Rescue" experienced a remarkable
+              <strong>surge in engagement and inquiries</strong>. Witnessing the
+              tangible impact of the redesign not only validated the
+              significance of user-centric UI/UX design but also reaffirmed my
+              belief in the power of design to drive positive change.
+            </p>
+            <br/>
+
+            <div class="flex-row">
+              <a
+                style="margin-right: 15px"
+                class="btn-primary"
+                href="https://www.miraclesforsatosrescue.org"
+                target="_blank"
+                >Visit Site</a
+              >
+              <a class="btn-secondary" href="miracles.html" target="_blank"
+                >Site Comparison</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="job-description display-none" id="space-description">
+          <div class="left-side center">
+            <div id="sun"></div>
+          </div>
+          <div class="right-side space-between">
+            <p class="project-close-btn">X</p>
+            <h3>Hand Coded Website</h3>
+            <h2>Interactive Solar System</h2>
+            <h4>
+              <span class="blue">HTML</span>
+              <span class="green">CSS</span>
+              <span class="red">Vanilla JS & Three.JS</span>
+            </h4>
+
+            <p>
+              My latest personal endeavor is an engaging digital experience
+              centered around our
+              <strong>
+                <a
+                  href="https://haydnkerr.github.io/interactive_solar_system/"
+                  target="_blank"
+                  >Solar System.</a
+                >
+              </strong
+              >. Tailored for a younger audience, it combines entertainment with
+              education, offering a captivating journey through the wonders of
+              our celestial neighborhood. This project not only demonstrates my
+              proficiency in HTML, CSS, and JS, but also highlights my expertise
+              in UI/UX design. The user interface is thoughtfully crafted to
+              ensure intuitive navigation and an enjoyable learning experience.
+              Additionally, I incorporated three.js for dynamic 3D rendering and
+              utilized Blender in the 3D modeling phase, enhancing the visual
+              richness of the Solar System representation.
+            </p>
+            <br/>
+            <p>
+              <strong>Throughout this project,</strong> I gained invaluable
+              insights into the synergistic potential of CSS and JS in crafting
+              an immersive user experience. A notable revelation was the
+              powerful role of CSS animations, which played a pivotal role in
+              vividly illustrating the orbital movements of planets around the
+              sun.
+            </p>
+            <br/>
+            <p>
+              In summary, the Solar System Adventure project is a testament to
+              my technical skills in web development and design, as well as my
+              dedication to creating immersive and educational digital
+              experiences. It serves as a gateway to the wonders of space,
+              tailored specifically for the curious minds of tomorrow.
+            </p>
+            <br/>
+            <div class="flex-row">
+              <a
+                style="margin-right: 15px"
+                class="btn-primary"
+                href="https://haydnkerr.github.io/interactive_solar_system/"
+                target="_blank"
+                >Visit Site</a
+              >
+              <a
+                class="btn-secondary"
+                href="https://github.com/haydnkerr/interactive_solar_system"
+                target="_blank"
+                >Git repo</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="job-description display-none" id="floe-description">
+          <div class="left-side center">
+            <img src="./assets/floe-logo.png"/>
+          </div>
+          <div class="right-side space-between">
+            <p class="project-close-btn">X</p>
+            <h3>Wordpress Website</h3>
+            <h2>Floe</h2>
+            <h4>
+              <span class="purple">UI/UX</span>
+              <span class="blue">HTML</span>
+              <span class="green">CSS</span>
+              <span class="red">JS</span>
+            </h4>
+
+            <p>
+              <strong>
+                <a href="https://floesafe.com" target="_blank">Floe</a>
+              </strong
+              >, a forward-thinking technology company, sought a complete
+              overhaul of their outdated website, which was failing to meet
+              industry standards in both design and SEO. The previous website
+              lacked user engagement and failed to effectively communicate
+              Floe's innovative solutions.
+            </p>
+            <br/>
+            <p>
+              In response to Floe's needs, I designed and developed a visually
+              appealing website that prioritized user experience and SEO
+              optimization. Utilizing a combination of modern design principles
+              and intuitive navigation, the new website guided visitors through
+              their exploration based on their interests and needs.
+            </p>
+            <br/>
+            <p>
+              The revamped Floe website represents a significant improvement
+              over its predecessor, meeting industry standards and exceeding
+              client expectations. With its intuitive navigation and visually
+              compelling design, the new website enhances user engagement and
+              communicates Floe's value proposition more effectively.
+            </p>
+
+            <br/>
+
+            <a class="btn-primary" href="https://floesafe.com" target="_blank"
+              >Visit Site</a
+            >
+          </div>
+        </div>
+
+        <div class="job-description display-none" id="neuro-description">
+          <div class="left-side center"></div>
+          <div class="right-side space-between">
+            <p class="project-close-btn">X</p>
+            <h3>Wordpress Site</h3>
+            <h2>UConn Neuroscience Department</h2>
+            <h4>
+              <span class="purple">UI/UX</span>
+            </h4>
+            <p>
+              I am proud to unveil the enhanced landing page for the
+              <strong>
+                <a href="https://health.uconn.edu/neuroscience/" target="_blank"
+                  >University of Connecticut Health Center's Neuroscience
+                  Department.</a
+                >
+              </strong>
+              This project aimed to elevate user engagement by overhauling the
+              landing page design using WordPress as the foundation. Integrating
+              custom HTML and CSS, I crafted a visually captivating experience,
+              incorporating high-quality images and custom backgrounds to add a
+              unique touch to each section.
+            </p>
+            <br/>
+
+            <p>
+              The project's key features include a visually appealing design,
+              personalized container backgrounds, and a responsive layout to
+              ensure optimal performance across devices. Despite challenges in
+              aligning the creative vision with WordPress constraints and
+              university standards, the final result surpassed expectations.
+            </p>
+            <br/>
+
+            <p>
+              The upgraded landing page reflects a commitment to excellence,
+              meeting university standards while providing an enriched user
+              experience. Future plans include redesigning the inner pages to
+              extend the improved aesthetics and functionality throughout the
+              entire website.
+            </p>
+
+            <br/>
+            <p>
+              This project showcases my dedication to delivering not just
+              functionality but a visually captivating and standards-compliant
+              online presence. I welcome feedback and anticipate future
+              collaborations to continue enhancing the department's digital
+              presence.
+            </p>
+            <br/>
+            <div class="flex-row">
+              <a
+                style="margin-right: 15px"
+                class="btn-primary"
+                href="https://health.uconn.edu/neuroscience/"
+                target="_blank"
+                >Visit Site</a
+              >
+              <a class="btn-secondary" href="neuro.html" target="_blank"
+                >Site Comparison</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="job-description display-none" id="ct-nerr-description">
+          <div class="left-side center"></div>
+          <div class="right-side space-between">
+            <p class="project-close-btn">X</p>
+            <h3>Wordpress Site</h3>
+            <h2>CT NERR</h2>
+            <h5>Connecticut National Estuarine Research Reserve</h5>
+            <h4>
+              <span class="purple">UI/UX</span>
+            </h4>
+            <p>
+              Redesigning the landing page for the
+              <strong>
+                <a
+                  target="_blank"
+                  href="https://estuarineresearchreserve.center.uconn.edu"
+                  target="_blank"
+                  >Connecticut National Estuarine Research Reserve</a
+                >
+              </strong>
+              marked a significant milestone for me, being my inaugural venture
+              into WordPress development. This project not only allowed me to
+              familiarize myself with the platform's functionalities but also
+              posed a <strong>unique challenge:</strong> designing in a way that
+              empowers a non-web designer to seamlessly take over maintenance
+              and make adjustments.
+            </p>
+            <br/>
+
+            <p>
+              Working within these parameters, I approached the project with a
+              dual focus. Firstly, I sought to create a visually appealing and
+              intuitive landing page that effectively conveyed the
+              organization's message. Secondly, I ensured that the design was
+              structured and documented in a manner that would empower a
+              non-technical user to manage the site effortlessly.
+            </p>
+            <br/>
+            <p>
+              Through this experience, I gained a deep appreciation for the
+              balance between design aesthetics and user-friendly functionality.
+              The WordPress platform, with its extensive ecosystem of plugins
+              and intuitive interface, provided a robust foundation for
+              achieving these goals.
+            </p>
+            <br/>
+            <p>
+              The successful launch of the redesigned landing page not only
+              bolstered the online presence of CT NERR but also demonstrated the
+              potential for WordPress to serve as an accessible platform for
+              non-technical users. This project stands as a testament to the
+              power of thoughtful design and user empowerment in web
               development.
             </p>
 
-            <br>
+            <br/>
+            <div class="flex-row">
+              <a
+                style="margin-right: 15px"
+                class="btn-primary"
+                href="https://estuarineresearchreserve.center.uconn.edu"
+                target="_blank"
+                >Visit Site</a
+              >
+              <a class="btn-secondary" href="nerr.html" target="_blank"
+                >Site Comparison</a
+              >
+            </div>
           </div>
-
-          <a class="btn-primary" href="./mentor.html" target="_blank">Challenges</a>
         </div>
 
-      </div>
-
-      <div class="job-description display-none" id="pr-description">
-        <div class="left-side center">
-
-        </div>
-        <div class="right-side space-between">
-          <div>
+        <div class="job-description display-none" id="core-description">
+          <div class="left-side center"></div>
+          <div class="right-side space-between">
             <p class="project-close-btn">X</p>
-            <h3>Wordpress Sites</h3>
-            <h2>
-              Puerto Rico Archive Sites
-            </h2>
+            <h3>Wordpress Site</h3>
+            <h2>COR&sup2E Facility</h2>
+            <h5>Center for Open Research Resources & Equipment</h5>
             <h4>
-              <span class="prurple">UI/UX Design</span>
+              <span class="purple">UI/UX</span>
             </h4>
 
+            <p>
+              I took on the challenge of migrating and redesigning the
+              <a href="https://core.uconn.edu" target="_blank"
+                >University of Connecticut COR&sup2E Facility's</a
+              >
+              website to facilitate easy content management for non-technical
+              users. The primary goal was to transition the site to WordPress,
+              providing an intuitive platform for updates and modifications.
+              Concurrently, we focused on revamping the user interface to create
+              a visually appealing and user-friendly experience.
+            </p>
+            <br/>
 
             <p>
-              Our team embarked on a significant project centered around Puerto Rico's political history and archival
-              data. We designed three distinct WordPress websites, each dedicated to different aspects of Puerto Rico's
-              political journey. The primary challenge was collating a vast amount of archival data and presenting it in
-              a way that offered users an intuitive and seamless exploration experience.
-
+              Through meticulous customization and user-centric features, we
+              ensured that individuals without coding expertise could
+              efficiently manage and update the website. This strategic
+              migration empowered the University of Connecticut Core Facility
+              staff to effortlessly modify content, keeping their online
+              presence current. The redesigned layout and improved navigation
+              menus streamlined the user's journey, making it easier for
+              visitors to find relevant information.
             </p>
-
+            <br/>
             <p>
-              The project's core objective was to create a comprehensive repository of Puerto Rico's political history
-              through meticulous archival documentation. This involved the integration of three distinct platforms, each
-              tailored to highlight specific historical periods or themes. The focus on intuitive navigation and
-              user-friendly features ensured that visitors could easily access and explore the wealth of historical
-              information.
-
+              The project's success lies in the seamless WordPress migration and
+              the thoughtful redesign. This transformation not only enabled
+              hassle-free content management but also elevated the website's
+              overall user experience. The project showcases our dedication to
+              delivering accessible and aesthetically pleasing web solutions
+              that meet the unique needs of our clients.
             </p>
+            <br/>
 
-            <p>
-              Through careful design choices and interactive elements, we aimed to make the exploration of Puerto Rico's
-              political history engaging and immersive. The project serves as a testament to our commitment to
-              preserving and sharing the historical narratives of this vibrant region. The user-centric approach has
-              transformed accessibility and understanding, providing a valuable resource for anyone interested in Puerto
-              Rico's political evolution.
-
-            </p>
-
-            <br>
+            <a class="btn-primary" href="https://core.uconn.edu" target="_blank"
+              >Visit Site</a
+            >
           </div>
-
-          <a class="btn-primary" href="https://www.frontendmentor.io/profile/haydnkerr" target="_blank">Visit
-            Profile</a>
         </div>
 
-      </div>
+        <div
+          class="job-description display-none"
+          id="frontend-mentor-description"
+        >
+          <div class="left-side center"></div>
+          <div class="right-side space-between">
+            <div>
+              <p class="project-close-btn">X</p>
+              <h3>Coding Challenges</h3>
+              <h2>Frontend Mentor</h2>
+              <h4>
+                <span class="blue">HTML</span>
+                <span class="green">CSS</span>
+                <span class="red">JS</span>
+              </h4>
 
-      <div class="job-description display-none" id="crosshairs-description">
-        <div class="left-side center">
-          <img class="miracles-mockup" src="./assets/miracles-mockup-laptop.png">
+              <p>
+                Maintaining a record of progress, regardless of perceived
+                proficiency, is a pivotal aspect of any developmental journey.
+                As I ventured into frontend development, Frontend Mentor emerged
+                as a vital platform for both practice and learning.
+              </p>
+              <br/>
+              <br/>
+              <p>
+                While my earlier projects may not boast the same level of
+                finesse as my recent endeavors, they stand as testaments to my
+                unwavering commitment to growth and improvement. Each project
+                represents a milestone, a tangible marker of progress along this
+                dynamic learning path.
+              </p>
+              <br/>
+              <p>
+                <strong>In the future</strong> I aim to revisit these early
+                projects, armed with the enhanced skills and knowledge I've
+                acquired since their creation. Moreover, I'm eager to take on
+                more of the challenging examples that Frontend Mentor has to
+                offer. Armed with a deeper understanding and refined skill set,
+                I'm confident in my ability to tackle complex projects with
+                creativity and precision. Each endeavor will serve as both a
+                testament to my growth and a platform for continuous learning
+                and exploration in the world of frontend development.
+              </p>
+
+              <br/>
+            </div>
+
+            <a class="btn-primary" href="./mentor.html" target="_blank"
+              >Challenges</a
+            >
+          </div>
         </div>
-        <div class="right-side space-between">
-          <p class="project-close-btn crosshairs-close">X</p>
-          <h3>Wix Website</h3>
-          <h2>
-            In The Crosshairs of War
-          </h2>
-          <h4>
-            <span class="purple">UI/UX</span>
-          </h4>
 
-          <p>
-            One of my most gratifying projects involved a pro bono collaboration with the <strong><a
-                href="https://www.miraclesforsatosrescue.org" target="_blank">"Miracles for Sato Rescue"</a></strong> in
-            Puerto Rico. This non-profit organization, dedicated to canine welfare, entrusted me with the task of
-            completely revamping their website to create a more user-friendly and visually appealing experience.
-          </p>
-          <br>
-          <p>
-            This endeavor marked my <strong>inaugural venture into Wix</strong>, providing me with a hands-on
-            introduction to the
-            platform. As I immersed myself in this project, I gained a comprehensive understanding of Wix's capabilities
-            and identified areas for improvement.
-          </p>
-          <br>
-          <p>
-            During our consultations, the owners expressed concerns about the perceived professionalism of their
-            previous website, noting its lackluster design and absence of visually captivating elements. With their
-            trust and support, I assumed <strong>full creative control</strong> of the redesign process.
-          </p>
-          <br>
-          <p>
-            Upon the unveiling of the revamped site, the "Miracles for Sato Rescue" experienced a remarkable
-            <strong>surge in
-              engagement and inquiries</strong>. Witnessing the tangible impact of the redesign not only validated the
-            significance
-            of user-centric UI/UX design but also reaffirmed my belief in the power of design to drive positive change.
-          </p>
-          <br>
+        <div class="job-description display-none" id="pr-description">
+          <div class="left-side center"></div>
+          <div class="right-side space-between">
+            <div>
+              <p class="project-close-btn">X</p>
+              <h3>Wordpress Sites</h3>
+              <h2>Puerto Rico Archive Sites</h2>
+              <h4>
+                <span class="prurple">UI/UX Design</span>
+              </h4>
 
-          <a class="btn-primary" href="https://www.miraclesforsatosrescue.org" target="_blank">Visit Site</a>
+              <p>
+                Our team embarked on a significant project centered around
+                Puerto Rico's political history and archival data. We designed
+                three distinct WordPress websites, each dedicated to different
+                aspects of Puerto Rico's political journey. The primary
+                challenge was collating a vast amount of archival data and
+                presenting it in a way that offered users an intuitive and
+                seamless exploration experience.
+              </p>
 
+              <p>
+                The project's core objective was to create a comprehensive
+                repository of Puerto Rico's political history through meticulous
+                archival documentation. This involved the integration of three
+                distinct platforms, each tailored to highlight specific
+                historical periods or themes. The focus on intuitive navigation
+                and user-friendly features ensured that visitors could easily
+                access and explore the wealth of historical information.
+              </p>
 
+              <p>
+                Through careful design choices and interactive elements, we
+                aimed to make the exploration of Puerto Rico's political history
+                engaging and immersive. The project serves as a testament to our
+                commitment to preserving and sharing the historical narratives
+                of this vibrant region. The user-centric approach has
+                transformed accessibility and understanding, providing a
+                valuable resource for anyone interested in Puerto Rico's
+                political evolution.
+              </p>
+
+              <br/>
+            </div>
+
+            <a
+              class="btn-primary"
+              href="https://www.frontendmentor.io/profile/haydnkerr"
+              target="_blank"
+              >Visit Profile</a
+            >
+          </div>
         </div>
 
-      </div>
+        <div class="job-description display-none" id="crosshairs-description">
+          <div class="left-side center">
+            <img
+              class="miracles-mockup"
+              src="./assets/miracles-mockup-laptop.png"
+/>
+          </div>
+          <div class="right-side space-between">
+            <p class="project-close-btn crosshairs-close">X</p>
+            <h3>Wix Website</h3>
+            <h2>In The Crosshairs of War</h2>
+            <h4>
+              <span class="purple">UI/UX</span>
+            </h4>
 
+            <p>
+              One of my most gratifying projects involved a pro bono
+              collaboration with the
+              <strong>
+                <a href="https://www.miraclesforsatosrescue.org" target="_blank"
+                  >"Miracles for Sato Rescue"</a
+                >
+              </strong>
+              in Puerto Rico. This non-profit organization, dedicated to canine
+              welfare, entrusted me with the task of completely revamping their
+              website to create a more user-friendly and visually appealing
+              experience.
+            </p>
+            <br/>
+            <p>
+              This endeavor marked my
+              <strong>inaugural venture into Wix</strong>, providing me with a
+              hands-on introduction to the platform. As I immersed myself in
+              this project, I gained a comprehensive understanding of Wix's
+              capabilities and identified areas for improvement.
+            </p>
+            <br/>
+            <p>
+              During our consultations, the owners expressed concerns about the
+              perceived professionalism of their previous website, noting its
+              lackluster design and absence of visually captivating elements.
+              With their trust and support, I assumed
+              <strong>full creative control</strong> of the redesign process.
+            </p>
+            <br/>
+            <p>
+              Upon the unveiling of the revamped site, the "Miracles for Sato
+              Rescue" experienced a remarkable
+              <strong>surge in engagement and inquiries</strong>. Witnessing the
+              tangible impact of the redesign not only validated the
+              significance of user-centric UI/UX design but also reaffirmed my
+              belief in the power of design to drive positive change.
+            </p>
+            <br/>
 
+            <a
+              class="btn-primary"
+              href="https://www.miraclesforsatosrescue.org"
+              target="_blank"
+              >Visit Site</a
+            >
+          </div>
+        </div>
+      </section>
 
-    </section>
+      <section
+        class="logo-view-container display-none"
+        id="logo-view-container"
+      >
+        <p id="logo-view-close-btn">X</p>
+        <div class="display-none" id="mensah-logo-full-size">
+          <img class="logo-view" src="./assets/mensah-logo.png"/>
+        </div>
 
+        <div class="display-none" id="greenwood-logo-full-size">
+          <img class="logo-view" src="./assets/greenwood-logo.png"/>
+        </div>
 
-    <section class="logo-view-container display-none" id="logo-view-container">
-      <p id="logo-view-close-btn">X</p>
-      <div class="display-none" id="mensah-logo-full-size">
-        <img class="logo-view" src="./assets/mensah-logo.png">
-      </div>
+        <div class="display-none" id="fbf-logo-full-size">
+          <img class="portrait-view" src="./assets/fbf-black.png"/>
+        </div>
 
-      <div class="display-none" id="greenwood-logo-full-size">
-        <img class="logo-view" src="./assets/greenwood-logo.png">
-      </div>
+        <div class="display-none" id="hk-logo-full-size">
+          <img class="portrait-view" src="./assets/hk-full-logo.png"/>
+        </div>
 
-      <div class="display-none" id="fbf-logo-full-size">
-        <img class="portrait-view" src="./assets/fbf-black.png">
-      </div>
+        <div class="display-none" id="tr-logo-full-size">
+          <img class="logo-view" src="./assets/tr-multi-logo.png"/>
+        </div>
 
-      <div class="display-none" id="hk-logo-full-size">
-        <img class="portrait-view" src="./assets/hk-full-logo.png">
-      </div>
+        <div class="display-none" id="top-5-full-size">
+          <img class="logo-view" src="./assets/top-5-post.png"/>
+        </div>
+      </section>
 
-      <div class="display-none" id="tr-logo-full-size">
-        <img class="logo-view" src="./assets/tr-multi-logo.png">
-      </div>
+      <section class="art-view-container display-none" id="art-view-container">
+        <p id="art-view-close-btn">X</p>
+        <div class="display-none" id="farming-drawing-full-size">
+          <img class="landscape-view" src="./assets/farming-drawing.jpg"/>
+        </div>
 
-      <div class="display-none" id="top-5-full-size">
-        <img class="logo-view" src="./assets/top-5-post.png">
-      </div>
+        <div class="display-none" id="plant-drawing-full-size">
+          <img class="landscape-view" src="./assets/plant-drawing.jpg"/>
+        </div>
 
+        <div class="display-none" id="paper-drawing-full-size">
+          <img class="portrait-view" src="./assets/paper-drawing.jpg"/>
+        </div>
 
-    </section>
+        <div class="display-none" id="zebra-drawing-full-size">
+          <img class="landscape-view" src="./assets/zebra-drawing.jpg"/>
+        </div>
 
-    <section class="art-view-container display-none" id="art-view-container">
-      <p id="art-view-close-btn">X</p>
-      <div class="display-none" id="farming-drawing-full-size">
-        <img class="landscape-view" src="./assets/farming-drawing.jpg">
-      </div>
+        <div class="display-none" id="striped-paper-drawing-full-size">
+          <img
+            class="landscape-view"
+            src="./assets/striped-paper-drawing.jpg"
+/>
+        </div>
 
-      <div class="display-none" id="plant-drawing-full-size">
-        <img class="landscape-view" src="./assets/plant-drawing.jpg">
-      </div>
+        <div class="display-none" id="shadow-drawing-full-size">
+          <img class="landscape-view" src="./assets/shading-drawing.jpg"/>
+        </div>
+      </section>
 
-      <div class="display-none" id="paper-drawing-full-size">
-        <img class="portrait-view" src="./assets/paper-drawing.jpg">
-      </div>
+      <section id="contact">
+        <h2 style="margin-top: 15px">Let's work together</h2>
+        <a class="btn-primary light-blue" href="mailto:haydnkerr365@gmail.com"
+          >Email</a
+        >
+      </section>
+    </main>
 
-      <div class="display-none" id="zebra-drawing-full-size">
-        <img class="landscape-view" src="./assets/zebra-drawing.jpg">
-      </div>
-
-      <div class="display-none" id="striped-paper-drawing-full-size">
-        <img class="landscape-view" src="./assets/striped-paper-drawing.jpg">
-      </div>
-
-      <div class="display-none" id="shadow-drawing-full-size">
-        <img class="landscape-view" src="./assets/shading-drawing.jpg">
-      </div>
-
-    </section>
-
-    <section id="contact">
-      <h2 style="margin-top: 15px">Let's work together</h2>
-      <a class="btn-primary light-blue" href="mailto:haydnkerr365@gmail.com">Email</a>
-    </section>
-  </main>
-
-
-
-
-
-  <script src="zenscroll-min.js"></script>
-</body>
-
+    <script src="zenscroll-min.js"></script>
+  </body>
 </html>
 
 <script>
+  AOS.init({once: true});
 
-
-
-  AOS.init({ once: true, });
-
-
-
-  let mobileNav = document.getElementById('mobile-nav-container');
-  let mobileModalCloseBtn = document.querySelector('.mobile-modal-close-btn');
-  let mobileLink = document.querySelectorAll('.mobile-link');
-  let hamburgerBtn = document.querySelector('.hamburger-btn')
+  let mobileNav = document.getElementById("mobile-nav-container");
+  let mobileModalCloseBtn = document.querySelector(".mobile-modal-close-btn");
+  let mobileLink = document.querySelectorAll(".mobile-link");
+  let hamburgerBtn = document.querySelector(".hamburger-btn");
 
   mobileLink.forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      toggleMobileNav()
-    })
+    btn.addEventListener("click", function () {
+      toggleMobileNav();
+    });
   });
 
+  hamburgerBtn.addEventListener("click", toggleMobileNav);
 
-
-  hamburgerBtn.addEventListener('click', toggleMobileNav)
-
-  mobileModalCloseBtn.addEventListener('click', toggleMobileNav)
+  mobileModalCloseBtn.addEventListener("click", toggleMobileNav);
 
   function toggleMobileNav() {
-    console.log('click')
-    mobileNav.classList.toggle('display-none')
+    console.log("click");
+    mobileNav
+      .classList
+      .toggle("display-none");
   }
 
-  let one = document.getElementById('one')
-  let two = document.getElementById('two')
-  let three = document.getElementById('three')
-  let activeDxg = document.getElementById('active-dxg')
-  let activeFreelance = document.getElementById('active-freelance')
-  let activeNutmeg = document.getElementById('active-nutmeg')
-  let inactiveDxg = document.getElementById('inactive-dxg')
-  let inactiveFreelance = document.getElementById('inactive-freelance')
-  let inactiveNutmeg = document.getElementById('inactive-nutmeg')
-  let bookBtn = document.getElementById('nutmeg-book-button')
-  let bookContainer = document.getElementById('book-container')
-  let bookCloseBtn = document.getElementById('book-close-btn')
-  let nutmegSpreadsBtn = document.getElementById('nutmeg-spreads-btn');
+  let one = document.getElementById("one");
+  let two = document.getElementById("two");
+  let three = document.getElementById("three");
+  let activeDxg = document.getElementById("active-dxg");
+  let activeFreelance = document.getElementById("active-freelance");
+  let activeNutmeg = document.getElementById("active-nutmeg");
+  let inactiveDxg = document.getElementById("inactive-dxg");
+  let inactiveFreelance = document.getElementById("inactive-freelance");
+  let inactiveNutmeg = document.getElementById("inactive-nutmeg");
+  let bookBtn = document.getElementById("nutmeg-book-button");
+  let bookContainer = document.getElementById("book-container");
+  let bookCloseBtn = document.getElementById("book-close-btn");
+  let nutmegSpreadsBtn = document.getElementById("nutmeg-spreads-btn");
 
-  let projectCell = document.querySelectorAll('.project-cell');
+  let projectCell = document.querySelectorAll(".project-cell");
 
+  let resumeBtn = document.getElementById("resume-link");
+  let resumeCloseBtn = document.getElementById("resume-close-btn");
+  let resume = document.querySelector(".resume-container");
 
+  let artCloseBtn = document.getElementById("art-view-close-btn");
+  let artView = document.getElementById("art-view-container");
+  let farmFullSize = document.getElementById("farming-drawing-full-size");
+  let shadeFullSize = document.getElementById("shadow-drawing-full-size");
+  let paperFullSize = document.getElementById("paper-drawing-full-size");
+  let stripedPaperFullSize = document.getElementById("striped-paper-drawing-full-size");
+  let plantFullSize = document.getElementById("plant-drawing-full-size");
+  let zebraFullSize = document.getElementById("zebra-drawing-full-size");
+  let zebraExpandBtn = document.getElementById("zebra-drawing-expand");
+  let paperExpandBtn = document.getElementById("paper-drawing-expand");
+  let stripedPaperExpandBtn = document.getElementById("striped-paper-drawing-expand");
+  let plantExpandBtn = document.getElementById("plant-drawing-expand");
+  let shadowExpandBtn = document.getElementById("shading-drawing-expand");
+  let farmExpandBtn = document.getElementById("farming-drawing-expand");
 
-  let resumeBtn = document.getElementById('resume-link')
-  let resumeCloseBtn = document.getElementById('resume-close-btn')
-  let resume = document.querySelector('.resume-container')
+  let logoCloseBtn = document.getElementById("logo-view-close-btn");
+  let logoView = document.getElementById("logo-view-container");
+  let mensahLogoFullSize = document.getElementById("mensah-logo-full-size");
+  let greenwoodLogoFullSize = document.getElementById("greenwood-logo-full-size");
+  let hkLogoFullSize = document.getElementById("hk-logo-full-size");
+  let trLogoFullSize = document.getElementById("tr-logo-full-size");
+  let fbfLogoFullSize = document.getElementById("fbf-logo-full-size");
+  let top5FullSize = document.getElementById("top-5-full-size");
+  let mensahExpandBtn = document.getElementById("mensah-logo-expand");
+  let greenwoodExpandBtn = document.getElementById("greenwood-logo-expand");
+  let fbfExpandBtn = document.getElementById("fbf-logo-expand");
+  let hkExpandBtn = document.getElementById("hk-logo-expand");
+  let trExpandBtn = document.getElementById("tr-logo-expand");
+  let top5ExpandBtn = document.getElementById("top-5-expand");
 
+  logoCloseBtn.addEventListener("click", toggleLogoView);
 
-  let artCloseBtn = document.getElementById('art-view-close-btn');
-  let artView = document.getElementById('art-view-container');
-  let farmFullSize = document.getElementById('farming-drawing-full-size');
-  let shadeFullSize = document.getElementById('shadow-drawing-full-size');
-  let paperFullSize = document.getElementById('paper-drawing-full-size');
-  let stripedPaperFullSize = document.getElementById('striped-paper-drawing-full-size');
-  let plantFullSize = document.getElementById('plant-drawing-full-size');
-  let zebraFullSize = document.getElementById('zebra-drawing-full-size');
-  let zebraExpandBtn = document.getElementById('zebra-drawing-expand');
-  let paperExpandBtn = document.getElementById('paper-drawing-expand');
-  let stripedPaperExpandBtn = document.getElementById('striped-paper-drawing-expand');
-  let plantExpandBtn = document.getElementById('plant-drawing-expand');
-  let shadowExpandBtn = document.getElementById('shading-drawing-expand');
-  let farmExpandBtn = document.getElementById('farming-drawing-expand');
-
-  let logoCloseBtn = document.getElementById('logo-view-close-btn');
-  let logoView = document.getElementById('logo-view-container');
-  let mensahLogoFullSize = document.getElementById('mensah-logo-full-size');
-  let greenwoodLogoFullSize = document.getElementById('greenwood-logo-full-size');
-  let hkLogoFullSize = document.getElementById('hk-logo-full-size');
-  let trLogoFullSize = document.getElementById('tr-logo-full-size');
-  let fbfLogoFullSize = document.getElementById('fbf-logo-full-size');
-  let top5FullSize = document.getElementById('top-5-full-size');
-  let mensahExpandBtn = document.getElementById('mensah-logo-expand');
-  let greenwoodExpandBtn = document.getElementById('greenwood-logo-expand');
-  let fbfExpandBtn = document.getElementById('fbf-logo-expand');
-  let hkExpandBtn = document.getElementById('hk-logo-expand');
-  let trExpandBtn = document.getElementById('tr-logo-expand');
-  let top5ExpandBtn = document.getElementById('top-5-expand');
-
-  logoCloseBtn.addEventListener('click', toggleLogoView);
-
-  mensahExpandBtn.addEventListener('click', function () {
-    logoView.classList.remove('display-none')
-    mensahLogoFullSize.classList.remove('display-none')
+  mensahExpandBtn.addEventListener("click", function () {
+    logoView
+      .classList
+      .remove("display-none");
+    mensahLogoFullSize
+      .classList
+      .remove("display-none");
     document.body.style.overflow = "hidden";
-  })
+  });
 
-  greenwoodExpandBtn.addEventListener('click', function () {
-    logoView.classList.remove('display-none')
-    greenwoodLogoFullSize.classList.remove('display-none')
+  greenwoodExpandBtn.addEventListener("click", function () {
+    logoView
+      .classList
+      .remove("display-none");
+    greenwoodLogoFullSize
+      .classList
+      .remove("display-none");
     document.body.style.overflow = "hidden";
-  })
+  });
 
-  fbfExpandBtn.addEventListener('click', function () {
-    logoView.classList.remove('display-none')
-    fbfLogoFullSize.classList.remove('display-none')
+  fbfExpandBtn.addEventListener("click", function () {
+    logoView
+      .classList
+      .remove("display-none");
+    fbfLogoFullSize
+      .classList
+      .remove("display-none");
     document.body.style.overflow = "hidden";
-  })
+  });
 
-  hkExpandBtn.addEventListener('click', function () {
-    logoView.classList.remove('display-none')
-    hkLogoFullSize.classList.remove('display-none')
+  hkExpandBtn.addEventListener("click", function () {
+    logoView
+      .classList
+      .remove("display-none");
+    hkLogoFullSize
+      .classList
+      .remove("display-none");
     document.body.style.overflow = "hidden";
-  })
+  });
 
-  trExpandBtn.addEventListener('click', function () {
-    logoView.classList.remove('display-none')
-    trLogoFullSize.classList.remove('display-none')
+  trExpandBtn.addEventListener("click", function () {
+    logoView
+      .classList
+      .remove("display-none");
+    trLogoFullSize
+      .classList
+      .remove("display-none");
     document.body.style.overflow = "hidden";
-  })
+  });
 
-  top5ExpandBtn.addEventListener('click', function () {
-    logoView.classList.remove('display-none')
-    top5FullSize.classList.remove('display-none')
+  top5ExpandBtn.addEventListener("click", function () {
+    logoView
+      .classList
+      .remove("display-none");
+    top5FullSize
+      .classList
+      .remove("display-none");
     document.body.style.overflow = "hidden";
-  })
+  });
 
   function toggleLogoView() {
     document.body.style.overflow = "scroll";
-    logoView.classList.toggle('display-none')
-    mensahLogoFullSize.classList.add('display-none')
-    greenwoodLogoFullSize.classList.add('display-none')
-    hkLogoFullSize.classList.add('display-none')
-    trLogoFullSize.classList.add('display-none')
-    fbfLogoFullSize.classList.add('display-none')
-    top5FullSize.classList.add('display-none')
-
+    logoView
+      .classList
+      .toggle("display-none");
+    mensahLogoFullSize
+      .classList
+      .add("display-none");
+    greenwoodLogoFullSize
+      .classList
+      .add("display-none");
+    hkLogoFullSize
+      .classList
+      .add("display-none");
+    trLogoFullSize
+      .classList
+      .add("display-none");
+    fbfLogoFullSize
+      .classList
+      .add("display-none");
+    top5FullSize
+      .classList
+      .add("display-none");
   }
 
-
-
-
-  inactiveNutmeg.addEventListener('click', oneTransition);
-  inactiveDxg.addEventListener('click', twoTransition);
-  inactiveFreelance.addEventListener('click', threeTransition);
-  bookBtn.addEventListener('click', openBook);
-  nutmegSpreadsBtn.addEventListener('click', openBook);
-  bookCloseBtn.addEventListener('click', openBook);
+  inactiveNutmeg.addEventListener("click", oneTransition);
+  inactiveDxg.addEventListener("click", twoTransition);
+  inactiveFreelance.addEventListener("click", threeTransition);
+  bookBtn.addEventListener("click", openBook);
+  nutmegSpreadsBtn.addEventListener("click", openBook);
+  bookCloseBtn.addEventListener("click", openBook);
   // resumeBtn.addEventListener('click', resumeToggle);
   // resumeCloseBtn.addEventListener('click', closeResume);
-  artCloseBtn.addEventListener('click', toggleArtView);
+  artCloseBtn.addEventListener("click", toggleArtView);
 
-  zebraExpandBtn.addEventListener('click', function () {
-    artView.classList.remove('display-none')
-    zebraFullSize.classList.remove('display-none')
+  zebraExpandBtn.addEventListener("click", function () {
+    artView
+      .classList
+      .remove("display-none");
+    zebraFullSize
+      .classList
+      .remove("display-none");
     document.body.style.overflow = "hidden";
-  })
+  });
 
-  paperExpandBtn.addEventListener('click', function () {
-    artView.classList.remove('display-none')
-    paperFullSize.classList.remove('display-none')
+  paperExpandBtn.addEventListener("click", function () {
+    artView
+      .classList
+      .remove("display-none");
+    paperFullSize
+      .classList
+      .remove("display-none");
     document.body.style.overflow = "hidden";
-  })
+  });
 
-  stripedPaperExpandBtn.addEventListener('click', function () {
-    artView.classList.remove('display-none')
-    stripedPaperFullSize.classList.remove('display-none')
+  stripedPaperExpandBtn.addEventListener("click", function () {
+    artView
+      .classList
+      .remove("display-none");
+    stripedPaperFullSize
+      .classList
+      .remove("display-none");
     document.body.style.overflow = "hidden";
-  })
+  });
 
-  plantExpandBtn.addEventListener('click', function () {
-    artView.classList.remove('display-none')
-    plantFullSize.classList.remove('display-none')
+  plantExpandBtn.addEventListener("click", function () {
+    artView
+      .classList
+      .remove("display-none");
+    plantFullSize
+      .classList
+      .remove("display-none");
     document.body.style.overflow = "hidden";
-  })
+  });
 
-  shadowExpandBtn.addEventListener('click', function () {
-    artView.classList.remove('display-none')
-    shadeFullSize.classList.remove('display-none')
+  shadowExpandBtn.addEventListener("click", function () {
+    artView
+      .classList
+      .remove("display-none");
+    shadeFullSize
+      .classList
+      .remove("display-none");
     document.body.style.overflow = "hidden";
-  })
+  });
 
-  farmExpandBtn.addEventListener('click', function () {
-    artView.classList.remove('display-none')
-    farmFullSize.classList.remove('display-none')
+  farmExpandBtn.addEventListener("click", function () {
+    artView
+      .classList
+      .remove("display-none");
+    farmFullSize
+      .classList
+      .remove("display-none");
     document.body.style.overflow = "hidden";
-  })
-
-
-
+  });
 
   function toggleArtView() {
     document.body.style.overflow = "scroll";
-    artView.classList.toggle('display-none')
-    farmFullSize.classList.add('display-none')
-    paperFullSize.classList.add('display-none')
-    stripedPaperFullSize.classList.add('display-none')
-    shadeFullSize.classList.add('display-none')
-    plantFullSize.classList.add('display-none')
-    zebraFullSize.classList.add('display-none')
-
+    artView
+      .classList
+      .toggle("display-none");
+    farmFullSize
+      .classList
+      .add("display-none");
+    paperFullSize
+      .classList
+      .add("display-none");
+    stripedPaperFullSize
+      .classList
+      .add("display-none");
+    shadeFullSize
+      .classList
+      .add("display-none");
+    plantFullSize
+      .classList
+      .add("display-none");
+    zebraFullSize
+      .classList
+      .add("display-none");
   }
 
   function resumeToggle() {
-    resume.classList.toggle('display-none')
+    resume
+      .classList
+      .toggle("display-none");
     document.body.style.overflow = "hidden";
   }
 
   function closeResume() {
-    resume.classList.toggle('display-none')
+    resume
+      .classList
+      .toggle("display-none");
     document.body.style.overflow = "scroll";
   }
 
-  bookCloseBtn.addEventListener("click", closeBook)
-
-
+  bookCloseBtn.addEventListener("click", closeBook);
 
   function openBook() {
-    bookContainer.classList.toggle('display-none')
+    bookContainer
+      .classList
+      .toggle("display-none");
     document.body.style.overflow = "hidden";
   }
 
   function closeBook() {
-    bookContainer.classList.add('display-none')
+    bookContainer
+      .classList
+      .add("display-none");
     document.body.style.overflow = "scroll";
   }
 
-
-
   function oneTransition() {
-    activeNutmeg.classList.remove('display-none')
-    activeDxg.classList.add('display-none')
-    activeFreelance.classList.add('display-none')
+    activeNutmeg
+      .classList
+      .remove("display-none");
+    activeDxg
+      .classList
+      .add("display-none");
+    activeFreelance
+      .classList
+      .add("display-none");
   }
 
   function twoTransition() {
-    activeNutmeg.classList.add('display-none')
-    activeDxg.classList.remove('display-none')
-    activeFreelance.classList.add('display-none')
+    activeNutmeg
+      .classList
+      .add("display-none");
+    activeDxg
+      .classList
+      .remove("display-none");
+    activeFreelance
+      .classList
+      .add("display-none");
   }
 
   function threeTransition() {
-    activeNutmeg.classList.add('display-none')
-    activeDxg.classList.add('display-none')
-    activeFreelance.classList.remove('display-none')
+    activeNutmeg
+      .classList
+      .add("display-none");
+    activeDxg
+      .classList
+      .add("display-none");
+    activeFreelance
+      .classList
+      .remove("display-none");
   }
 
-
-
-
-  let projectCloseBtn = document.querySelectorAll('.project-close-btn')
-  let jobDescriptionContainer = document.getElementById('job-description-container')
+  let projectCloseBtn = document.querySelectorAll(".project-close-btn");
+  let jobDescriptionContainer = document.getElementById("job-description-container");
   let n = 0;
 
-  let connectFourOpen = document.getElementById('connect-four-learn-more');
-  let memoryPadOpen = document.getElementById('memory-learn-more');
-  let beehiveOpen = document.getElementById('beehive-learn-more');
-  let miraclesOpen = document.getElementById('miracles-learn-more');
-  let ctnerrOpen = document.getElementById('ctnerr-learn-more');
-  let spaceOpen = document.getElementById('space-learn-more');
-  let coreOpen = document.getElementById('core-learn-more');
-  let neuroOpen = document.getElementById('neuro-learn-more');
-  let prArchivesOpen = document.getElementById('pr-archive-learn-more');
-  let crosshairsOpen = document.getElementById('crosshairs-learn-more');
-  let floeOpen = document.getElementById('floe-learn-more');
-  let frontendMentorOpen = document.getElementById('frontend-mentor-learn-more');
+  let connectFourOpen = document.getElementById("connect-four-learn-more");
+  let memoryPadOpen = document.getElementById("memory-learn-more");
+  let beehiveOpen = document.getElementById("beehive-learn-more");
+  let miraclesOpen = document.getElementById("miracles-learn-more");
+  let ctnerrOpen = document.getElementById("ctnerr-learn-more");
+  let spaceOpen = document.getElementById("space-learn-more");
+  let coreOpen = document.getElementById("core-learn-more");
+  let neuroOpen = document.getElementById("neuro-learn-more");
+  let prArchivesOpen = document.getElementById("pr-archive-learn-more");
+  let crosshairsOpen = document.getElementById("crosshairs-learn-more");
+  let floeOpen = document.getElementById("floe-learn-more");
+  let frontendMentorOpen = document.getElementById("frontend-mentor-learn-more");
 
+  let connectFourDesc = document.getElementById("connect-four-description");
+  let memoryPadDesc = document.getElementById("memory-pad-description");
+  let beehiveDesc = document.getElementById("beehive-description");
+  let miraclesDesc = document.getElementById("miracles-description");
+  let ctnerrDesc = document.getElementById("ct-nerr-description");
+  let spaceDesc = document.getElementById("space-description");
+  let neuroDesc = document.getElementById("neuro-description");
+  let coreDesc = document.getElementById("core-description");
+  let prArchivesDesc = document.getElementById("pr-description");
+  let crosshairsDesc = document.getElementById("crosshairs-description");
+  let floeDesc = document.getElementById("floe-description");
+  let frontendMentorDesc = document.getElementById("frontend-mentor-description");
 
-  let connectFourDesc = document.getElementById('connect-four-description');
-  let memoryPadDesc = document.getElementById('memory-pad-description');
-  let beehiveDesc = document.getElementById('beehive-description');
-  let miraclesDesc = document.getElementById('miracles-description');
-  let ctnerrDesc = document.getElementById('ct-nerr-description');
-  let spaceDesc = document.getElementById('space-description');
-  let neuroDesc = document.getElementById('neuro-description');
-  let coreDesc = document.getElementById('core-description');
-  let prArchivesDesc = document.getElementById('pr-description');
-  let crosshairsDesc = document.getElementById('crosshairs-description');
-  let floeDesc = document.getElementById('floe-description');
-  let frontendMentorDesc = document.getElementById('frontend-mentor-description');
-
-  connectFourOpen.addEventListener('click', openConnectProject);
-  beehiveOpen.addEventListener('click', openBeehiveProject);
-  memoryPadOpen.addEventListener('click', openMemoryProject);
-  miraclesOpen.addEventListener('click', openMiraclesProject);
-  ctnerrOpen.addEventListener('click', openCtnerrProject);
-  spaceOpen.addEventListener('click', openSpaceProject);
-  neuroOpen.addEventListener('click', openNeuroProject);
-  coreOpen.addEventListener('click', openCoreProject);
-  prArchivesOpen.addEventListener('click', openPrArchivesProject);
-  crosshairsOpen.addEventListener('click', openCrosshairsProject);
-  floeOpen.addEventListener('click', openFloeProject);
-  frontendMentorOpen.addEventListener('click', openFrontendMentorProject);
+  connectFourOpen.addEventListener("click", openConnectProject);
+  beehiveOpen.addEventListener("click", openBeehiveProject);
+  memoryPadOpen.addEventListener("click", openMemoryProject);
+  miraclesOpen.addEventListener("click", openMiraclesProject);
+  ctnerrOpen.addEventListener("click", openCtnerrProject);
+  spaceOpen.addEventListener("click", openSpaceProject);
+  neuroOpen.addEventListener("click", openNeuroProject);
+  coreOpen.addEventListener("click", openCoreProject);
+  prArchivesOpen.addEventListener("click", openPrArchivesProject);
+  crosshairsOpen.addEventListener("click", openCrosshairsProject);
+  floeOpen.addEventListener("click", openFloeProject);
+  frontendMentorOpen.addEventListener("click", openFrontendMentorProject);
 
   function openConnectProject() {
-    connectFourDesc.classList.remove('display-none')
-    jobDescriptionContainer.classList.remove('display-none')
-    n = 0
-    projectCloseBtn[n] = projectCloseBtn[n]
+    connectFourDesc
+      .classList
+      .remove("display-none");
+    jobDescriptionContainer
+      .classList
+      .remove("display-none");
+    n = 0;
+    projectCloseBtn[n] = projectCloseBtn[n];
     document.body.style.overflow = "hidden";
   }
 
   function openMemoryProject() {
-    memoryPadDesc.classList.remove('display-none')
-    jobDescriptionContainer.classList.remove('display-none')
-    n = 0
-    projectCloseBtn[n] = projectCloseBtn[n]
+    memoryPadDesc
+      .classList
+      .remove("display-none");
+    jobDescriptionContainer
+      .classList
+      .remove("display-none");
+    n = 0;
+    projectCloseBtn[n] = projectCloseBtn[n];
     document.body.style.overflow = "hidden";
   }
 
   function openBeehiveProject() {
-    beehiveDesc.classList.remove('display-none')
-    jobDescriptionContainer.classList.remove('display-none')
-    n = 1
+    beehiveDesc
+      .classList
+      .remove("display-none");
+    jobDescriptionContainer
+      .classList
+      .remove("display-none");
+    n = 1;
   }
 
   function openMiraclesProject() {
-    miraclesDesc.classList.remove('display-none')
-    jobDescriptionContainer.classList.remove('display-none')
-    n = 1
-    projectCloseBtn[n] = projectCloseBtn[1]
+    miraclesDesc
+      .classList
+      .remove("display-none");
+    jobDescriptionContainer
+      .classList
+      .remove("display-none");
+    n = 1;
+    projectCloseBtn[n] = projectCloseBtn[1];
     document.body.style.overflow = "hidden";
   }
 
   function openCtnerrProject() {
-    ctnerrDesc.classList.remove('display-none')
-    jobDescriptionContainer.classList.remove('display-none')
-    n = 2
+    ctnerrDesc
+      .classList
+      .remove("display-none");
+    jobDescriptionContainer
+      .classList
+      .remove("display-none");
+    n = 2;
     document.body.style.overflow = "hidden";
   }
   function openSpaceProject() {
-    spaceDesc.classList.remove('display-none')
-    jobDescriptionContainer.classList.remove('display-none')
-    n = 3
+    spaceDesc
+      .classList
+      .remove("display-none");
+    jobDescriptionContainer
+      .classList
+      .remove("display-none");
+    n = 3;
     document.body.style.overflow = "hidden";
   }
 
   function openNeuroProject() {
-    neuroDesc.classList.remove('display-none')
-    jobDescriptionContainer.classList.remove('display-none')
-    n = 3
+    neuroDesc
+      .classList
+      .remove("display-none");
+    jobDescriptionContainer
+      .classList
+      .remove("display-none");
+    n = 3;
     document.body.style.overflow = "hidden";
   }
 
-
   function openCoreProject() {
-    coreDesc.classList.remove('display-none')
-    jobDescriptionContainer.classList.remove('display-none')
-    n = 4
+    coreDesc
+      .classList
+      .remove("display-none");
+    jobDescriptionContainer
+      .classList
+      .remove("display-none");
+    n = 4;
     document.body.style.overflow = "hidden";
   }
   function openPrArchivesProject() {
-    prArchivesDesc.classList.remove('display-none')
-    jobDescriptionContainer.classList.remove('display-none')
-    n = 5
+    prArchivesDesc
+      .classList
+      .remove("display-none");
+    jobDescriptionContainer
+      .classList
+      .remove("display-none");
+    n = 5;
     document.body.style.overflow = "hidden";
   }
   function openCrosshairsProject() {
-    crosshairsDesc.classList.remove('display-none')
-    jobDescriptionContainer.classList.remove('display-none')
-    n = 6
+    crosshairsDesc
+      .classList
+      .remove("display-none");
+    jobDescriptionContainer
+      .classList
+      .remove("display-none");
+    n = 6;
     document.body.style.overflow = "hidden";
   }
   function openFloeProject() {
-    floeDesc.classList.remove('display-none')
-    jobDescriptionContainer.classList.remove('display-none')
-    n = 7
+    floeDesc
+      .classList
+      .remove("display-none");
+    jobDescriptionContainer
+      .classList
+      .remove("display-none");
+    n = 7;
     document.body.style.overflow = "hidden";
   }
   function openFrontendMentorProject() {
-    frontendMentorDesc.classList.remove('display-none')
-    jobDescriptionContainer.classList.remove('display-none')
-    n = 8
+    frontendMentorDesc
+      .classList
+      .remove("display-none");
+    jobDescriptionContainer
+      .classList
+      .remove("display-none");
+    n = 8;
     document.body.style.overflow = "hidden";
   }
 
-
-
-
-
-
-  projectCloseBtn[0].addEventListener('click', closeProjectModal);
-  projectCloseBtn[1].addEventListener('click', closeProjectModal);
-  projectCloseBtn[2].addEventListener('click', closeProjectModal);
-  projectCloseBtn[3].addEventListener('click', closeProjectModal);
-  projectCloseBtn[4].addEventListener('click', closeProjectModal);
-  projectCloseBtn[5].addEventListener('click', closeProjectModal);
-  projectCloseBtn[6].addEventListener('click', closeProjectModal);
-  projectCloseBtn[7].addEventListener('click', closeProjectModal);
-  projectCloseBtn[8].addEventListener('click', closeProjectModal);
-  projectCloseBtn[p].addEventListener('click', closeProjectModal);
-
-
-
+  projectCloseBtn[0].addEventListener("click", closeProjectModal);
+  projectCloseBtn[1].addEventListener("click", closeProjectModal);
+  projectCloseBtn[2].addEventListener("click", closeProjectModal);
+  projectCloseBtn[3].addEventListener("click", closeProjectModal);
+  projectCloseBtn[4].addEventListener("click", closeProjectModal);
+  projectCloseBtn[5].addEventListener("click", closeProjectModal);
+  projectCloseBtn[6].addEventListener("click", closeProjectModal);
+  projectCloseBtn[7].addEventListener("click", closeProjectModal);
+  projectCloseBtn[8].addEventListener("click", closeProjectModal);
+  projectCloseBtn[p].addEventListener("click", closeProjectModal);
 
   function closeProjectModal() {
-    jobDescriptionContainer.classList.add('display-none')
-    connectFourDesc.classList.add('display-none')
-    beehiveDesc.classList.add('display-none')
-    miraclesDesc.classList.add('display-none')
-    ctnerrDesc.classList.add('display-none')
-    spaceDesc.classList.add('display-none')
-    coreDesc.classList.add('display-none')
-    prArchivesDesc.classList.add('display-none')
-    crosshairsDesc.classList.add('display-none')
-    floeDesc.classList.add('display-none')
-    frontendMentorDesc.classList.add('display-none')
-    neuroDesc.classList.add('display-none')
+    jobDescriptionContainer
+      .classList
+      .add("display-none");
+    connectFourDesc
+      .classList
+      .add("display-none");
+    beehiveDesc
+      .classList
+      .add("display-none");
+    miraclesDesc
+      .classList
+      .add("display-none");
+    ctnerrDesc
+      .classList
+      .add("display-none");
+    spaceDesc
+      .classList
+      .add("display-none");
+    coreDesc
+      .classList
+      .add("display-none");
+    prArchivesDesc
+      .classList
+      .add("display-none");
+    crosshairsDesc
+      .classList
+      .add("display-none");
+    floeDesc
+      .classList
+      .add("display-none");
+    frontendMentorDesc
+      .classList
+      .add("display-none");
+    neuroDesc
+      .classList
+      .add("display-none");
     document.body.style.overflow = "scroll";
   }
-
-
-
-
-
-
 </script>
