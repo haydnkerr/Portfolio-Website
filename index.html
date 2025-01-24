@@ -480,11 +480,11 @@
                 </p>
                 <br/>
                 <p>
-                  This role cultivated my expertise in
-                  interdisciplinary collaboration, creative problem-solving, and
-                  full-cycle web development. It resulted in a website that not
-                  only reflects the museum’s mission but also delivers
-                  measurable results in terms of performance and audience reach.
+                  This role cultivated my expertise in interdisciplinary
+                  collaboration, creative problem-solving, and full-cycle web
+                  development. It resulted in a website that not only reflects
+                  the museum’s mission but also delivers measurable results in
+                  terms of performance and audience reach.
                 </p>
               </div>
             </div>
@@ -1581,6 +1581,68 @@
           </div>
         </div>
 
+        <div class="job-description display-none" id="ssmc-description">
+          <div class="left-side center"></div>
+          <div class="right-side space-between">
+            <p class="project-close-btn">X</p>
+            <h3>Webflow Site</h3>
+            <h2>Stepping Stones Museum for Children</h2>
+            <h4>
+              <span class="purple">UI/UX</span>
+              <span class="blue">HTML</span>
+              <span class="green">CSS</span>
+              <span class="red">JS</span>
+            </h4>
+
+            <p>
+              One of my standout projects as a web developer at the children’s
+              museum was the complete redesign of its <strong>
+                <a href="https://www.steppingstonesmuseum.org/" target="_blank"
+                  >website,</a
+                >
+              </strong> a transformation
+              aimed at enhancing both user engagement and online visibility.
+              With over 20 pages, the new site was carefully crafted to provide
+              a modern, streamlined experience while staying true to the
+              museum’s playful and vibrant brand identity.
+            </p>
+            <br/>
+
+            <p>
+              The redesign process involved close collaboration with the graphic
+              design, marketing, and museum exhibits teams, ensuring that every
+              element—from conceptual design to final development—aligned with
+              the museum’s mission. Using Webflow, I handled everything from
+              user-centric web design to full-scale deployment. Beyond
+              aesthetics, I focused on performance optimization, increasing SEO
+              scores from 88% to 95% and boosting organic traffic by 34%,
+              leading to greater audience reach and engagement.
+            </p>
+
+            <br/>
+            <p>
+              This project not only showcased my technical skills in web design
+              and development but also strengthened my ability to manage
+              interdisciplinary collaboration and problem-solving. The result is
+              a visually engaging and high-performing website that effectively
+              connects users with the museum’s offerings.
+            </p>
+            <br/>
+            <div class="flex-row">
+              <a
+                style="margin-right: 15px"
+                class="btn-primary"
+                href="https://www.steppingstonesmuseum.org/"
+                target="_blank"
+                >Visit Site</a
+              >
+              <!-- <a class="btn-secondary" href="neuro.html" target="_blank"
+                >Site Comparison</a
+              > -->
+            </div>
+          </div>
+        </div>
+
         <div class="job-description display-none" id="neuro-description">
           <div class="left-side center"></div>
           <div class="right-side space-between">
@@ -2341,6 +2403,7 @@
   let n = 0;
 
   let connectFourOpen = document.getElementById("connect-four-learn-more");
+  let ssmcOpen = document.getElementById("ssmc-learn-more");
   let memoryPadOpen = document.getElementById("memory-learn-more");
   let beehiveOpen = document.getElementById("beehive-learn-more");
   let miraclesOpen = document.getElementById("miracles-learn-more");
@@ -2354,6 +2417,7 @@
   let frontendMentorOpen = document.getElementById("frontend-mentor-learn-more");
 
   let connectFourDesc = document.getElementById("connect-four-description");
+  let ssmcDesc = document.getElementById("ssmc-description");
   let memoryPadDesc = document.getElementById("memory-pad-description");
   let beehiveDesc = document.getElementById("beehive-description");
   let miraclesDesc = document.getElementById("miracles-description");
@@ -2367,6 +2431,7 @@
   let frontendMentorDesc = document.getElementById("frontend-mentor-description");
 
   connectFourOpen.addEventListener("click", openConnectProject);
+  ssmcOpen.addEventListener("click", openSsmcProject);
   beehiveOpen.addEventListener("click", openBeehiveProject);
   memoryPadOpen.addEventListener("click", openMemoryProject);
   miraclesOpen.addEventListener("click", openMiraclesProject);
@@ -2381,6 +2446,18 @@
 
   function openConnectProject() {
     connectFourDesc
+      .classList
+      .remove("display-none");
+    jobDescriptionContainer
+      .classList
+      .remove("display-none");
+    n = 0;
+    projectCloseBtn[n] = projectCloseBtn[n];
+    document.body.style.overflow = "hidden";
+  }
+
+    function openSsmcProject() {
+    ssmcDesc
       .classList
       .remove("display-none");
     jobDescriptionContainer
