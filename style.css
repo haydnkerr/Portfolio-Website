@@ -834,7 +834,7 @@ header a:hover {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   width: 100%;
   max-width: 1300px;
   gap: 25px;
@@ -1602,9 +1602,9 @@ header a:hover {
 
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (max-width: 1450px) {
   .projects-grid {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
 }
