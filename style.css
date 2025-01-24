@@ -1182,6 +1182,16 @@ header a:hover {
   background-position: center;
 }
 
+#memory-pad-description .left-side {
+  background-color: #1a2837;
+  background-position: center;
+  overflow: hidden;
+}
+
+#memory-pad-description .left-side img {
+  width: 105%;
+}
+
 #connect-four-description .left-side img {
   width: 90%;
 }

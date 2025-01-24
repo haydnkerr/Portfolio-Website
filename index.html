@@ -971,15 +971,73 @@
           <br>
           <div class="flex-row">
             <a class='btn-primary' href="https://connect-four-online.onrender.com/?" target="_blank"
-              style="margin-right: 10px">Online Version</a>
-            <a class='btn-secondary' href="https://haydnkerr.github.io/connect-four/" target="_blank"
-              style="margin-right: 10px">Offline Version</a>
+              style="margin-right: 10px">Play Game</a>
+            <!-- <a class='btn-secondary' href="https://haydnkerr.github.io/connect-four/" target="_blank"
+              style="margin-right: 10px">Offline Version</a> -->
             <a class='btn-primary' href="https://github.com/haydnkerr/connect-four" target="_blank">Git Repo</a>
           </div>
 
         </div>
 
       </div>
+
+      <div class="job-description display-none" id="memory-pad-description">
+        <div class="left-side center">
+          <img src="./assets/memory-pad.png">
+        </div>
+        <div class="right-side space-between">
+          <p class="project-close-btn">X</p>
+          <h3>Online Desktop Game</h3>
+          <h2>
+            Lillie's Memory Pads
+          </h2>
+          <h4>
+            <span class="blue">HTML</span><span class="green">CSS</span><span class="red">Express JS</span><span
+              class="purple">Supabase</span>
+          </h4>
+          <!-- <p>
+            <strong>Disclaimer:</strong> Due to the type of free server used for this project the inital load may take a
+            few moments.
+          </p>
+          <br> -->
+          <p>
+            One of my favored portfolio pieces is the <strong><a target="_blank"
+                href="https://connect-four-online.onrender.com/?">Under the Sea Connect Four-style game</a></strong>.
+            This project was a deliberate showcase of my proficiency in HTML,
+            CSS, and
+            JS,
+            coupled with a flair for creativity. By reimagining a classic game in an underwater setting, I aimed to
+            demonstrate not only technical skills but also a keen eye for design.
+          </p>
+          <br>
+          <p>
+            Throughout the development and <strong>learning process</strong>, I delved deep into various JavaScript
+            techniques, with a strong emphasis on manipulating arrays and optimizing loops. This endeavor led me to
+            revisit and refine my code repeatedly. The process involved streamlining complex segments, resulting in a
+            more
+            concise and efficient codebase.
+          </p>
+          <br>
+          <p>
+            <strong>The latest update,</strong> adds the integration
+            of online multiplayer capabilities, allowing users to compete against opponents remotely, adding a dynamic
+            and
+            interactive dimension to the game. Through the use of <span class="purple">socket.io</span> and hosting the
+            server on render.com this was both a challenging and fun learning experience.
+          </p>
+          <br>
+          <div class="flex-row">
+            <a class='btn-primary' href="https://memory-game-7xvy.onrender.com/" target="_blank"
+              style="margin-right: 10px">Play Game</a>
+
+            <a class='btn-primary' href="https://github.com/haydnkerr/connect-four" target="_blank">Git Repo</a>
+          </div>
+
+        </div>
+
+      </div>
+
+
 
       <div class="job-description display-none" id="beehive-description">
         <div class="left-side center">
@@ -1831,6 +1889,7 @@
   let n = 0;
 
   let connectFourOpen = document.getElementById('connect-four-learn-more');
+  let memoryPadOpen = document.getElementById('memory-learn-more');
   let beehiveOpen = document.getElementById('beehive-learn-more');
   let miraclesOpen = document.getElementById('miracles-learn-more');
   let ctnerrOpen = document.getElementById('ctnerr-learn-more');
@@ -1844,6 +1903,7 @@
 
 
   let connectFourDesc = document.getElementById('connect-four-description');
+  let memoryPadDesc = document.getElementById('memory-pad-description');
   let beehiveDesc = document.getElementById('beehive-description');
   let miraclesDesc = document.getElementById('miracles-description');
   let ctnerrDesc = document.getElementById('ct-nerr-description');
@@ -1857,7 +1917,7 @@
 
   connectFourOpen.addEventListener('click', openConnectProject);
   beehiveOpen.addEventListener('click', openBeehiveProject);
-
+  memoryPadOpen.addEventListener('click', openMemoryProject);
   miraclesOpen.addEventListener('click', openMiraclesProject);
   ctnerrOpen.addEventListener('click', openCtnerrProject);
   spaceOpen.addEventListener('click', openSpaceProject);
@@ -1870,6 +1930,14 @@
 
   function openConnectProject() {
     connectFourDesc.classList.remove('display-none')
+    jobDescriptionContainer.classList.remove('display-none')
+    n = 0
+    projectCloseBtn[n] = projectCloseBtn[n]
+    document.body.style.overflow = "hidden";
+  }
+
+  function openMemoryProject() {
+    memoryPadDesc.classList.remove('display-none')
     jobDescriptionContainer.classList.remove('display-none')
     n = 0
     projectCloseBtn[n] = projectCloseBtn[n]
