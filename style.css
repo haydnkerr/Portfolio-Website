@@ -1534,12 +1534,7 @@ header a:hover {
 
 }
 
-@media screen and (min-width: 1500px) {
-  .projects-grid {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  }
 
-}
 
 @media screen and (max-width: 875px) {
   .face-img {
@@ -1603,6 +1598,13 @@ header a:hover {
 
   #job-description-container {
     padding: 10px
+  }
+
+}
+
+@media screen and (min-width: 1500px) {
+  .projects-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 
 }
