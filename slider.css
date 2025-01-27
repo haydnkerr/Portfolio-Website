@@ -72,6 +72,11 @@ header {
     height: 550%;
 }
 
+#old-ssmc {
+    background-image: url("./assets/old-page.png");  
+    height: 550%;
+}
+
 #floe-nav {
     position: absolute;
     z-index: 10;

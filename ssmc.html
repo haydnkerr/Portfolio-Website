@@ -15,7 +15,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <title>CT Nerr Site Comparison</title>
+    <title>SSMC Site Comparison</title>
 
     <link href="slider.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -25,14 +25,14 @@
 <body>
 
 
-    <div class="scroll-container new-miracles">
-        <img class="new-img" src="./assets/miracles-new.jpg">
+    <div class="scroll-container new-ssmce">
+        <img class="new-img" src="./assets/ssmc-new.jpg">
 
 
     </div>
     
 
-    <div class="scroll-container old-site" id="old-miracles">
+    <div class="scroll-container old-site" id="old-ssmc">
 
     </div>
 
@@ -41,19 +41,19 @@
     
 
     <script>
-        let oldMiraclesWidth = document.getElementById('old-miracles')
+        let oldssmcWidth = document.getElementById('old-ssmc')
 
 
 
         let width = (innerWidth / 10)
-        oldMiraclesWidth.style.width = '50%';
+        oldssmcWidth.style.width = '50%';
 
         function mouseXPosition(event) {
  
             var mouseX = event.clientX;
 
 
-            oldMiraclesWidth.style.width = mouseX + 'px';
+            oldssmcWidth.style.width = mouseX + 'px';
 
 
         }
