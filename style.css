@@ -1452,6 +1452,39 @@ header a:hover {
 
 }
 
+
+.logo-slider {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 100%; /* Full-width */
+  background: #f8f8f8; /* Optional background */
+  padding: 10px 0;
+}
+
+.logo-track {
+  display: flex;
+  gap: 20px;
+  animation: scroll-left 10s linear infinite;
+}
+
+.logo-track img {
+  height: 50px; /* Adjust based on your needs */
+  display: inline-block;
+  object-fit: contain;
+}
+
+/* Keyframes for smooth scrolling */
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
 @media screen and (max-width: 992px) {
   .job-description {
     flex-direction: column;
