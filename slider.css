@@ -73,8 +73,14 @@ header {
 }
 
 #old-ssmc {
-    background-image: url("./assets/ssmc-old.jpg");  
-    height: 700%;
+    /* background-image: url("./assets/ssmc-old.jpg");  
+    height: 700%; */
+    overflow: hidden;
+}
+
+.old-ssmc {
+    width: 100vw;
+    height: auto;
 }
 
 #floe-nav {
